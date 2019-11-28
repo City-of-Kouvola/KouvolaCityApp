@@ -14,7 +14,7 @@
     "member-ordering": [
       true,
       {
-        "order": ["variables-before-functions", "public-before-private"]
+        "order": ["public-before-private"]
       }
     ],
     "no-any": false,
