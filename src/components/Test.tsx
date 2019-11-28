@@ -6,7 +6,6 @@ interface Props {
 }
 
 const Test = (props: Props): JSX.Element => {
-  const [count, setCount] = useState<number>(0);
   const [name, setName] = useState<String>(props.name);
 
   useEffect(() => {
@@ -14,7 +13,7 @@ const Test = (props: Props): JSX.Element => {
   }, []);
   return (
     <View>
-      <Text>{`Test ${count} ${name} `}</Text>
+      <Text>{`Test ${name}`}</Text>
     </View>
   );
 };
