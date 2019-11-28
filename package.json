@@ -10,7 +10,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "tsc -b && tslint --project ."
+      "pre-commit": "tsc -b && tslint --project ."
     }
   },
   "dependencies": {
