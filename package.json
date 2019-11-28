@@ -8,6 +8,9 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "hooks": {
+    "pre-commit": "tsc -b && tslint --project ."
+  },
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.4",
