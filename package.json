@@ -6,15 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
-    "pre-commit": "tsc -b && tslint --project .",
-    "precommit": "tsc -b && tslint --project ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsc -b && tslint --project .",
-      "precommit": "tsc -b && tslint --project ."
-    }
+    "test": "jest"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -30,7 +22,7 @@
     "@types/react-test-renderer": "16.9.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^3.2.0",
-    "husky": "^3.1.0",
+    "git-hooks": "^1.1.10",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.9.0",
