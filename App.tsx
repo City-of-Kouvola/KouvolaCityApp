@@ -1,11 +1,17 @@
 import React from 'react';
 import { View } from 'react-native';
-import Test from 'components/Test';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from './src/modules/navigation/NavigationContainer';
+import { setTopLevelNavigator } from './src/modules/navigation/components/NavigationService';
 
 const App = (): JSX.Element => {
   return (
-    <View>
-      <Test name={'a'} />
+    <View style={{ flex: 1 }}>
+      <NavigationContainer
+        ref={(navigatorRef) => {
+          setTopLevelNavigator(navigatorRef);
+        }}
+      />
     </View>
   );
 };
