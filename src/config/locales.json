@@ -1,0 +1,70 @@
+{
+  "Labels": {
+    "english": {
+      "Navigation": {
+        "Home": "Home",
+        "RoutePlanner": "Route Planner",
+        "OpenJobOffers": "Open jobs",
+        "Foodmenus": "Foodmenus",
+        "Enquiries": "Enquiries",
+        "SwimmingTimes": "Swimming baths",
+        "Back": "Return"
+      },
+      "ExternalApps": {
+        "Kouvola": "Kouvola",
+        "Trimble FeedBack": "Trimble Feedback",
+        "Instagram": "Kouvola Instagram"
+      }
+    },
+    "finnish": {
+      "Navigation": {
+        "Home": "Koti",
+        "RouteGuide": "Reittiopas",
+        "OpenJobOffers": "Avoimet työpaikat",
+        "FoodMenus": "Ruokalistat",
+        "Enquiries": "Kyselyt",
+        "SwimmingTimes": "Uimahallien poikkeusaukioloajat",
+        "Back": "Palaa"
+      },
+      "ExternalApps": {
+        "Kouvola": "Kouvola",
+        "Trimble FeedBack": "Trimble Feedback",
+        "Instagram": "Kouvola Instagram"
+      }
+    }
+  },
+  "Accessibility": {
+    "english": {
+      "Navigation": {
+        "Home": "Go to home",
+        "RouteGuide": "Go to route planner",
+        "OpenJobOffers": "Go to open jobs",
+        "FoodMenus": "Go to foodmenus",
+        "Enquiries": "Go to enquiries",
+        "SwimmingTimes": "Go to swimming baths",
+        "Back": "Go back"
+      },
+      "ExternalApps": {
+        "Kouvola": "Open Kouvola",
+        "Trimble FeedBack": "Open Trimble Feedback",
+        "Instagram": "Open Kouvola Instagram"
+      }
+    },
+    "finnish": {
+      "Navigation": {
+        "Home": "Mene kotiin",
+        "RouteGuide": "Mene reittioppaaseen",
+        "OpenJobOffers": "Mene avoimiin työpaikkoihin",
+        "FoodMenus": "Mene ruokalistoihin",
+        "Enquiries": "Mene kyselyihin",
+        "SwimmingTimes": "Mene Uimahallien poikkeusaukioloaikoihin",
+        "Back": "Mene takaisin"
+      },
+      "ExternalApps": {
+        "Kouvola": "Avaa Kouvola",
+        "Trimble FeedBack": "Avaa Trimble Feedback",
+        "Instagram": "Avaa Kouvola Instagram"
+      }
+    }
+  }
+}
