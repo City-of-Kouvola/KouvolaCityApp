@@ -3,9 +3,9 @@
     "english": {
       "Navigation": {
         "Home": "Home",
-        "RoutePlanner": "Route Planner",
+        "RoutePlanners": "Route Planner",
         "OpenJobOffers": "Open jobs",
-        "Foodmenus": "Foodmenus",
+        "FoodMenus": "Foodmenus",
         "Enquiries": "Enquiries",
         "SwimmingTimes": "Swimming baths",
         "Back": "Return"
@@ -19,7 +19,7 @@
     "finnish": {
       "Navigation": {
         "Home": "Koti",
-        "RouteGuide": "Reittiopas",
+        "RoutePlanners": "Reittiopas",
         "OpenJobOffers": "Avoimet työpaikat",
         "FoodMenus": "Ruokalistat",
         "Enquiries": "Kyselyt",
@@ -37,7 +37,7 @@
     "english": {
       "Navigation": {
         "Home": "Go to home",
-        "RouteGuide": "Go to route planner",
+        "RoutePlanners": "Go to route planner",
         "OpenJobOffers": "Go to open jobs",
         "FoodMenus": "Go to foodmenus",
         "Enquiries": "Go to enquiries",
@@ -53,7 +53,7 @@
     "finnish": {
       "Navigation": {
         "Home": "Mene kotiin",
-        "RouteGuide": "Mene reittioppaaseen",
+        "RoutePlanners": "Mene reittioppaaseen",
         "OpenJobOffers": "Mene avoimiin työpaikkoihin",
         "FoodMenus": "Mene ruokalistoihin",
         "Enquiries": "Mene kyselyihin",
