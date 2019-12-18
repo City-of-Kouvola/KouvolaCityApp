@@ -32,11 +32,17 @@ const Placeholder = createStackNavigator({
   },
 });
 
+const translationData = require('config/locales.json');
+
 const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerOptions,
   NavigationDrawerProp<NavigationRoute>
 > = {
-  Tapahtumat: Placeholder,
+  [translationData.Labels.finnish.Navigation.SwimmingTimes]: Placeholder,
+  [translationData.Labels.finnish.Navigation.RoutePlanners]: Placeholder,
+  [translationData.Labels.finnish.Navigation.OpenJobOffers]: Placeholder,
+  [translationData.Labels.finnish.Navigation.FoodMenus]: Placeholder,
+  [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
