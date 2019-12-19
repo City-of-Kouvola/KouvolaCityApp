@@ -18,7 +18,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 0,
-    paddingTop: 0,
   },
   headerLogo: {
     width: '100%',

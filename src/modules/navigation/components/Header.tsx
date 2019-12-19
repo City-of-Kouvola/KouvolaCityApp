@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import { Header } from 'react-native-elements';
 import { openDrawer, closeDrawer, goBack } from './NavigationService';
+import logo from 'assets/img/kouvolalogo.jpg';
 import styles from '../styles';
 import colors from 'config/colors';
 
@@ -17,10 +18,7 @@ export const MainHeader = (props: any): JSX.Element => {
       }}
       centerComponent={
         <ImageBackground
-          source={{
-            uri:
-              'https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.png',
-          }}
+          source={logo}
           resizeMode='center'
           style={styles.headerLogo}
         />
@@ -57,10 +55,7 @@ export const DrawerHeader = (props: any): JSX.Element => {
     <Header
       centerComponent={
         <ImageBackground
-          source={{
-            uri:
-              'https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.png',
-          }}
+          source={logo}
           resizeMode='center'
           style={styles.headerLogo}
         />
