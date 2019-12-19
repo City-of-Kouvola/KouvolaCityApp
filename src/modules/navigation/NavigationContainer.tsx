@@ -15,6 +15,7 @@ import {
 import NavigationContent from './components/NavigationContent';
 import colors from 'config/colors';
 import Test from 'components/Test';
+import HomeView from 'components/Home';
 import { MainHeader, BackHeader } from './components/Header';
 
 const Placeholder = createStackNavigator({
@@ -32,14 +33,24 @@ const Placeholder = createStackNavigator({
   },
 });
 
+const Home = createStackNavigator({
+  Events: {
+    screen: (props: any) => <HomeView {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
 const translationData = require('config/locales.json');
 
 const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerOptions,
   NavigationDrawerProp<NavigationRoute>
 > = {
+  [translationData.Labels.finnish.Navigation.Home]: Home,
   [translationData.Labels.finnish.Navigation.SwimmingTimes]: Placeholder,
-  [translationData.Labels.finnish.Navigation.RoutePlanners]: Placeholder,
+  [translationData.Labels.finnish.Navigation.RoutePlanners]: Home,
   [translationData.Labels.finnish.Navigation.OpenJobOffers]: Placeholder,
   [translationData.Labels.finnish.Navigation.FoodMenus]: Placeholder,
   [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
