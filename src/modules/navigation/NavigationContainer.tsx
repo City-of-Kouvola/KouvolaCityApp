@@ -42,22 +42,29 @@ const Home = createStackNavigator({
   },
 });
 
-const redirectTrimble: RedirectData = {
+const trimble: RedirectData = {
   applicationName: 'Trimble Feedback',
   androidStoreUrl: 'market://details?id=com.tekla.feedback&launch=true',
   iosStoreUrl: 'itms-apps://apps.apple.com/us/app/trimble-feedback/id816215762',
 };
 
-const redirectKvlMobiili: RedirectData = {
+const kvlMobiili: RedirectData = {
   applicationName: 'Kouvola mobiililippu',
   launchUrl: 'payiqkouvola://',
   androidStoreUrl: 'market://details?id=net.payiq.kouvola&launch=true',
   iosStoreUrl: 'itms-apps://apps.apple.com/us/app/kouvola/id1463762029',
 };
 
+const kvlInstagram: RedirectData = {
+  applicationName: 'Kouvola instagram',
+  launchUrl: 'instagram://user?username=kouvolankaupunki',
+  androidStoreUrl: 'market://details?id=com.instagram.android&launch=true',
+  iosStoreUrl: 'itms-apps://apps.apple.com/us/appinstagram/id389801252',
+};
+
 const trimbleFeedbackRedirect = createStackNavigator({
   trimbleFeedbackRedirect: {
-    screen: (props: any) => <Redirect {...redirectTrimble} {...props} />,
+    screen: (props: any) => <Redirect {...trimble} {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
     },
@@ -66,7 +73,16 @@ const trimbleFeedbackRedirect = createStackNavigator({
 
 const kvlMobiiliRedirect = createStackNavigator({
   kvlMobiiliRedirect: {
-    screen: (props: any) => <Redirect {...redirectKvlMobiili} {...props} />,
+    screen: (props: any) => <Redirect {...kvlMobiili} {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const kvlInstagramRedirect = createStackNavigator({
+  kvlMobiiliRedirect: {
+    screen: (props: any) => <Redirect {...kvlInstagram} {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
     },
@@ -87,6 +103,7 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
   'Trimble Feedback': trimbleFeedbackRedirect,
   'Mobiili lippu': kvlMobiiliRedirect,
+  'Kouvola instagram': kvlInstagramRedirect,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
