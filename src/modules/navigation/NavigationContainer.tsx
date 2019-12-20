@@ -1,5 +1,4 @@
 import React from 'react';
-import {} from 'react-native';
 import {
   createAppContainer,
   NavigationRouteConfigMap,
@@ -16,7 +15,9 @@ import NavigationContent from './components/NavigationContent';
 import colors from 'config/colors';
 import Test from 'components/Test';
 import HomeView from 'components/Home';
+import Redirect from 'components/Redirect';
 import { MainHeader, BackHeader } from './components/Header';
+import { RedirectData } from 'config/types';
 
 const Placeholder = createStackNavigator({
   Events: {
@@ -42,6 +43,37 @@ const Home = createStackNavigator({
   },
 });
 
+const redirectTrimble: RedirectData = {
+  applicationName: 'Trimble Feedback',
+  androidStoreUrl: 'market://details?id=com.tekla.feedback&launch=true',
+  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/trimble-feedback/id816215762',
+};
+
+const redirectKvlMobiili: RedirectData = {
+  applicationName: 'Kouvola mobiililippu',
+  launchUrl: 'payiqkouvola://',
+  androidStoreUrl: 'market://details?id=net.payiq.kouvola&launch=true',
+  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/kouvola/id1463762029',
+};
+
+const test = createStackNavigator({
+  test: {
+    screen: (props: any) => <Redirect {...redirectTrimble} {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const test2 = createStackNavigator({
+  test: {
+    screen: (props: any) => <Redirect {...redirectKvlMobiili} {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
 const translationData = require('config/locales.json');
 
 const RouteConfigs: NavigationRouteConfigMap<
@@ -54,6 +86,8 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.OpenJobOffers]: Placeholder,
   [translationData.Labels.finnish.Navigation.FoodMenus]: Placeholder,
   [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
+  'Trimble Feedback': test,
+  'Mobiili lippu': test2,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {

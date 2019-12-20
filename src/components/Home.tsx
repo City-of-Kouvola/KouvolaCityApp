@@ -43,7 +43,7 @@ const Home = (): JSX.Element => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 25,
+    padding: 15,
   },
   textHeader: {
     fontWeight: 'bold',

@@ -9,7 +9,13 @@ const DrawerContent = (props: any): JSX.Element => {
     <View style={styles.headerMenu}>
       <DrawerHeader />
       <ScrollView>
-        <DrawerItems labelStyle={styles.headerItems} {...props} />
+        <DrawerItems
+          labelStyle={styles.headerLabel}
+          itemStyle={styles.headerItem}
+          activeBackgroundColor={'#fff'}
+          activeLabelStyle={styles.headerActiveLabel}
+          {...props}
+        />
       </ScrollView>
     </View>
   );

@@ -5,19 +5,27 @@ export default StyleSheet.create({
   headerMenu: {
     backgroundColor: colors.min,
     height: '100%',
-    // fontFamily: 'FuturaPT-Book',
   },
-  headerItems: {
-    // fontFamily: 'FuturaPT-Book',
+  headerLabel: {
     color: colors.max,
-    fontWeight: 'bold',
+    fontWeight: '400',
     fontSize: 20,
+  },
+  headerActiveLabel: {
+    fontWeight: 'bold',
+  },
+  headerItem: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#212121',
+    width: '90%',
+    alignSelf: 'center',
   },
   header: {
     backgroundColor: colors.min,
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomWidth: 0,
+    borderBottomWidth: 1,
+    borderBottomColor: '#212121',
   },
   headerLogo: {
     width: '100%',
