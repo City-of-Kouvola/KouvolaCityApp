@@ -1,5 +1,4 @@
 import React from 'react';
-import {} from 'react-native';
 import {
   createAppContainer,
   NavigationRouteConfigMap,
@@ -13,10 +12,11 @@ import {
   NavigationDrawerConfig,
 } from 'react-navigation-drawer';
 import NavigationContent from './components/NavigationContent';
-import colors from 'config/colors';
 import Test from 'components/Test';
 import HomeView from 'components/Home';
+import Redirect from 'components/Redirect';
 import { MainHeader, BackHeader } from './components/Header';
+import { RedirectData } from 'config/types';
 
 const Placeholder = createStackNavigator({
   Events: {
@@ -34,8 +34,39 @@ const Placeholder = createStackNavigator({
 });
 
 const Home = createStackNavigator({
-  Events: {
+  Home: {
     screen: (props: any) => <HomeView {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const redirectTrimble: RedirectData = {
+  applicationName: 'Trimble Feedback',
+  androidStoreUrl: 'market://details?id=com.tekla.feedback&launch=true',
+  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/trimble-feedback/id816215762',
+};
+
+const redirectKvlMobiili: RedirectData = {
+  applicationName: 'Kouvola mobiililippu',
+  launchUrl: 'payiqkouvola://',
+  androidStoreUrl: 'market://details?id=net.payiq.kouvola&launch=true',
+  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/kouvola/id1463762029',
+};
+
+const trimbleFeedbackRedirect = createStackNavigator({
+  trimbleFeedbackRedirect: {
+    screen: (props: any) => <Redirect {...redirectTrimble} {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const kvlMobiiliRedirect = createStackNavigator({
+  kvlMobiiliRedirect: {
+    screen: (props: any) => <Redirect {...redirectKvlMobiili} {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
     },
@@ -54,6 +85,8 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.OpenJobOffers]: Placeholder,
   [translationData.Labels.finnish.Navigation.FoodMenus]: Placeholder,
   [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
+  'Trimble Feedback': trimbleFeedbackRedirect,
+  'Mobiili lippu': kvlMobiiliRedirect,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
