@@ -5,11 +5,15 @@ import { openDrawer, closeDrawer, goBack } from './NavigationService';
 import logo from 'assets/img/kouvolalogo.png';
 import styles from '../styles';
 import colors from 'config/colors';
+import translationData from 'config/locales.json';
 
 export const MainHeader = (props: any): JSX.Element => {
   return (
     <Header
       leftComponent={{
+        accessible: true,
+        accessibilityLabel:
+          translationData.Accessibility.finnish.Navigation.OpenMenu,
         icon: 'menu',
         iconStyle: styles.iconStyle,
         underlayColor: '#eee',
@@ -33,6 +37,9 @@ export const BackHeader = (props: any): JSX.Element => {
   return (
     <Header
       leftComponent={{
+        accessible: true,
+        accessibilityLabel:
+          translationData.Accessibility.finnish.Navigation.GoBack,
         icon: 'arrow-back',
         iconStyle: styles.iconStyle,
         underlayColor: '#f77952',
@@ -40,9 +47,11 @@ export const BackHeader = (props: any): JSX.Element => {
         onPress: () => goBack(),
       }}
       centerComponent={
-        <View>
-          <Text>Test</Text>
-        </View>
+        <ImageBackground
+          source={logo}
+          resizeMode='center'
+          style={styles.headerLogo}
+        />
       }
       containerStyle={styles.header}
       {...props}
@@ -61,6 +70,9 @@ export const DrawerHeader = (props: any): JSX.Element => {
         />
       }
       rightComponent={{
+        accessible: true,
+        accessibilityLabel:
+          translationData.Accessibility.finnish.Navigation.CloseMenu,
         icon: 'close',
         iconStyle: styles.iconStyle,
         color: colors.max,
