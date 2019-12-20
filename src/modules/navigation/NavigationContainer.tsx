@@ -12,7 +12,6 @@ import {
   NavigationDrawerConfig,
 } from 'react-navigation-drawer';
 import NavigationContent from './components/NavigationContent';
-import colors from 'config/colors';
 import Test from 'components/Test';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
@@ -35,7 +34,7 @@ const Placeholder = createStackNavigator({
 });
 
 const Home = createStackNavigator({
-  Events: {
+  Home: {
     screen: (props: any) => <HomeView {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
@@ -56,8 +55,8 @@ const redirectKvlMobiili: RedirectData = {
   iosStoreUrl: 'itms-apps://apps.apple.com/us/app/kouvola/id1463762029',
 };
 
-const test = createStackNavigator({
-  test: {
+const trimbleFeedbackRedirect = createStackNavigator({
+  trimbleFeedbackRedirect: {
     screen: (props: any) => <Redirect {...redirectTrimble} {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
@@ -65,8 +64,8 @@ const test = createStackNavigator({
   },
 });
 
-const test2 = createStackNavigator({
-  test: {
+const kvlMobiiliRedirect = createStackNavigator({
+  kvlMobiiliRedirect: {
     screen: (props: any) => <Redirect {...redirectKvlMobiili} {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
@@ -86,8 +85,8 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.OpenJobOffers]: Placeholder,
   [translationData.Labels.finnish.Navigation.FoodMenus]: Placeholder,
   [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
-  'Trimble Feedback': test,
-  'Mobiili lippu': test2,
+  'Trimble Feedback': trimbleFeedbackRedirect,
+  'Mobiili lippu': kvlMobiiliRedirect,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
