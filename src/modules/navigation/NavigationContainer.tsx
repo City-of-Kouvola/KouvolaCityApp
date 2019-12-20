@@ -17,21 +17,7 @@ import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
 import { MainHeader, BackHeader } from './components/Header';
 import { kvlInstagram, kvlMobiili, trimble } from 'config/Redirectroutes';
-
-const Placeholder = createStackNavigator({
-  Events: {
-    screen: (props: any) => <Test {...props} />,
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
-  Details: {
-    screen: (props: any) => <Test {...props} />,
-    navigationOptions: {
-      header: () => <BackHeader />,
-    },
-  },
-});
+import { WebViewModule } from 'OpenCityKvlModules';
 
 const Home = createStackNavigator({
   Home: {
@@ -69,6 +55,88 @@ const kvlInstagramRedirect = createStackNavigator({
   },
 });
 
+const FoodMenus = createStackNavigator({
+  Events: {
+    screen: (props: any) => (
+      <WebViewModule
+        src='https://www.kouvola.fi/kouvolankaupunki/kouvola-tietoa/ruokapalvelut/ruokalistat/
+
+        '
+        modalTimeout={5000}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const OpenJobOffers = createStackNavigator({
+  Events: {
+    screen: (props: any) => (
+      <WebViewModule
+        src='https://www.kouvola.fi/avoimet_tyopaikat/'
+        modalTimeout={5000}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const SwimmingTimes = createStackNavigator({
+  Events: {
+    screen: (props: any) => (
+      <WebViewModule
+        src='https://www.kouvola.fi/liikuntatilojen-kayttoaikarajoitukset/'
+        modalTimeout={5000}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const Routeplans = createStackNavigator({
+  Events: {
+    screen: (props: any) => (
+      <WebViewModule
+        src='https://kouvola.digitransit.fi/'
+        modalTimeout={5000}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const Enquiries = createStackNavigator({
+  Events: {
+    screen: (props: any) => (
+      <WebViewModule
+        src='https://www.kouvola.fi/kyselyt'
+        modalTimeout={5000}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
 const translationData = require('config/locales.json');
 
 const RouteConfigs: NavigationRouteConfigMap<
@@ -76,11 +144,11 @@ const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerProp<NavigationRoute>
 > = {
   [translationData.Labels.finnish.Navigation.Home]: Home,
-  [translationData.Labels.finnish.Navigation.SwimmingTimes]: Placeholder,
-  [translationData.Labels.finnish.Navigation.RoutePlanners]: Home,
-  [translationData.Labels.finnish.Navigation.OpenJobOffers]: Placeholder,
-  [translationData.Labels.finnish.Navigation.FoodMenus]: Placeholder,
-  [translationData.Labels.finnish.Navigation.Enquiries]: Placeholder,
+  [translationData.Labels.finnish.Navigation.SwimmingTimes]: SwimmingTimes,
+  [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
+  [translationData.Labels.finnish.Navigation.OpenJobOffers]: OpenJobOffers,
+  [translationData.Labels.finnish.Navigation.FoodMenus]: FoodMenus,
+  [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
   'Trimble Feedback': trimbleFeedbackRedirect,
   'Mobiili lippu': kvlMobiiliRedirect,
   'Kouvola instagram': kvlInstagramRedirect,

@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "OpenCityKvlModules": "git+https://github.com/SamuliPunos/open-city-kvl-modules.git",
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-elements": "^1.2.7",
@@ -18,6 +19,7 @@
     "react-native-screens": "^2.0.0-alpha.16",
     "react-native-splash-screen": "^3.2.0",
     "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "^8.0.1",
     "react-navigation": "^4.0.10",
     "react-navigation-drawer": "^2.3.3",
     "react-navigation-stack": "^1.10.3"
