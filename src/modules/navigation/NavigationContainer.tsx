@@ -4,7 +4,7 @@ import {
   NavigationRouteConfigMap,
   NavigationRoute,
 } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator, HeaderTitle } from 'react-navigation-stack';
 import {
   createDrawerNavigator,
   NavigationDrawerProp,
@@ -16,7 +16,7 @@ import Test from 'components/Test';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
 import { MainHeader, BackHeader } from './components/Header';
-import { RedirectData } from 'config/types';
+import { kvlInstagram, kvlMobiili, trimble } from 'config/Redirectroutes';
 
 const Placeholder = createStackNavigator({
   Events: {
@@ -41,26 +41,6 @@ const Home = createStackNavigator({
     },
   },
 });
-
-const trimble: RedirectData = {
-  applicationName: 'Trimble Feedback',
-  androidStoreUrl: 'market://details?id=com.tekla.feedback&launch=true',
-  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/trimble-feedback/id816215762',
-};
-
-const kvlMobiili: RedirectData = {
-  applicationName: 'Kouvola mobiililippu',
-  launchUrl: 'payiqkouvola://',
-  androidStoreUrl: 'market://details?id=net.payiq.kouvola&launch=true',
-  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/kouvola/id1463762029',
-};
-
-const kvlInstagram: RedirectData = {
-  applicationName: 'Kouvola instagram',
-  launchUrl: 'instagram://user?username=kouvolankaupunki',
-  androidStoreUrl: 'market://details?id=com.instagram.android&launch=true',
-  iosStoreUrl: 'itms-apps://apps.apple.com/us/appinstagram/id389801252',
-};
 
 const trimbleFeedbackRedirect = createStackNavigator({
   trimbleFeedbackRedirect: {

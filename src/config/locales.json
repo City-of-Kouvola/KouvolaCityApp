@@ -36,6 +36,9 @@
   "Accessibility": {
     "english": {
       "Navigation": {
+        "OpenMenu": "Open menu",
+        "CloseMenu": "Close menu",
+        "GoBack": "Go back",
         "Home": "Go to home",
         "RoutePlanners": "Go to route planner",
         "OpenJobOffers": "Go to open jobs",
@@ -45,13 +48,16 @@
         "Back": "Go back"
       },
       "ExternalApps": {
-        "Kouvola": "Open Kouvola",
+        "Kouvola": "Open Kouvola mobiililippu",
         "Trimble FeedBack": "Open Trimble Feedback",
         "Instagram": "Open Kouvola Instagram"
       }
     },
     "finnish": {
       "Navigation": {
+        "OpenMenu": "Avaa valikko",
+        "CloseMenu": "Sulje valikko",
+        "GoBack": "Palaa takaisin",
         "Home": "Mene kotiin",
         "RoutePlanners": "Mene reittioppaaseen",
         "OpenJobOffers": "Mene avoimiin työpaikkoihin",
@@ -61,8 +67,8 @@
         "Back": "Mene takaisin"
       },
       "ExternalApps": {
-        "Kouvola": "Avaa Kouvola",
-        "Trimble FeedBack": "Avaa Trimble Feedback",
+        "Kouvola": "Avaa Kouvola mobiililippu",
+        "TrimbleFeedBack": "Avaa Trimble Feedback",
         "Instagram": "Avaa Kouvola Instagram"
       }
     }
