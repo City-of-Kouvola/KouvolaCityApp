@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import colors from 'config/colors';
 
 export default StyleSheet.create({
@@ -10,6 +10,7 @@ export default StyleSheet.create({
     color: colors.max,
     fontWeight: '400',
     fontSize: 20,
+    width: '100%',
   },
   headerActiveLabel: {
     fontWeight: 'bold',
@@ -26,6 +27,15 @@ export default StyleSheet.create({
     justifyContent: 'center',
     borderBottomWidth: 1,
     borderBottomColor: '#212121',
+    ...Platform.select({
+      android: {
+        paddingTop: 0,
+        height: 70,
+      },
+      ios: {
+        height: 95,
+      },
+    }),
   },
   headerLogo: {
     width: '100%',
