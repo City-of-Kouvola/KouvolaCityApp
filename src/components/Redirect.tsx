@@ -40,14 +40,13 @@ const Redirect = (props: Props): JSX.Element => {
   };
 
   return (
-    <NavigationEvents onDidFocus={() => handleRedirect()}>
-      <View style={{ flex: 1, alignItems: 'center' }}>
-        <Text style={{ marginTop: 10 }}>
-          Ohjataan sovellukseen: {props.applicationName}
-        </Text>
-        <Button title='Avaa sovellus' onPress={handleRedirect} type='clear' />
-      </View>
-    </NavigationEvents>
+    <View style={{ flex: 1, alignItems: 'center' }}>
+      <NavigationEvents onDidFocus={() => handleRedirect()}></NavigationEvents>
+      <Text style={{ marginTop: 10 }}>
+        Ohjataan sovellukseen: {props.applicationName}
+      </Text>
+      <Button title='Avaa sovellus' onPress={handleRedirect} type='clear' />
+    </View>
   );
 };
 
