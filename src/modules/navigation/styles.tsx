@@ -2,6 +2,39 @@ import { StyleSheet, Platform } from 'react-native';
 import colors from 'config/colors';
 
 export default StyleSheet.create({
+  header: {
+    backgroundColor: colors.min,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#212121',
+    ...Platform.select({
+      android: {
+        paddingTop: 0,
+        height: 70,
+      },
+      ios: {
+        height: 90,
+        paddingBottom: '5%',
+      },
+    }),
+  },
+  drawerHeader: {
+    backgroundColor: colors.min,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#212121',
+    ...Platform.select({
+      android: {
+        paddingTop: 0,
+        height: 70,
+      },
+      ios: {
+        height: 90,
+      },
+    }),
+  },
   headerMenu: {
     backgroundColor: colors.min,
     height: '100%',
@@ -20,22 +53,6 @@ export default StyleSheet.create({
     borderBottomColor: '#212121',
     width: '90%',
     alignSelf: 'center',
-  },
-  header: {
-    backgroundColor: colors.min,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: '#212121',
-    ...Platform.select({
-      android: {
-        paddingTop: 0,
-        height: 70,
-      },
-      ios: {
-        height: 95,
-      },
-    }),
   },
   headerLogo: {
     width: '100%',

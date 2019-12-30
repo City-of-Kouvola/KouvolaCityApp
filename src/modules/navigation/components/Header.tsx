@@ -23,7 +23,7 @@ export const MainHeader = (props: any): JSX.Element => {
       centerComponent={
         <ImageBackground
           source={logo}
-          resizeMode='center'
+          resizeMode='contain'
           style={styles.headerLogo}
         />
       }
@@ -49,7 +49,7 @@ export const BackHeader = (props: any): JSX.Element => {
       centerComponent={
         <ImageBackground
           source={logo}
-          resizeMode='center'
+          resizeMode='contain'
           style={styles.headerLogo}
         />
       }
@@ -65,7 +65,7 @@ export const DrawerHeader = (props: any): JSX.Element => {
       centerComponent={
         <ImageBackground
           source={logo}
-          resizeMode='center'
+          resizeMode='contain'
           style={styles.headerLogo}
         />
       }
@@ -78,7 +78,7 @@ export const DrawerHeader = (props: any): JSX.Element => {
         color: colors.max,
         onPress: () => closeDrawer(),
       }}
-      containerStyle={styles.header}
+      containerStyle={styles.drawerHeader}
       {...props}
     />
   );
