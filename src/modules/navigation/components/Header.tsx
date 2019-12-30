@@ -78,7 +78,7 @@ export const DrawerHeader = (props: any): JSX.Element => {
         color: colors.max,
         onPress: () => closeDrawer(),
       }}
-      containerStyle={styles.header}
+      containerStyle={styles.drawerHeader}
       {...props}
     />
   );
