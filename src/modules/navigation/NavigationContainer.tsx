@@ -19,41 +19,7 @@ import { MainHeader, BackHeader } from './components/Header';
 import { kvlInstagram, kvlMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
 
-const OpenJobOffers = createStackNavigator({
-  Events: {
-    screen: (props: any) => (
-      React.useEffect(() => {
-        if (props.screenProps.updater2 === 5) {
-          const unsubscribe = props.navigation.addListener('willFocus', () => {
-            props.screenProps.up2();
-            console.log('Reloaded ' + props.screenProps.updater2 + ' 2 ');
-          });
-
-          // Return the function to unsubscribe from the event so it gets removed on unmount
-          return () => unsubscribe;
-        }
-      }, [props.screenProps.updater2]),
-      <WebViewModule
-        key={props.screenProps.updater2}
-        src='https://www.kouvola.fi/avoimet_tyopaikat/'
-        modalTimeout={5000}
-        modalVisible={props.screenProps.modal2}
-        {...props}
-      />
-    ),
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
-});
-
-const masterNavigator = createStackNavigator({
-  Home: {
-    screen: (props: any) => <HomeView {...props} />,
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
+/*const WebViewStack = createStackNavigator({
   WebView: {
     screen: (props: any) => (
       <WebViewModule
@@ -68,18 +34,18 @@ const masterNavigator = createStackNavigator({
       header: () => <MainHeader />,
     },
   },
-  kvlInstagramRedirect: {
-    screen: (props: any) => <Redirect {...kvlInstagram} {...props} />,
+});*/
+
+const Home = createStackNavigator({
+  Home: {
+    screen: (props: any) => <HomeView {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
     },
   },
-  kvlMobiiliRedirect: {
-    screen: (props: any) => <Redirect {...kvlMobiili} {...props} />,
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
+});
+
+const trimbleFeedbackRedirect = createStackNavigator({
   trimbleFeedbackRedirect: {
     screen: (props: any) => <Redirect {...trimble} {...props} />,
     navigationOptions: {
@@ -88,12 +54,99 @@ const masterNavigator = createStackNavigator({
   },
 });
 
-const Enquiries = () => (<View style={{ flex: 1 }}><MainHeader /><WebViewModule
-  key={1}
-  src='https://www.kouvola.fi/kyselyt'
-  modalTimeout={5000}
-  modalVisible={true}
-/></View>);
+const kvlMobiiliRedirect = createStackNavigator({
+  kvlMobiiliRedirect: {
+    screen: (props: any) => <Redirect {...kvlMobiili} {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const events = createStackNavigator({
+  Events: {
+    screen: (props: any) => (
+      <WebViewModule
+        key={props.screenProps.eventsKey}
+        src='https://kymenlaaksonyt.fi/'
+        modalTimeout={2500}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const visitKvl = createStackNavigator({
+  Visiter: {
+    screen: (props: any) => (
+      <WebViewModule
+        key={props.screenProps.visitsKey}
+        src='https://visitkouvola.fi/fi'
+        modalTimeout={2500}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const onxIdea = createStackNavigator({
+  Ideaer: {
+    screen: (props: any) => (
+      <WebViewModule
+        key={props.screenProps.ideasKey}
+        src='https://www.onxideaa.fi/'
+        modalTimeout={2500}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const Routeplans = createStackNavigator({
+  Router: {
+    screen: (props: any) => (
+      <WebViewModule
+        key={props.screenProps.routesKey}
+        src='https://kouvola.digitransit.fi/'
+        modalTimeout={2500}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
+const Enquiries = createStackNavigator({
+  Enquirer: {
+    screen: (props: any) => (
+      <WebViewModule
+        key={props.screenProps.enquirysKey}
+        src='https://www.kouvola.fi/kyselyt'
+        modalTimeout={2500}
+        modalVisible={true}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
 
 const translationData = require('config/locales.json');
 
@@ -101,14 +154,14 @@ const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerOptions,
   NavigationDrawerProp<NavigationRoute>
 > = {
-  [translationData.Labels.finnish.Navigation.Home]: masterNavigator,
-  [translationData.Labels.finnish.Navigation.RoutePlanners]: masterNavigator,
-  [translationData.Labels.finnish.ExternalApps.Kouvola]: masterNavigator,
-  [translationData.Labels.finnish.Navigation.OnxIdeaa]: masterNavigator,
-  [translationData.Labels.finnish.Navigation.Visit]: masterNavigator,
-  [translationData.Labels.finnish.Navigation.Enquiries]: masterNavigator,
-  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]: masterNavigator,
-  [translationData.Labels.finnish.Navigation.Tapahtumat]: masterNavigator,
+  [translationData.Labels.finnish.Navigation.Home]: Home,
+  [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
+  [translationData.Labels.finnish.ExternalApps.Kouvola]: kvlMobiiliRedirect,
+  [translationData.Labels.finnish.Navigation.OnxIdeaa]: onxIdea,
+  [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
+  [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
+  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]: trimbleFeedbackRedirect,
+  [translationData.Labels.finnish.Navigation.Tapahtumat]: events,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {

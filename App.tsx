@@ -2,36 +2,36 @@ import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from './src/modules/navigation/NavigationContainer';
-import { setTopLevelNavigator, closeDrawer } from './src/modules/navigation/components/NavigationService';
+import { setTopLevelNavigator } from './src/modules/navigation/components/NavigationService';
 import SplashScreen from 'react-native-splash-screen';
 
 const App = (): JSX.Element => {
   useEffect(() => SplashScreen.hide(), []);
-  const [urlNow, setUrlNow] = useState('https://www.kouvola.fi/');
+  const [ideaKey, setIdeaKey] = useState(0);
+  const [visitKey, setVisitKey] = useState(400);
+  const [routeKey, setRouteKey] = useState(300);
+  const [enquiryKey, setEnquiryKey] = useState(200);
+  const [eventKey, setEventKey] = useState(100);
   const [modalShow, setModalShow] = useState(true);
 
   const changeUrlIdea = (): void => {
-    setUrlNow('https://www.onxideaa.fi/');
-  };
-
-  const changeUrlJobs = (): void => {
-    setUrlNow('https://www.kouvola.fi/avoimet_tyopaikat/');
+    setIdeaKey(ideaKey + 1);
   };
 
   const changeUrlEnquiries = (): void => {
-    setUrlNow('https://www.kouvola.fi/kyselyt');
+    setEnquiryKey(enquiryKey + 1);
   };
 
   const changeUrlRoutes = (): void => {
-    setUrlNow('https://kouvola.digitransit.fi/');
+    setRouteKey(routeKey + 1);
   };
 
-  const changeUrlTapahtumat = (): void => {
-    setUrlNow('https://kymenlaaksonyt.fi/');
+  const changeUrlEvents = (): void => {
+    setEventKey(eventKey + 1);
   };
 
   const changeUrlVisit = (): void => {
-    setUrlNow('https://visitkouvola.fi/fi');
+    setVisitKey(visitKey + 1);
   };
 
   const changeModalShow = (): void => {
@@ -47,15 +47,18 @@ const App = (): JSX.Element => {
       <NavigationContainer
         screenProps={{
           idea: changeUrlIdea,
-          jobs: changeUrlJobs,
           enquiries: changeUrlEnquiries,
-          tapahtumat: changeUrlTapahtumat,
+          events: changeUrlEvents,
           routes: changeUrlRoutes,
           visit: changeUrlVisit,
           showModal: modalShow,
           enableModal: changeModalShow,
           disableModal: changeModalHide,
-          target: urlNow,
+          ideasKey: ideaKey,
+          enquirysKey: enquiryKey,
+          eventsKey: eventKey,
+          routesKey: routeKey,
+          visitsKey: visitKey,
         }}
         ref={(navigatorRef) => {
           setTopLevelNavigator(navigatorRef);

@@ -25,23 +25,19 @@ const DrawerContent = (props: any): JSX.Element => {
                 break;
               case translationData.Labels.finnish.Navigation.RoutePlanners:
                 props.screenProps.routes();
-                props.screenProps.enableModal();
-                props.navigation.navigate('WebView');
+                props.navigation.navigate('Router');
                 break;
               case translationData.Labels.finnish.Navigation.OnxIdeaa:
                 props.screenProps.idea();
-                props.screenProps.enableModal();
-                props.navigation.navigate('WebView');
+                props.navigation.navigate('Ideaer');
                 break;
               case translationData.Labels.finnish.Navigation.Visit:
                 props.screenProps.visit();
-                props.screenProps.enableModal();
-                props.navigation.navigate('WebView');
+                props.navigation.navigate('Visiter');
                 break;
               case translationData.Labels.finnish.Navigation.Enquiries:
                 props.screenProps.enquiries();
-                props.screenProps.enableModal();
-                props.navigation.navigate('WebView');
+                props.navigation.navigate('Enquirer');
                 break;
               case translationData.Labels.finnish.ExternalApps.TrimbleFeedBack:
                 props.navigation.navigate('trimbleFeedbackRedirect');
@@ -50,9 +46,8 @@ const DrawerContent = (props: any): JSX.Element => {
                 props.navigation.navigate('kvlMobiiliRedirect');
                 break;
               case translationData.Labels.finnish.Navigation.Tapahtumat:
-                props.screenProps.enableModal();
                 props.screenProps.tapahtumat();
-                props.navigation.navigate('WebView');
+                props.navigation.navigate('Events');
                 break;
               default:
                 props.navigation.navigate('Home');
@@ -60,6 +55,7 @@ const DrawerContent = (props: any): JSX.Element => {
                 return;
             }
             closeDrawer();
+            return;
           }}
         />
       </ScrollView>

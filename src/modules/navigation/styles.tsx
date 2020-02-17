@@ -61,4 +61,7 @@ export default StyleSheet.create({
   iconStyle: {
     padding: 10,
   },
+  webViewView: {
+    flex: 1,
+  },
 });
