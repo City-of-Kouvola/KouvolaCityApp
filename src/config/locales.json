@@ -4,32 +4,30 @@
       "Navigation": {
         "Home": "Home",
         "RoutePlanners": "Route Planner",
-        "OpenJobOffers": "Open jobs",
-        "FoodMenus": "Foodmenus",
+        "Visit": "VisitKouvola.fi",
+        "OnxIdeaa": "Teenager, Got an idea?",
         "Enquiries": "Enquiries",
-        "SwimmingTimes": "Swimming baths",
+        "Tapahtumat": "Kymenlaaksonyt.fi",
         "Back": "Return"
       },
       "ExternalApps": {
         "Kouvola": "Kouvola",
-        "Trimble FeedBack": "Trimble Feedback",
-        "Instagram": "Kouvola Instagram"
+        "TrimbleFeedBack": "Trimble Feedback",
       }
     },
     "finnish": {
       "Navigation": {
         "Home": "Koti",
         "RoutePlanners": "Reittiopas",
-        "OpenJobOffers": "Avoimet työpaikat",
-        "FoodMenus": "Ruokalistat",
+        "Visit": "VisitKouvola.fi",
+        "OnxIdeaa": "Nuori, onks ideaa?",
         "Enquiries": "Kyselyt",
-        "SwimmingTimes": "Uimahallien poikkeusaukioloajat",
+        "Tapahtumat": "Kymenlaaksonyt.fi",
         "Back": "Palaa"
       },
       "ExternalApps": {
         "Kouvola": "Kouvola",
-        "Trimble FeedBack": "Trimble Feedback",
-        "Instagram": "Kouvola Instagram"
+        "TrimbleFeedBack": "Trimble Feedback",
       }
     }
   },
@@ -41,16 +39,15 @@
         "GoBack": "Go back",
         "Home": "Go to home",
         "RoutePlanners": "Go to route planner",
-        "OpenJobOffers": "Go to open jobs",
-        "FoodMenus": "Go to foodmenus",
+        "Visit": "Go to VisitKouvola.fi",
+        "OnxIdeaa": "Go to OnxIdeaa",
         "Enquiries": "Go to enquiries",
-        "SwimmingTimes": "Go to swimming baths",
+        "Tapahtumat": "Open Kymenlaaksonyt.fi",
         "Back": "Go back"
       },
       "ExternalApps": {
         "Kouvola": "Open Kouvola mobiililippu",
-        "Trimble FeedBack": "Open Trimble Feedback",
-        "Instagram": "Open Kouvola Instagram"
+        "TrimbleFeedBack": "Open Trimble Feedback",
       }
     },
     "finnish": {
@@ -60,16 +57,14 @@
         "GoBack": "Palaa takaisin",
         "Home": "Mene kotiin",
         "RoutePlanners": "Mene reittioppaaseen",
-        "OpenJobOffers": "Mene avoimiin työpaikkoihin",
-        "FoodMenus": "Mene ruokalistoihin",
+        "visit": "Mene VisitKouvola.fi",
         "Enquiries": "Mene kyselyihin",
-        "SwimmingTimes": "Mene Uimahallien poikkeusaukioloaikoihin",
+        "Tapahtumat": "Avaa Kymenlaaksonyt.fi",
         "Back": "Mene takaisin"
       },
       "ExternalApps": {
         "Kouvola": "Avaa Kouvola mobiililippu",
         "TrimbleFeedBack": "Avaa Trimble Feedback",
-        "Instagram": "Avaa Kouvola Instagram"
       }
     }
   }
