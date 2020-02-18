@@ -121,7 +121,8 @@ const RouteConfigs: NavigationRouteConfigMap<
 > = {
   [translationData.Labels.finnish.Navigation.Home]: Home,
   [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
-  [translationData.Labels.finnish.ExternalApps.Kouvola]: kvlMobiiliRedirect,
+  [translationData.Labels.finnish.ExternalApps
+    .KouvolaJoukkoliikenne]: kvlMobiiliRedirect,
   [translationData.Labels.finnish.Navigation.OnxIdeaa]: onxIdea,
   [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
   [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,

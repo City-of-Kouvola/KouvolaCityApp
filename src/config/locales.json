@@ -11,7 +11,7 @@
         "Back": "Return"
       },
       "ExternalApps": {
-        "Kouvola": "Kouvola",
+        "KouvolaJoukkoliikenne": "Mobiililippu",
         "TrimbleFeedBack": "Trimble Feedback"
       }
     },
@@ -26,7 +26,7 @@
         "Back": "Palaa"
       },
       "ExternalApps": {
-        "Kouvola": "Kouvola",
+        "KouvolaJoukkoliikenne": "Mobiililippu",
         "TrimbleFeedBack": "Trimble Feedback"
       }
     }

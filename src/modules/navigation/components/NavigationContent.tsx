@@ -42,7 +42,8 @@ const DrawerContent = (props: any): JSX.Element => {
               case translationData.Labels.finnish.ExternalApps.TrimbleFeedBack:
                 props.navigation.navigate('trimbleFeedbackRedirect');
                 break;
-              case translationData.Labels.finnish.ExternalApps.Kouvola:
+              case translationData.Labels.finnish.ExternalApps
+                .KouvolaJoukkoliikenne:
                 props.navigation.navigate('kvlMobiiliRedirect');
                 break;
               case translationData.Labels.finnish.Navigation.Events:
