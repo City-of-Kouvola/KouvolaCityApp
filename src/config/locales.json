@@ -7,12 +7,18 @@
         "Visit": "VisitKouvola.fi",
         "OnxIdeaa": "Teenager, Got an idea?",
         "Enquiries": "Enquiries",
-        "Tapahtumat": "Kymenlaaksonyt.fi",
+        "Events": "Events",
+        "Feedback": "Give Feedback",
         "Back": "Return"
       },
       "ExternalApps": {
-        "Kouvola": "Kouvola",
-        "TrimbleFeedBack": "Trimble Feedback",
+        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "TrimbleFeedBack": "Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
       }
     },
     "finnish": {
@@ -22,12 +28,18 @@
         "Visit": "VisitKouvola.fi",
         "OnxIdeaa": "Nuori, onks ideaa?",
         "Enquiries": "Kyselyt",
-        "Tapahtumat": "Kymenlaaksonyt.fi",
+        "Events": "Tapahtumat",
+        "Feedback": "Anna palautetta",
         "Back": "Palaa"
       },
       "ExternalApps": {
-        "Kouvola": "Kouvola",
-        "TrimbleFeedBack": "Trimble Feedback",
+        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "TrimbleFeedBack": "Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Sijaintipalvelut",
+        "Message": "Haluaisimme luvan käyttää sijaintipalveluja",
+        "Accept": "Selvä"
       }
     }
   },
@@ -42,12 +54,18 @@
         "Visit": "Go to VisitKouvola.fi",
         "OnxIdeaa": "Go to OnxIdeaa",
         "Enquiries": "Go to enquiries",
-        "Tapahtumat": "Open Kymenlaaksonyt.fi",
+        "Events": "Open Kymenlaaksonyt.fi",
+        "Feedback": "Open  App Feedback",
         "Back": "Go back"
       },
       "ExternalApps": {
         "Kouvola": "Open Kouvola mobiililippu",
-        "TrimbleFeedBack": "Open Trimble Feedback",
+        "TrimbleFeedBack": "Open Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
       }
     },
     "finnish": {
@@ -59,12 +77,18 @@
         "RoutePlanners": "Mene reittioppaaseen",
         "visit": "Mene VisitKouvola.fi",
         "Enquiries": "Mene kyselyihin",
-        "Tapahtumat": "Avaa Kymenlaaksonyt.fi",
+        "Events": "Avaa Kymenlaaksonyt.fi",
+        "Feedback": "Avaa sovellus palaute",
         "Back": "Mene takaisin"
       },
       "ExternalApps": {
         "Kouvola": "Avaa Kouvola mobiililippu",
-        "TrimbleFeedBack": "Avaa Trimble Feedback",
+        "TrimbleFeedBack": "Avaa Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
       }
     }
   }

@@ -4,6 +4,8 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from './src/modules/navigation/NavigationContainer';
 import { setTopLevelNavigator } from './src/modules/navigation/components/NavigationService';
 import SplashScreen from 'react-native-splash-screen';
+import { PermissionsAndroid } from 'react-native';
+const translationData = require('config/locales.json');
 
 const App = (): JSX.Element => {
   useEffect(() => SplashScreen.hide(), []);
@@ -41,6 +43,15 @@ const App = (): JSX.Element => {
   const changeModalHide = (): void => {
     setModalShow(false);
   };
+
+  PermissionsAndroid.request(
+    PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+    {
+      title: translationData.Labels.finnish.Permissions.Title,
+      message: translationData.Labels.finnish.Permissions.Message,
+      buttonPositive: translationData.Labels.finnish.Permissions.Accept,
+    }
+  );
 
   return (
     <View style={{ flex: 1 }}>
