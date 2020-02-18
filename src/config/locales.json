@@ -1,0 +1,95 @@
+{
+  "Labels": {
+    "english": {
+      "Navigation": {
+        "Home": "Home",
+        "RoutePlanners": "Route Planner",
+        "Visit": "VisitKouvola.fi",
+        "OnxIdeaa": "Teenager, Got an idea?",
+        "Enquiries": "Enquiries",
+        "Events": "Events",
+        "Feedback": "Give Feedback",
+        "Back": "Return"
+      },
+      "ExternalApps": {
+        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "TrimbleFeedBack": "Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
+      }
+    },
+    "finnish": {
+      "Navigation": {
+        "Home": "Koti",
+        "RoutePlanners": "Reittiopas",
+        "Visit": "VisitKouvola.fi",
+        "OnxIdeaa": "Nuori, onks ideaa?",
+        "Enquiries": "Kyselyt",
+        "Events": "Tapahtumat",
+        "Feedback": "Anna palautetta",
+        "Back": "Palaa"
+      },
+      "ExternalApps": {
+        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "TrimbleFeedBack": "Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Sijaintipalvelut",
+        "Message": "Haluaisimme luvan käyttää sijaintipalveluja",
+        "Accept": "Selvä"
+      }
+    }
+  },
+  "Accessibility": {
+    "english": {
+      "Navigation": {
+        "OpenMenu": "Open menu",
+        "CloseMenu": "Close menu",
+        "GoBack": "Go back",
+        "Home": "Go to home",
+        "RoutePlanners": "Go to route planner",
+        "Visit": "Go to VisitKouvola.fi",
+        "OnxIdeaa": "Go to OnxIdeaa",
+        "Enquiries": "Go to enquiries",
+        "Events": "Open Kymenlaaksonyt.fi",
+        "Feedback": "Open  App Feedback",
+        "Back": "Go back"
+      },
+      "ExternalApps": {
+        "Kouvola": "Open Kouvola mobiililippu",
+        "TrimbleFeedBack": "Open Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
+      }
+    },
+    "finnish": {
+      "Navigation": {
+        "OpenMenu": "Avaa valikko",
+        "CloseMenu": "Sulje valikko",
+        "GoBack": "Palaa takaisin",
+        "Home": "Mene kotiin",
+        "RoutePlanners": "Mene reittioppaaseen",
+        "visit": "Mene VisitKouvola.fi",
+        "Enquiries": "Mene kyselyihin",
+        "Events": "Avaa Kymenlaaksonyt.fi",
+        "Feedback": "Avaa sovellus palaute",
+        "Back": "Mene takaisin"
+      },
+      "ExternalApps": {
+        "Kouvola": "Avaa Kouvola mobiililippu",
+        "TrimbleFeedBack": "Avaa Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
+      }
+    }
+  }
+}
