@@ -13,6 +13,11 @@
       "ExternalApps": {
         "KouvolaJoukkoliikenne": "Mobiililippu",
         "TrimbleFeedBack": "Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
       }
     },
     "finnish": {
@@ -28,6 +33,11 @@
       "ExternalApps": {
         "KouvolaJoukkoliikenne": "Mobiililippu",
         "TrimbleFeedBack": "Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Sijaintipalvelut",
+        "Message": "Haluaisimme luvan käyttää sijaintipalveluja",
+        "Accept": "Selvä"
       }
     }
   },
@@ -48,6 +58,11 @@
       "ExternalApps": {
         "Kouvola": "Open Kouvola mobiililippu",
         "TrimbleFeedBack": "Open Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
       }
     },
     "finnish": {
@@ -65,6 +80,11 @@
       "ExternalApps": {
         "Kouvola": "Avaa Kouvola mobiililippu",
         "TrimbleFeedBack": "Avaa Trimble Feedback"
+      },
+      "Permissions": {
+        "Title": "Location Services",
+        "Message": "We would like to request permissions to use location services",
+        "Accept": "okay"
       }
     }
   }
