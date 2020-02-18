@@ -51,7 +51,7 @@ const events = createStackNavigator({
       <WebViewModule
         key={props.screenProps.eventsKey}
         src='https://kymenlaaksonyt.fi/'
-        modalTimeout={2500}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -68,7 +68,7 @@ const visitKvl = createStackNavigator({
       <WebViewModule
         key={props.screenProps.visitsKey}
         src='https://visitkouvola.fi/fi'
-        modalTimeout={2500}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -85,7 +85,7 @@ const onxIdea = createStackNavigator({
       <WebViewModule
         key={props.screenProps.ideasKey}
         src='https://www.onxideaa.fi/'
-        modalTimeout={2500}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -102,7 +102,7 @@ const Routeplans = createStackNavigator({
       <WebViewModule
         key={props.screenProps.routesKey}
         src='https://kouvola.digitransit.fi/'
-        modalTimeout={2500}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -119,7 +119,7 @@ const Enquiries = createStackNavigator({
       <WebViewModule
         key={props.screenProps.enquirysKey}
         src='https://www.kouvola.fi/kyselyt'
-        modalTimeout={2500}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />

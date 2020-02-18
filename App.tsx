@@ -59,6 +59,7 @@ const App = (): JSX.Element => {
           eventsKey: eventKey,
           routesKey: routeKey,
           visitsKey: visitKey,
+          modalTimeout: 2500,
         }}
         ref={(navigatorRef) => {
           setTopLevelNavigator(navigatorRef);
