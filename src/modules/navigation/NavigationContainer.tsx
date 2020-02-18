@@ -4,7 +4,7 @@ import {
   NavigationRouteConfigMap,
   NavigationRoute,
 } from 'react-navigation';
-import { createStackNavigator, HeaderTitle } from 'react-navigation-stack';
+import { createStackNavigator } from 'react-navigation-stack';
 import {
   createDrawerNavigator,
   NavigationDrawerProp,
@@ -12,11 +12,10 @@ import {
   NavigationDrawerConfig,
 } from 'react-navigation-drawer';
 import NavigationContent from './components/NavigationContent';
-import Test from 'components/Test';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
-import { MainHeader, BackHeader } from './components/Header';
-import { kvlInstagram, kvlMobiili, trimble } from 'config/Redirectroutes';
+import { MainHeader } from './components/Header';
+import { kvlMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
 
 const Home = createStackNavigator({
@@ -46,23 +45,13 @@ const kvlMobiiliRedirect = createStackNavigator({
   },
 });
 
-const kvlInstagramRedirect = createStackNavigator({
-  kvlMobiiliRedirect: {
-    screen: (props: any) => <Redirect {...kvlInstagram} {...props} />,
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
-});
-
-const FoodMenus = createStackNavigator({
+const events = createStackNavigator({
   Events: {
     screen: (props: any) => (
       <WebViewModule
-        src='https://www.kouvola.fi/kouvolankaupunki/kouvola-tietoa/ruokapalvelut/ruokalistat/
-
-        '
-        modalTimeout={5000}
+        key={props.screenProps.eventsKey}
+        src='https://kymenlaaksonyt.fi/'
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -73,12 +62,13 @@ const FoodMenus = createStackNavigator({
   },
 });
 
-const OpenJobOffers = createStackNavigator({
-  Events: {
+const visitKvl = createStackNavigator({
+  Visiter: {
     screen: (props: any) => (
       <WebViewModule
-        src='https://www.kouvola.fi/avoimet_tyopaikat/'
-        modalTimeout={5000}
+        key={props.screenProps.visitsKey}
+        src='https://visitkouvola.fi/fi'
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -89,12 +79,13 @@ const OpenJobOffers = createStackNavigator({
   },
 });
 
-const SwimmingTimes = createStackNavigator({
-  Events: {
+const onxIdea = createStackNavigator({
+  Ideaer: {
     screen: (props: any) => (
       <WebViewModule
-        src='https://www.kouvola.fi/liikuntatilojen-kayttoaikarajoitukset/'
-        modalTimeout={5000}
+        key={props.screenProps.ideasKey}
+        src='https://www.onxideaa.fi/'
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -106,11 +97,12 @@ const SwimmingTimes = createStackNavigator({
 });
 
 const Routeplans = createStackNavigator({
-  Events: {
+  Router: {
     screen: (props: any) => (
       <WebViewModule
+        key={props.screenProps.routesKey}
         src='https://kouvola.digitransit.fi/'
-        modalTimeout={5000}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -122,11 +114,12 @@ const Routeplans = createStackNavigator({
 });
 
 const Enquiries = createStackNavigator({
-  Events: {
+  Enquirer: {
     screen: (props: any) => (
       <WebViewModule
+        key={props.screenProps.enquirysKey}
         src='https://www.kouvola.fi/kyselyt'
-        modalTimeout={5000}
+        modalTimeout={props.screenProps.modalTimeout}
         modalVisible={true}
         {...props}
       />
@@ -144,14 +137,13 @@ const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerProp<NavigationRoute>
 > = {
   [translationData.Labels.finnish.Navigation.Home]: Home,
-  [translationData.Labels.finnish.Navigation.SwimmingTimes]: SwimmingTimes,
   [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
-  [translationData.Labels.finnish.Navigation.OpenJobOffers]: OpenJobOffers,
-  [translationData.Labels.finnish.Navigation.FoodMenus]: FoodMenus,
+  [translationData.Labels.finnish.ExternalApps.Kouvola]: kvlMobiiliRedirect,
+  [translationData.Labels.finnish.Navigation.OnxIdeaa]: onxIdea,
+  [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
   [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
-  'Trimble Feedback': trimbleFeedbackRedirect,
-  'Mobiili lippu': kvlMobiiliRedirect,
-  'Kouvola instagram': kvlInstagramRedirect,
+  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]: trimbleFeedbackRedirect,
+  [translationData.Labels.finnish.Navigation.Tapahtumat]: events,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
