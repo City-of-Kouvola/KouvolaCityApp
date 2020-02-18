@@ -45,8 +45,8 @@ const DrawerContent = (props: any): JSX.Element => {
               case translationData.Labels.finnish.ExternalApps.Kouvola:
                 props.navigation.navigate('kvlMobiiliRedirect');
                 break;
-              case translationData.Labels.finnish.Navigation.Tapahtumat:
-                props.screenProps.tapahtumat();
+              case translationData.Labels.finnish.Navigation.Events:
+                props.screenProps.events();
                 props.navigation.navigate('Events');
                 break;
               default:

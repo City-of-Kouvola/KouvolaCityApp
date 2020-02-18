@@ -17,6 +17,7 @@ import Redirect from 'components/Redirect';
 import { MainHeader } from './components/Header';
 import { kvlMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
+import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
 
 const Home = createStackNavigator({
   Home: {
@@ -48,13 +49,7 @@ const kvlMobiiliRedirect = createStackNavigator({
 const events = createStackNavigator({
   Events: {
     screen: (props: any) => (
-      <WebViewModule
-        key={props.screenProps.eventsKey}
-        src='https://kymenlaaksonyt.fi/'
-        modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
-        {...props}
-      />
+      <RedirectInAppBrowser url='https://kymenlaaksonyt.fi/' {...props} />
     ),
     navigationOptions: {
       header: () => <MainHeader />,
@@ -65,13 +60,7 @@ const events = createStackNavigator({
 const visitKvl = createStackNavigator({
   Visiter: {
     screen: (props: any) => (
-      <WebViewModule
-        key={props.screenProps.visitsKey}
-        src='https://visitkouvola.fi/fi'
-        modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
-        {...props}
-      />
+      <RedirectInAppBrowser url='https://visitkouvola.fi/fi' {...props} />
     ),
     navigationOptions: {
       header: () => <MainHeader />,
@@ -82,13 +71,7 @@ const visitKvl = createStackNavigator({
 const onxIdea = createStackNavigator({
   Ideaer: {
     screen: (props: any) => (
-      <WebViewModule
-        key={props.screenProps.ideasKey}
-        src='https://www.onxideaa.fi/'
-        modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
-        {...props}
-      />
+      <RedirectInAppBrowser url='https://www.onxideaa.fi/' {...props} />
     ),
     navigationOptions: {
       header: () => <MainHeader />,
@@ -142,8 +125,9 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.OnxIdeaa]: onxIdea,
   [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
   [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
-  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]: trimbleFeedbackRedirect,
-  [translationData.Labels.finnish.Navigation.Tapahtumat]: events,
+  [translationData.Labels.finnish.ExternalApps
+    .TrimbleFeedBack]: trimbleFeedbackRedirect,
+  [translationData.Labels.finnish.Navigation.Events]: events,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {

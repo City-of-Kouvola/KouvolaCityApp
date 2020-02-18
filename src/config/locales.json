@@ -7,12 +7,12 @@
         "Visit": "VisitKouvola.fi",
         "OnxIdeaa": "Teenager, Got an idea?",
         "Enquiries": "Enquiries",
-        "Tapahtumat": "Kymenlaaksonyt.fi",
+        "Events": "Events",
         "Back": "Return"
       },
       "ExternalApps": {
         "Kouvola": "Kouvola",
-        "TrimbleFeedBack": "Trimble Feedback",
+        "TrimbleFeedBack": "Trimble Feedback"
       }
     },
     "finnish": {
@@ -22,12 +22,12 @@
         "Visit": "VisitKouvola.fi",
         "OnxIdeaa": "Nuori, onks ideaa?",
         "Enquiries": "Kyselyt",
-        "Tapahtumat": "Kymenlaaksonyt.fi",
+        "Events": "Tapahtumat",
         "Back": "Palaa"
       },
       "ExternalApps": {
         "Kouvola": "Kouvola",
-        "TrimbleFeedBack": "Trimble Feedback",
+        "TrimbleFeedBack": "Trimble Feedback"
       }
     }
   },
@@ -47,7 +47,7 @@
       },
       "ExternalApps": {
         "Kouvola": "Open Kouvola mobiililippu",
-        "TrimbleFeedBack": "Open Trimble Feedback",
+        "TrimbleFeedBack": "Open Trimble Feedback"
       }
     },
     "finnish": {
@@ -64,7 +64,7 @@
       },
       "ExternalApps": {
         "Kouvola": "Avaa Kouvola mobiililippu",
-        "TrimbleFeedBack": "Avaa Trimble Feedback",
+        "TrimbleFeedBack": "Avaa Trimble Feedback"
       }
     }
   }
