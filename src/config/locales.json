@@ -8,6 +8,7 @@
         "OnxIdeaa": "Teenager, Got an idea?",
         "Enquiries": "Enquiries",
         "Events": "Events",
+        "Feedback": "Give Feedback",
         "Back": "Return"
       },
       "ExternalApps": {
@@ -28,6 +29,7 @@
         "OnxIdeaa": "Nuori, onks ideaa?",
         "Enquiries": "Kyselyt",
         "Events": "Tapahtumat",
+        "Feedback": "Anna palautetta",
         "Back": "Palaa"
       },
       "ExternalApps": {
@@ -52,7 +54,8 @@
         "Visit": "Go to VisitKouvola.fi",
         "OnxIdeaa": "Go to OnxIdeaa",
         "Enquiries": "Go to enquiries",
-        "Tapahtumat": "Open Kymenlaaksonyt.fi",
+        "Events": "Open Kymenlaaksonyt.fi",
+        "Feedback": "Open  App Feedback",
         "Back": "Go back"
       },
       "ExternalApps": {
@@ -74,7 +77,8 @@
         "RoutePlanners": "Mene reittioppaaseen",
         "visit": "Mene VisitKouvola.fi",
         "Enquiries": "Mene kyselyihin",
-        "Tapahtumat": "Avaa Kymenlaaksonyt.fi",
+        "Events": "Avaa Kymenlaaksonyt.fi",
+        "Feedback": "Avaa sovellus palaute",
         "Back": "Mene takaisin"
       },
       "ExternalApps": {

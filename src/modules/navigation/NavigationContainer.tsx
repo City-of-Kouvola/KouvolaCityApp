@@ -113,6 +113,22 @@ const Enquiries = createStackNavigator({
   },
 });
 
+const Feedbacks = createStackNavigator({
+  Feeder: {
+    screen: (props: any) => (
+      <WebViewModule
+        src='https://forms.office.com/Pages/ResponsePage.aspx?id=ExOyCIOAqkKvHS9MnyytXSlNvRMzFBBMnbnK5I_oJr1UNFAyNjRLUTI4SVVRR1RNRzJYQzQ2WVpHVyQlQCN0PWcu'
+        modalTimeout={props.screenProps.modalTimeout}
+        modalVisible={false}
+        {...props}
+      />
+    ),
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
 const translationData = require('config/locales.json');
 
 const RouteConfigs: NavigationRouteConfigMap<
@@ -129,6 +145,7 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.ExternalApps
     .TrimbleFeedBack]: trimbleFeedbackRedirect,
   [translationData.Labels.finnish.Navigation.Events]: events,
+  [translationData.Labels.finnish.Navigation.Feedback]: Feedbacks,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {

@@ -50,6 +50,9 @@ const DrawerContent = (props: any): JSX.Element => {
                 props.screenProps.events();
                 props.navigation.navigate('Events');
                 break;
+              case translationData.Labels.finnish.Navigation.Feedback:
+                props.navigation.navigate('Feeder');
+                break;
               default:
                 props.navigation.navigate('Home');
                 closeDrawer();
