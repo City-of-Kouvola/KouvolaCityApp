@@ -4,8 +4,7 @@ import {
   NavigationRouteConfigMap,
   NavigationRoute,
 } from 'react-navigation';
-import { View, PanResponder } from 'react-native';
-import { createStackNavigator, HeaderTitle } from 'react-navigation-stack';
+import { createStackNavigator } from 'react-navigation-stack';
 import {
   createDrawerNavigator,
   NavigationDrawerProp,
@@ -15,26 +14,9 @@ import {
 import NavigationContent from './components/NavigationContent';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
-import { MainHeader, BackHeader } from './components/Header';
-import { kvlInstagram, kvlMobiili, trimble } from 'config/Redirectroutes';
+import { MainHeader } from './components/Header';
+import { kvlMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
-
-/*const WebViewStack = createStackNavigator({
-  WebView: {
-    screen: (props: any) => (
-      <WebViewModule
-        src={props.screenProps.target}
-        modalTimeout={5000}
-        modalVisible={props.screenProps.showModal}
-        onHideModal={props.screenProps.disableModal}
-        {...props}
-      />
-    ),
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
-});*/
 
 const Home = createStackNavigator({
   Home: {
