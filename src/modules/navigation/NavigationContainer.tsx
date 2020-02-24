@@ -86,7 +86,7 @@ const Routeplans = createStackNavigator({
         key={props.screenProps.routesKey}
         src='https://kouvola.digitransit.fi/'
         modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
+        modalVisible={false}
         {...props}
       />
     ),
@@ -103,7 +103,7 @@ const Enquiries = createStackNavigator({
         key={props.screenProps.enquirysKey}
         src='https://www.kouvola.fi/kyselyt'
         modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
+        modalVisible={false}
         {...props}
       />
     ),

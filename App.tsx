@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View } from 'react-native';
+import { View, Platform } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from './src/modules/navigation/NavigationContainer';
 import { setTopLevelNavigator } from './src/modules/navigation/components/NavigationService';
@@ -44,14 +44,16 @@ const App = (): JSX.Element => {
     setModalShow(false);
   };
 
-  PermissionsAndroid.request(
-    PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-    {
-      title: translationData.Labels.finnish.Permissions.Title,
-      message: translationData.Labels.finnish.Permissions.Message,
-      buttonPositive: translationData.Labels.finnish.Permissions.Accept,
-    }
-  );
+  if (Platform.OS === 'android') {
+    PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+      {
+        title: translationData.Labels.finnish.Permissions.Title,
+        message: translationData.Labels.finnish.Permissions.Message,
+        buttonPositive: translationData.Labels.finnish.Permissions.Accept,
+      },
+    );
+  }
 
   return (
     <View style={{ flex: 1 }}>
