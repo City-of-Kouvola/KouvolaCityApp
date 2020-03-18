@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dimensions } from 'react-native';
 import {
   createAppContainer,
   NavigationRouteConfigMap,
@@ -150,6 +151,7 @@ const RouteConfigs: NavigationRouteConfigMap<
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
   contentComponent: NavigationContent,
+  drawerWidth: Dimensions.get('window').width * 0.8,
 };
 
 const Drawer = createDrawerNavigator(RouteConfigs, DrawerNavigatorConfig);

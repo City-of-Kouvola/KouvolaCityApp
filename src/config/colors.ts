@@ -4,7 +4,7 @@ export interface ColorSet {
 }
 
 const colors: ColorSet = {
-  black: '#000000',
+  black: '#212121',
   white: '#FFFFFF',
 };
 

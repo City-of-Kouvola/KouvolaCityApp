@@ -15,7 +15,7 @@ const DrawerContent = (props: any): JSX.Element => {
         <DrawerItems
           labelStyle={styles.headerLabel}
           itemStyle={styles.headerItem}
-          activeBackgroundColor={'#000'}
+          activeBackgroundColor={'#212121'}
           activeLabelStyle={styles.headerActiveLabel}
           {...props}
           onItemPress={({ route }) => {
