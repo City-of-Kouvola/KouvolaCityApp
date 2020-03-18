@@ -3,7 +3,7 @@ import colors from 'config/colors';
 
 export default StyleSheet.create({
   header: {
-    backgroundColor: colors.min,
+    backgroundColor: colors.black,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 1,
@@ -20,11 +20,11 @@ export default StyleSheet.create({
     }),
   },
   drawerHeader: {
-    backgroundColor: colors.min,
+    backgroundColor: colors.black,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: '#212121',
+    borderBottomColor: colors.black,
     ...Platform.select({
       android: {
         paddingTop: 0,
@@ -36,21 +36,28 @@ export default StyleSheet.create({
     }),
   },
   headerMenu: {
-    backgroundColor: colors.min,
+    backgroundColor: colors.black,
     height: '100%',
   },
   headerLabel: {
-    color: colors.max,
-    fontWeight: '400',
-    fontSize: 20,
+    color: colors.white,
+    fontWeight: '300',
+    fontSize: 22,
     width: '100%',
   },
   headerActiveLabel: {
-    fontWeight: 'bold',
+    ...Platform.select({
+      android: {
+        fontWeight: 'bold',
+      },
+      ios: {
+        fontWeight: '800',
+      },
+    }),
   },
   headerItem: {
     borderBottomWidth: 1,
-    borderBottomColor: '#212121',
+    borderBottomColor: colors.white,
     width: '90%',
     alignSelf: 'center',
   },
@@ -60,6 +67,7 @@ export default StyleSheet.create({
   },
   iconStyle: {
     padding: 10,
+    fontSize: 30,
   },
   webViewView: {
     flex: 1,
