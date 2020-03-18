@@ -1,17 +1,11 @@
 export interface ColorSet {
-  max: string;
-  med: string;
-  min: string;
-  homefg: string;
-  homebg: string;
+  black: string;
+  white: string;
 }
 
 const colors: ColorSet = {
-  max: '#000000',
-  med: '#0000AA',
-  min: '#FFFFFF',
-  homefg: '#ffc61e',
-  homebg: '#9fc9eb',
+  black: '#000000',
+  white: '#FFFFFF',
 };
 
 export default colors;

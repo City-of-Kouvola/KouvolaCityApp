@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import { Header } from 'react-native-elements';
 import { openDrawer, closeDrawer, goBack } from './NavigationService';
-import logo from 'assets/img/kouvolalogo.png';
+import logo from 'assets/img/kouvola-white-logo.png';
 import styles from '../styles';
 import colors from 'config/colors';
 import translationData from 'config/locales.json';
@@ -10,14 +10,18 @@ import translationData from 'config/locales.json';
 export const MainHeader = (props: any): JSX.Element => {
   return (
     <Header
+      statusBarProps={{
+        barStyle: 'light-content',
+        backgroundColor: colors.black,
+      }}
       leftComponent={{
         accessible: true,
         accessibilityLabel:
           translationData.Accessibility.finnish.Navigation.OpenMenu,
         icon: 'menu',
         iconStyle: styles.iconStyle,
-        underlayColor: '#eee',
-        color: colors.max,
+        underlayColor: '#000',
+        color: colors.white,
         onPress: () => openDrawer(),
       }}
       centerComponent={
@@ -42,8 +46,8 @@ export const BackHeader = (props: any): JSX.Element => {
           translationData.Accessibility.finnish.Navigation.GoBack,
         icon: 'arrow-back',
         iconStyle: styles.iconStyle,
-        underlayColor: '#f77952',
-        color: colors.min,
+        underlayColor: '#000',
+        color: colors.white,
         onPress: () => goBack(),
       }}
       centerComponent={
@@ -75,7 +79,8 @@ export const DrawerHeader = (props: any): JSX.Element => {
           translationData.Accessibility.finnish.Navigation.CloseMenu,
         icon: 'close',
         iconStyle: styles.iconStyle,
-        color: colors.max,
+        underlayColor: '#000',
+        color: colors.white,
         onPress: () => closeDrawer(),
       }}
       containerStyle={styles.drawerHeader}

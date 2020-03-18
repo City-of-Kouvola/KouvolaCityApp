@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     margin: 15,
     textAlign: 'center',
   },
-  text: { fontSize: 17, marginBottom: 8 },
+  text: { fontSize: 17, marginBottom: 10 },
 });
 
 export default Home;
