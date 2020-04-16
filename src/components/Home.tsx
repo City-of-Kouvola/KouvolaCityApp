@@ -1,9 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import trasparentbg from '../assets/img/transparentImage.png';
+import { View, Text, StyleSheet, ScrollView, Image, Dimensions } from 'react-native';
 
 const Home = (): JSX.Element => {
   return (
     <ScrollView style={styles.container}>
+      <Image
+        source={trasparentbg}
+        resizeMode='contain'
+        style={styles.transbg}
+      />
       <Text style={styles.text}>
         Kouvolassa asuu Suomen onnellisimmat naapurit (Asuntomessubarometrin
         mukaan). Meillä on elävä maaseutu ja rentoa pikkukaupungin sykettä.
@@ -23,10 +29,14 @@ const Home = (): JSX.Element => {
   );
 };
 
+const dimensions = Dimensions.get('window');
+const imageHeight = Math.round(dimensions.width * 14 / 16);
+const imageTopMargin = -Math.round(dimensions.width * 2.5 / 16);
+const imageWidth = dimensions.width;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 15,
   },
   textHeader: {
     fontWeight: 'bold',
@@ -34,7 +44,13 @@ const styles = StyleSheet.create({
     margin: 15,
     textAlign: 'center',
   },
-  text: { fontSize: 17, marginBottom: 10 },
+  transbg: {
+    width: imageWidth,
+    height: imageHeight,
+    marginBottom: 25,
+    marginTop: imageTopMargin,
+  },
+  text: { fontSize: 17, marginBottom: 10, paddingLeft: 15, paddingRight: 15 },
 });
 
 export default Home;
