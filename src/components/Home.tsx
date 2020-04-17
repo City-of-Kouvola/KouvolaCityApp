@@ -1,5 +1,5 @@
 import React from 'react';
-import trasparentbg from '../assets/img/transparentImage.png';
+import trasparentbg from '../assets/img/kouvolatransparentImage.jpg';
 import { View, Text, StyleSheet, ScrollView, Image, Dimensions } from 'react-native';
 
 const Home = (): JSX.Element => {
