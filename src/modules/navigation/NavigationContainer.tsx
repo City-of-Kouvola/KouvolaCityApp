@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dimensions } from 'react-native';
 import {
   createAppContainer,
   NavigationRouteConfigMap,
@@ -86,7 +87,7 @@ const Routeplans = createStackNavigator({
         key={props.screenProps.routesKey}
         src='https://kouvola.digitransit.fi/'
         modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
+        modalVisible={false}
         {...props}
       />
     ),
@@ -103,7 +104,7 @@ const Enquiries = createStackNavigator({
         key={props.screenProps.enquirysKey}
         src='https://www.kouvola.fi/kyselyt'
         modalTimeout={props.screenProps.modalTimeout}
-        modalVisible={true}
+        modalVisible={false}
         {...props}
       />
     ),
@@ -150,6 +151,7 @@ const RouteConfigs: NavigationRouteConfigMap<
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
   contentComponent: NavigationContent,
+  drawerWidth: Dimensions.get('window').width * 0.8,
 };
 
 const Drawer = createDrawerNavigator(RouteConfigs, DrawerNavigatorConfig);
