@@ -8,7 +8,9 @@ import { PermissionsAndroid } from 'react-native';
 const translationData = require('config/locales.json');
 
 const App = (): JSX.Element => {
-  useEffect(() => SplashScreen.hide(), []);
+  useEffect(() => {
+    setTimeout(() => { SplashScreen.hide(); }, 3000);
+  }, []);
   const [ideaKey, setIdeaKey] = useState(0);
   const [visitKey, setVisitKey] = useState(400);
   const [routeKey, setRouteKey] = useState(300);
