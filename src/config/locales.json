@@ -8,12 +8,12 @@
         "OnxIdeaa": "Teenager, Got an idea?",
         "Enquiries": "Enquiries",
         "Events": "Events",
-        "Feedback": "Give Feedback",
+        "Feedback": "App feedback",
         "Back": "Return"
       },
       "ExternalApps": {
         "KouvolaJoukkoliikenne": "Mobiililippu",
-        "TrimbleFeedBack": "Trimble Feedback"
+        "TrimbleFeedBack": "City Feedback"
       },
       "Permissions": {
         "Title": "Location Services",
@@ -29,12 +29,12 @@
         "OnxIdeaa": "Nuori, onks ideaa?",
         "Enquiries": "Kyselyt",
         "Events": "Tapahtumat",
-        "Feedback": "Anna palautetta",
+        "Feedback": "Palaute sovelluksesta",
         "Back": "Palaa"
       },
       "ExternalApps": {
         "KouvolaJoukkoliikenne": "Mobiililippu",
-        "TrimbleFeedBack": "Trimble Feedback"
+        "TrimbleFeedBack": "Palaute kaupungille"
       },
       "Permissions": {
         "Title": "Sijaintipalvelut",
@@ -55,12 +55,12 @@
         "OnxIdeaa": "Go to OnxIdeaa",
         "Enquiries": "Go to enquiries",
         "Events": "Open Kymenlaaksonyt.fi",
-        "Feedback": "Open  App Feedback",
+        "Feedback": "Open App Feedback",
         "Back": "Go back"
       },
       "ExternalApps": {
         "Kouvola": "Open Kouvola mobiililippu",
-        "TrimbleFeedBack": "Open Trimble Feedback"
+        "TrimbleFeedBack": "Open Trimble Feedback for city feedback"
       },
       "Permissions": {
         "Title": "Location Services",
@@ -83,7 +83,7 @@
       },
       "ExternalApps": {
         "Kouvola": "Avaa Kouvola mobiililippu",
-        "TrimbleFeedBack": "Avaa Trimble Feedback"
+        "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle"
       },
       "Permissions": {
         "Title": "Location Services",

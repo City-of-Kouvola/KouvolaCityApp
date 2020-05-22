@@ -143,9 +143,9 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.OnxIdeaa]: onxIdea,
   [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
   [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
+  [translationData.Labels.finnish.Navigation.Events]: events,
   [translationData.Labels.finnish.ExternalApps
     .TrimbleFeedBack]: trimbleFeedbackRedirect,
-  [translationData.Labels.finnish.Navigation.Events]: events,
   [translationData.Labels.finnish.Navigation.Feedback]: Feedbacks,
 };
 
