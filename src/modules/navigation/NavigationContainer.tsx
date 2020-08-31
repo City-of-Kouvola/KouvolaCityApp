@@ -69,17 +69,6 @@ const visitKvl = createStackNavigator({
   },
 });
 
-const onxIdea = createStackNavigator({
-  Ideaer: {
-    screen: (props: any) => (
-      <RedirectInAppBrowser url='https://www.onxideaa.fi/' {...props} />
-    ),
-    navigationOptions: {
-      header: () => <MainHeader />,
-    },
-  },
-});
-
 const Routeplans = createStackNavigator({
   Router: {
     screen: (props: any) => (
@@ -140,7 +129,6 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
   [translationData.Labels.finnish.ExternalApps
     .KouvolaJoukkoliikenne]: kvlMobiiliRedirect,
-  [translationData.Labels.finnish.Navigation.OnxIdeaa]: onxIdea,
   [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
   [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
   [translationData.Labels.finnish.Navigation.Events]: events,
