@@ -27,10 +27,6 @@ const DrawerContent = (props: any): JSX.Element => {
                 props.screenProps.routes();
                 props.navigation.navigate('Router');
                 break;
-              case translationData.Labels.finnish.Navigation.OnxIdeaa:
-                props.screenProps.idea();
-                props.navigation.navigate('Ideaer');
-                break;
               case translationData.Labels.finnish.Navigation.Visit:
                 props.screenProps.visit();
                 props.navigation.navigate('Visiter');
