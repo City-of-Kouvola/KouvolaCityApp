@@ -299,7 +299,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = T3863CZRP9;
+						DevelopmentTeam = AB3TGBXZTM;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -698,18 +698,19 @@
 			baseConfigurationReference = 00110D1B0A8BBFCDDE551F09 /* Pods-KouvolaCityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = T3863CZRP9;
+				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.Kouvola.Kouvola-Mobiilissa";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
 				PRODUCT_NAME = "Kouvola Mobiilissa";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -720,17 +721,18 @@
 			baseConfigurationReference = FD4CC177FF2B69643A9890B2 /* Pods-KouvolaCityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T3863CZRP9;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.Kouvola.Kouvola-Mobiilissa";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
 				PRODUCT_NAME = "Kouvola Mobiilissa";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
