@@ -12,6 +12,7 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		22FBA24D24FE694D00E658CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA24F24FE694D00E658CB /* InfoPlist.strings */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -52,6 +53,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KouvolaCityApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KouvolaCityApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KouvolaCityApp/main.m; sourceTree = "<group>"; };
+		22FBA24A24FE692E00E658CB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		22FBA24E24FE694D00E658CB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22FBA25024FE694F00E658CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* KouvolaCityApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KouvolaCityApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* KouvolaCityApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KouvolaCityApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		438C6E66AE145A069EB3AAF9 /* Pods-KouvolaCityApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-tvOS/Pods-KouvolaCityApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				22FBA24F24FE694D00E658CB /* InfoPlist.strings */,
 			);
 			name = KouvolaCityApp;
 			sourceTree = "<group>";
@@ -286,7 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -294,7 +299,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = T3863CZRP9;
+						DevelopmentTeam = AB3TGBXZTM;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -315,6 +320,7 @@
 				English,
 				en,
 				Base,
+				fi,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -342,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				22FBA24D24FE694D00E658CB /* InfoPlist.strings in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,9 +630,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				13B07FB21A68108700A75B9A /* Base */,
+				22FBA24A24FE692E00E658CB /* fi */,
 			);
 			name = LaunchScreen.xib;
 			path = KouvolaCityApp;
+			sourceTree = "<group>";
+		};
+		22FBA24F24FE694D00E658CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22FBA24E24FE694D00E658CB /* fi */,
+				22FBA25024FE694F00E658CB /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -681,18 +698,19 @@
 			baseConfigurationReference = 00110D1B0A8BBFCDDE551F09 /* Pods-KouvolaCityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = T3863CZRP9;
+				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.Kouvola.Kouvola-Mobiilissa";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
 				PRODUCT_NAME = "Kouvola Mobiilissa";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -703,17 +721,18 @@
 			baseConfigurationReference = FD4CC177FF2B69643A9890B2 /* Pods-KouvolaCityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T3863CZRP9;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.Kouvola.Kouvola-Mobiilissa";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
 				PRODUCT_NAME = "Kouvola Mobiilissa";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
