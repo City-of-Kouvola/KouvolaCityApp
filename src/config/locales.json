@@ -11,7 +11,7 @@
         "Back": "Return"
       },
       "ExternalApps": {
-        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "KouvolaJoukkoliikenne": "Waltti Mobiili",
         "TrimbleFeedBack": "City Feedback"
       },
       "Permissions": {
@@ -31,7 +31,7 @@
         "Back": "Palaa"
       },
       "ExternalApps": {
-        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "KouvolaJoukkoliikenne": "Waltti Mobiili",
         "TrimbleFeedBack": "Palaute kaupungille"
       },
       "Permissions": {
@@ -56,7 +56,7 @@
         "Back": "Go back"
       },
       "ExternalApps": {
-        "Kouvola": "Open Kouvola mobiililippu",
+        "Kouvola": "Open Waltti Mobiili",
         "TrimbleFeedBack": "Open Trimble Feedback for city feedback"
       },
       "Permissions": {
@@ -79,7 +79,7 @@
         "Back": "Mene takaisin"
       },
       "ExternalApps": {
-        "Kouvola": "Avaa Kouvola mobiililippu",
+        "Kouvola": "Avaa Waltti Mobiili",
         "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle"
       },
       "Permissions": {
