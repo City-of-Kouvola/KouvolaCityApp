@@ -6,11 +6,11 @@ export const trimble: RedirectData = {
   iosStoreUrl: 'itms-apps://apps.apple.com/us/app/trimble-feedback/id816215762',
 };
 
-export const kvlMobiili: RedirectData = {
-  applicationName: 'Kouvola mobiililippu',
-  launchUrl: 'payiqkouvola://',
-  androidStoreUrl: 'market://details?id=net.payiq.kouvola&launch=true',
-  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/kouvola/id1463762029',
+export const walttiMobiili: RedirectData = {
+  applicationName: 'Waltti Mobiili',
+  launchUrl: 'walttiapp://',
+  androidStoreUrl: 'market://details?id=waltti.com.mobiili&launch=true',
+  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/waltti-mobiili/id1467878273',
 };
 
 export const kvlInstagram: RedirectData = {

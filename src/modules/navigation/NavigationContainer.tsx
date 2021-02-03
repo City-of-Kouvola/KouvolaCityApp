@@ -16,7 +16,7 @@ import NavigationContent from './components/NavigationContent';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
 import { MainHeader } from './components/Header';
-import { kvlMobiili, trimble } from 'config/Redirectroutes';
+import { walttiMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
 import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
 
@@ -38,9 +38,9 @@ const trimbleFeedbackRedirect = createStackNavigator({
   },
 });
 
-const kvlMobiiliRedirect = createStackNavigator({
-  kvlMobiiliRedirect: {
-    screen: (props: any) => <Redirect {...kvlMobiili} {...props} />,
+const walttiMobiiliRedirect = createStackNavigator({
+  walttiMobiiliRedirect: {
+    screen: (props: any) => <Redirect {...walttiMobiili} {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
     },
@@ -128,7 +128,7 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.Navigation.Home]: Home,
   [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
   [translationData.Labels.finnish.ExternalApps
-    .KouvolaJoukkoliikenne]: kvlMobiiliRedirect,
+    .KouvolaJoukkoliikenne]: walttiMobiiliRedirect,
   [translationData.Labels.finnish.Navigation.Visit]: visitKvl,
   [translationData.Labels.finnish.Navigation.Enquiries]: Enquiries,
   [translationData.Labels.finnish.Navigation.Events]: events,
