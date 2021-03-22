@@ -13,8 +13,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		22FBA24D24FE694D00E658CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA24F24FE694D00E658CB /* InfoPlist.strings */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C343A5EDD646AA484572FA00 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D2D72CC7AE3DF1A960D805 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */; };
-		FD667CDC870D3A8E02D8DD3D /* libPods-KouvolaCityApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBC432E3808FE405339DB07 /* libPods-KouvolaCityApp.a */; };
+		9A85757EFC422C3E26DB1E29 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E8608FB1648C2C23E3B934 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */; };
+		E59718568E8455F0C5C34291 /* libPods-KouvolaCityApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B18D3D54C3C35A7D5B40C6 /* libPods-KouvolaCityApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +37,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KouvolaCityApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KouvolaCityApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KouvolaCityApp/main.m; sourceTree = "<group>"; };
+		1CBCFB85FA303E97C6912E5F /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		22FBA24E24FE694D00E658CB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22FBA25024FE694F00E658CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		32D2D72CC7AE3DF1A960D805 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KouvolaCityApp-KouvolaCityAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73E8608FB1648C2C23E3B934 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KouvolaCityApp-KouvolaCityAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F82562A3875DCC57C4C8F4 /* Pods-KouvolaCityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = KouvolaCityApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		93571E7A72D4AD7CBF575EA2 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2253AA66707895DE2F39251 /* Pods-KouvolaCityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.debug.xcconfig"; sourceTree = "<group>"; };
-		C4C34AC80482CB3A42184E7E /* Pods-KouvolaCityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.release.xcconfig"; sourceTree = "<group>"; };
-		CEBC432E3808FE405339DB07 /* libPods-KouvolaCityApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KouvolaCityApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4888A3071020962F16E6F65 /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C777193B62941965DB7C1CFF /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2B18D3D54C3C35A7D5B40C6 /* libPods-KouvolaCityApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KouvolaCityApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2130D6064630FE755D55F0B /* Pods-KouvolaCityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C343A5EDD646AA484572FA00 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */,
+				9A85757EFC422C3E26DB1E29 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD667CDC870D3A8E02D8DD3D /* libPods-KouvolaCityApp.a in Frameworks */,
+				E59718568E8455F0C5C34291 /* libPods-KouvolaCityApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +99,20 @@
 			name = KouvolaCityApp;
 			sourceTree = "<group>";
 		};
+		2261172A26035D16005F440F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				CEBC432E3808FE405339DB07 /* libPods-KouvolaCityApp.a */,
-				32D2D72CC7AE3DF1A960D805 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */,
+				D2B18D3D54C3C35A7D5B40C6 /* libPods-KouvolaCityApp.a */,
+				73E8608FB1648C2C23E3B934 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,7 +132,8 @@
 				00E356EF1AD99517003FC87E /* KouvolaCityAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				DC39874762BB83E94885143F /* Pods */,
+				A48ABD93B3CAAA479E64B770 /* Pods */,
+				2261172A26035D16005F440F /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,15 +149,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC39874762BB83E94885143F /* Pods */ = {
+		A48ABD93B3CAAA479E64B770 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2253AA66707895DE2F39251 /* Pods-KouvolaCityApp.debug.xcconfig */,
-				C4C34AC80482CB3A42184E7E /* Pods-KouvolaCityApp.release.xcconfig */,
-				93571E7A72D4AD7CBF575EA2 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */,
-				D4888A3071020962F16E6F65 /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */,
+				77F82562A3875DCC57C4C8F4 /* Pods-KouvolaCityApp.debug.xcconfig */,
+				E2130D6064630FE755D55F0B /* Pods-KouvolaCityApp.release.xcconfig */,
+				C777193B62941965DB7C1CFF /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */,
+				1CBCFB85FA303E97C6912E5F /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,12 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KouvolaCityAppTests" */;
 			buildPhases = (
-				7FE7A89D275C9E2423B67288 /* [CP] Check Pods Manifest.lock */,
+				2905CE39692F3893A6D2A4B3 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				FA0A14EAAF0FD49B077B6729 /* [CP] Embed Pods Frameworks */,
-				F03949CB1D8AD9E49760F680 /* [CP] Copy Pods Resources */,
+				E73A8991316CA9226FDACF99 /* [CP] Embed Pods Frameworks */,
+				08FF8E981476E61ADF5A4A8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,14 +188,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KouvolaCityApp" */;
 			buildPhases = (
-				6019EE95BF3914C54DA21701 /* [CP] Check Pods Manifest.lock */,
+				53E49A99FC92902671581B01 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				3CA43DDDAF0AF03C7BEAAD71 /* [CP] Embed Pods Frameworks */,
-				2449BC5DA61DCEA638A0427D /* [CP] Copy Pods Resources */,
+				968B1194E1AE230A6DEAC4C6 /* [CP] Embed Pods Frameworks */,
+				39336F748DEA572115BC9E8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,63 +280,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		2449BC5DA61DCEA638A0427D /* [CP] Copy Pods Resources */ = {
+		08FF8E981476E61ADF5A4A8F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3CA43DDDAF0AF03C7BEAAD71 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6019EE95BF3914C54DA21701 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KouvolaCityApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7FE7A89D275C9E2423B67288 /* [CP] Check Pods Manifest.lock */ = {
+		2905CE39692F3893A6D2A4B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,24 +319,63 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F03949CB1D8AD9E49760F680 /* [CP] Copy Pods Resources */ = {
+		39336F748DEA572115BC9E8E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA0A14EAAF0FD49B077B6729 /* [CP] Embed Pods Frameworks */ = {
+		53E49A99FC92902671581B01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KouvolaCityApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968B1194E1AE230A6DEAC4C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E73A8991316CA9226FDACF99 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,7 +456,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93571E7A72D4AD7CBF575EA2 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */;
+			baseConfigurationReference = C777193B62941965DB7C1CFF /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
@@ -476,7 +484,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4888A3071020962F16E6F65 /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */;
+			baseConfigurationReference = 1CBCFB85FA303E97C6912E5F /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -501,7 +509,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2253AA66707895DE2F39251 /* Pods-KouvolaCityApp.debug.xcconfig */;
+			baseConfigurationReference = 77F82562A3875DCC57C4C8F4 /* Pods-KouvolaCityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -529,7 +537,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4C34AC80482CB3A42184E7E /* Pods-KouvolaCityApp.release.xcconfig */;
+			baseConfigurationReference = E2130D6064630FE755D55F0B /* Pods-KouvolaCityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
