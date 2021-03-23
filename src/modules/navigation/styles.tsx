@@ -14,8 +14,8 @@ export default StyleSheet.create({
         height: 70,
       },
       ios: {
-        height: 90,
-        paddingBottom: '5%',
+        height: 100,
+        padding: '2%',
       },
     }),
   },
