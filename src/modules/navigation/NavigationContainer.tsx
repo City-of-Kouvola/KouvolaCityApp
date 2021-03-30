@@ -18,6 +18,7 @@ import Redirect from 'components/Redirect';
 import { MainHeader } from './components/Header';
 import { walttiMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
+import { LibraryCardModule } from 'Library_card_module';
 import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
 
 const Home = createStackNavigator({
@@ -119,6 +120,15 @@ const Feedbacks = createStackNavigator({
   },
 });
 
+const LibraryCard = createStackNavigator({
+  librarycard: {
+    screen: (props: any) => <LibraryCardModule {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
 const translationData = require('config/locales.json');
 
 const RouteConfigs: NavigationRouteConfigMap<
@@ -135,6 +145,7 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.ExternalApps
     .TrimbleFeedBack]: trimbleFeedbackRedirect,
   [translationData.Labels.finnish.Navigation.Feedback]: Feedbacks,
+  [translationData.Labels.finnish.Navigation.Librarycard]: LibraryCard,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {

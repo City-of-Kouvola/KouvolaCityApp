@@ -9,10 +9,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.14.1",
+    "@react-native-community/art": "^1.2.0",
     "@react-native-community/toolbar-android": "0.1.0-rc.2",
+    "Library_card_module": "git+ssh://git@github.com:City-of-Kouvola/Library_card_module.git#develop",
     "OpenCityKvlModules": "git+https://github.com/City-of-Kouvola/open-city-kvl-modules.git",
     "react": "17.0.1",
     "react-native": "0.64.0",
+    "react-native-barcode-builder": "^2.0.0",
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.9.0",
     "react-native-inappbrowser-reborn": "^3.5.1",
@@ -20,6 +24,7 @@
     "react-native-reanimated": "^1.13.2",
     "react-native-screens": "^2.16.1",
     "react-native-splash-screen": "^3.2.0",
+    "react-native-svg": "^12.1.0",
     "react-native-vector-icons": "^8.1.0",
     "react-native-webview": "^8.2.1",
     "react-navigation": "^4.4.3",

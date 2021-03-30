@@ -49,6 +49,9 @@ const DrawerContent = (props: any): JSX.Element => {
               case translationData.Labels.finnish.Navigation.Feedback:
                 props.navigation.navigate('Feeder');
                 break;
+              case translationData.Labels.finnish.Navigation.Librarycard:
+                props.navigation.navigate('librarycard');
+                break;
               default:
                 props.navigation.navigate('Home');
                 closeDrawer();
