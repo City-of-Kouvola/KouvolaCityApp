@@ -18,7 +18,7 @@ import Redirect from 'components/Redirect';
 import { MainHeader } from './components/Header';
 import { walttiMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
-import { LibraryCardModule } from 'Library_card_module';
+import { LibraryCardModule } from 'library_card_module';
 import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
 
 const Home = createStackNavigator({

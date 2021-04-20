@@ -12,7 +12,7 @@
     "@react-native-async-storage/async-storage": "^1.14.1",
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/toolbar-android": "0.1.0-rc.2",
-    "Library_card_module": "git+ssh://git@github.com:City-of-Kouvola/Library_card_module.git#develop",
+    "library_card_module": "github:City-of-Kouvola/Library_card_module#develop",
     "OpenCityKvlModules": "git+https://github.com/City-of-Kouvola/open-city-kvl-modules.git",
     "react": "17.0.1",
     "react-native": "0.64.0",

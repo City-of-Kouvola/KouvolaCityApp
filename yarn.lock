@@ -4566,9 +4566,9 @@
     "prelude-ls" "~1.1.2"
     "type-check" "~0.3.2"
 
-"Library_card_module@git+ssh://git@github.com:City-of-Kouvola/Library_card_module.git#develop":
-  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#967e296ff0a6e5443abe80533466355d2655529c"
-  "version" "0.0.1"
+"library_card_module@github:City-of-Kouvola/Library_card_module#develop":
+  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#f6f8310534bdd45f207be28d957bcc8a27bd022e"
+  "version" "0.0.2"
   dependencies:
     "@react-native-async-storage/async-storage" "^1.14.1"
     "@react-native-community/art" "^1.2.0"
