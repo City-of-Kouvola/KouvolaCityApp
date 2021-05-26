@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import { Header } from 'react-native-elements';
 import { openDrawer, closeDrawer, goBack } from './NavigationService';
-import logo from 'assets/img/kouvola-white-logo.png';
+import logo from 'assets/img/KouvolaWhiteLogo.png';
 import styles from '../styles';
 import colors from 'config/colors';
 import translationData from 'config/locales.json';

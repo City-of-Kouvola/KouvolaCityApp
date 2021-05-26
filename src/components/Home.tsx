@@ -1,6 +1,13 @@
 import React from 'react';
 import trasparentbg from '../assets/img/kouvolatransparentImage.jpg';
-import { View, Text, StyleSheet, ScrollView, Image, Dimensions } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Image,
+  Dimensions,
+} from 'react-native';
 
 const Home = (): JSX.Element => {
   return (
@@ -30,8 +37,8 @@ const Home = (): JSX.Element => {
 };
 
 const dimensions = Dimensions.get('window');
-const imageHeight = Math.round(dimensions.width * 14 / 16);
-const imageTopMargin = -Math.round(dimensions.width * 2.5 / 16);
+const imageHeight = Math.round((dimensions.width * 14) / 16);
+const imageTopMargin = -Math.round((dimensions.width * 2.5) / 16);
 const imageWidth = dimensions.width;
 
 const styles = StyleSheet.create({
