@@ -62,7 +62,10 @@ const events = createStackNavigator({
 const visitKvl = createStackNavigator({
   Visiter: {
     screen: (props: any) => (
-      <RedirectInAppBrowser url='https://visitkouvola.fi/fi' {...props} />
+      <RedirectInAppBrowser
+        url='https://visitkouvola.fi/suunnittele-matkasi'
+        {...props}
+      />
     ),
     navigationOptions: {
       header: () => <MainHeader />,
