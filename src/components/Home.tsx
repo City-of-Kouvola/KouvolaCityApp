@@ -1,5 +1,5 @@
 import React from 'react';
-import trasparentbg from '../assets/img/kouvolatransparentImage.jpg';
+import trasparentbg from '../assets/img/keltamusta_laiturillaB.jpg';
 import {
   View,
   Text,
