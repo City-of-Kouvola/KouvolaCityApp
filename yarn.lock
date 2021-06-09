@@ -4567,7 +4567,7 @@
     "type-check" "~0.3.2"
 
 "library_card_module@github:City-of-Kouvola/Library_card_module#feature/update_images_and_texts":
-  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#9e5b3c5b267988cec566dadbc00e65350aefd1ef"
+  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#3c7f0836c9213ea1471bb9309a12e9a3157758ac"
   "version" "0.0.3"
   dependencies:
     "@react-native-async-storage/async-storage" "^1.14.1"
