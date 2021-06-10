@@ -37,8 +37,8 @@ const Home = (): JSX.Element => {
 };
 
 const dimensions = Dimensions.get('window');
-const imageHeight = Math.round((dimensions.width * 14) / 16);
-const imageTopMargin = -Math.round((dimensions.width * 4.1) / 16);
+const imageHeight = Math.round((dimensions.width * 6) / 16);
+const imageTopMargin = -Math.round((dimensions.width * 0.1) / 16);
 const imageWidth = dimensions.width;
 
 const styles = StyleSheet.create({
@@ -53,8 +53,7 @@ const styles = StyleSheet.create({
   },
   transbg: {
     width: imageWidth,
-    height: imageHeight,
-    marginBottom: 25,
+    maxHeight: imageHeight,
     marginTop: imageTopMargin,
   },
   text: { fontSize: 17, marginBottom: 10, paddingLeft: 15, paddingRight: 15 },
