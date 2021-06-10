@@ -139,6 +139,7 @@ const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerProp<NavigationRoute>
 > = {
   [translationData.Labels.finnish.Navigation.Home]: Home,
+  [translationData.Labels.finnish.Navigation.Librarycard]: LibraryCard,
   [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
   [translationData.Labels.finnish.ExternalApps
     .KouvolaJoukkoliikenne]: walttiMobiiliRedirect,
@@ -148,7 +149,6 @@ const RouteConfigs: NavigationRouteConfigMap<
   [translationData.Labels.finnish.ExternalApps
     .TrimbleFeedBack]: trimbleFeedbackRedirect,
   [translationData.Labels.finnish.Navigation.Feedback]: Feedbacks,
-  [translationData.Labels.finnish.Navigation.Librarycard]: LibraryCard,
 };
 
 const DrawerNavigatorConfig: NavigationDrawerConfig = {
