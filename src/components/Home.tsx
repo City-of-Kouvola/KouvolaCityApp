@@ -38,7 +38,7 @@ const Home = (): JSX.Element => {
 
 const dimensions = Dimensions.get('window');
 const imageHeight = Math.round((dimensions.width * 14) / 16);
-const imageTopMargin = -Math.round((dimensions.width * 2.5) / 16);
+const imageTopMargin = -Math.round((dimensions.width * 4.1) / 16);
 const imageWidth = dimensions.width;
 
 const styles = StyleSheet.create({
