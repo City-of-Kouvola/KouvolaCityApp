@@ -18,6 +18,7 @@ import Redirect from 'components/Redirect';
 import { MainHeader } from './components/Header';
 import { walttiMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
+import { LibraryCardModule } from 'library_card_module';
 import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
 
 const Home = createStackNavigator({
@@ -61,7 +62,10 @@ const events = createStackNavigator({
 const visitKvl = createStackNavigator({
   Visiter: {
     screen: (props: any) => (
-      <RedirectInAppBrowser url='https://visitkouvola.fi/fi' {...props} />
+      <RedirectInAppBrowser
+        url='https://visitkouvola.fi/suunnittele-matkasi'
+        {...props}
+      />
     ),
     navigationOptions: {
       header: () => <MainHeader />,
@@ -119,6 +123,15 @@ const Feedbacks = createStackNavigator({
   },
 });
 
+const LibraryCard = createStackNavigator({
+  librarycard: {
+    screen: (props: any) => <LibraryCardModule {...props} />,
+    navigationOptions: {
+      header: () => <MainHeader />,
+    },
+  },
+});
+
 const translationData = require('config/locales.json');
 
 const RouteConfigs: NavigationRouteConfigMap<
@@ -126,6 +139,7 @@ const RouteConfigs: NavigationRouteConfigMap<
   NavigationDrawerProp<NavigationRoute>
 > = {
   [translationData.Labels.finnish.Navigation.Home]: Home,
+  [translationData.Labels.finnish.Navigation.Librarycard]: LibraryCard,
   [translationData.Labels.finnish.Navigation.RoutePlanners]: Routeplans,
   [translationData.Labels.finnish.ExternalApps
     .KouvolaJoukkoliikenne]: walttiMobiiliRedirect,

@@ -7,7 +7,7 @@
         "Visit": "VisitKouvola.fi",
         "Enquiries": "Enquiries",
         "Events": "Events",
-        "Feedback": "App feedback",
+        "Librarycard": "Libary card",
         "Back": "Return"
       },
       "ExternalApps": {
@@ -28,6 +28,7 @@
         "Enquiries": "Kyselyt",
         "Events": "Tapahtumat",
         "Feedback": "Palaute sovelluksesta",
+        "Librarycard": "Kirjastokortti",
         "Back": "Palaa"
       },
       "ExternalApps": {

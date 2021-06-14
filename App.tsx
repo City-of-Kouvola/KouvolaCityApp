@@ -9,7 +9,9 @@ const translationData = require('config/locales.json');
 
 const App = (): JSX.Element => {
   useEffect(() => {
-    setTimeout(() => { SplashScreen.hide(); }, 3000);
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 3000);
   }, []);
   const [ideaKey, setIdeaKey] = useState(0);
   const [visitKey, setVisitKey] = useState(400);
@@ -76,7 +78,7 @@ const App = (): JSX.Element => {
           visitsKey: visitKey,
           modalTimeout: 2500,
         }}
-        ref={(navigatorRef) => {
+        ref={navigatorRef => {
           setTopLevelNavigator(navigatorRef);
         }}
       />
