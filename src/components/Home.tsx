@@ -8,6 +8,7 @@ import {
   Image,
   Dimensions,
 } from 'react-native';
+import { NewsContainer } from '../modules/news/NewsContainer';
 
 const Home = (): JSX.Element => {
   return (
@@ -32,6 +33,7 @@ const Home = (): JSX.Element => {
         Kouvolalaisten leppoisa ja mutkaton elämäntyyli tarttuu helposti ja
         ihmiset täällä ovat oikein mukavaa porukkaa.
       </Text>
+      <NewsContainer />
     </ScrollView>
   );
 };

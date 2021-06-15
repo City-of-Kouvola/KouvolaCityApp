@@ -18,6 +18,14 @@
         "Title": "Location Services",
         "Message": "We would like to request permissions to use location services",
         "Accept": "okay"
+      },
+      "Screens": {
+        "Home": {
+          "CurrentNews": "Current News"
+        }
+      },
+      "ErrorMessages": {
+        "ErrorLoadingNews": "Error loading current news"
       }
     },
     "finnish": {
@@ -39,6 +47,14 @@
         "Title": "Sijaintipalvelut",
         "Message": "Haluaisimme luvan käyttää sijaintipalveluja",
         "Accept": "Selvä"
+      },
+      "Screens": {
+        "Home": {
+          "CurrentNews": "Ajankohtaista"
+        }
+      },
+      "ErrorMessages": {
+        "ErrorLoadingNews": "Virhe ladattaessa ajakohtaisia uutisia"
       }
     }
   },
