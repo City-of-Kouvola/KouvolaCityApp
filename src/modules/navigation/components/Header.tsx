@@ -40,6 +40,10 @@ export const MainHeader = (props: any): JSX.Element => {
 export const BackHeader = (props: any): JSX.Element => {
   return (
     <Header
+      statusBarProps={{
+        barStyle: 'light-content',
+        backgroundColor: colors.black,
+      }}
       leftComponent={{
         accessible: true,
         accessibilityLabel:

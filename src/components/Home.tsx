@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import { NewsContainer } from '../modules/news/NewsContainer';
 
-const Home = (): JSX.Element => {
+const Home = ({ navigation }: any): JSX.Element => {
   return (
     <ScrollView style={styles.container}>
       <Image
@@ -33,7 +33,7 @@ const Home = (): JSX.Element => {
         Kouvolalaisten leppoisa ja mutkaton elämäntyyli tarttuu helposti ja
         ihmiset täällä ovat oikein mukavaa porukkaa.
       </Text>
-      <NewsContainer />
+      <NewsContainer {...{ navigation }} />
     </ScrollView>
   );
 };

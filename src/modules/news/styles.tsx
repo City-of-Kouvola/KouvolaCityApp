@@ -5,9 +5,20 @@ const HeaderFont =
 const textFont = 'Roboto';
 
 export const styles = StyleSheet.create({
+  newsContainer: {
+    flex: 1,
+  },
   headerText: {
     fontFamily: HeaderFont,
     fontSize: 24,
     textAlign: 'center',
+  },
+  articleTitle: {
+    fontFamily: textFont,
+    fontSize: 21,
+    fontWeight: 'bold',
+  },
+  newsTitleContainer: {
+    padding: 16,
   },
 });

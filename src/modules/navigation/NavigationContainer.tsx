@@ -15,17 +15,24 @@ import {
 import NavigationContent from './components/NavigationContent';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
-import { MainHeader } from './components/Header';
+import { BackHeader, MainHeader } from './components/Header';
 import { walttiMobiili, trimble } from 'config/Redirectroutes';
 import { WebViewModule } from 'OpenCityKvlModules';
 import { LibraryCardModule } from 'library_card_module';
 import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
+import { ArticleFull } from '../news/components';
 
 const Home = createStackNavigator({
   Home: {
     screen: (props: any) => <HomeView {...props} />,
     navigationOptions: {
       header: () => <MainHeader />,
+    },
+  },
+  Details: {
+    screen: (props: any) => <ArticleFull {...props} />,
+    navigationOptions: {
+      header: () => <BackHeader />,
     },
   },
 });
