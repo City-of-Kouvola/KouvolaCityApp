@@ -67,7 +67,7 @@ export const NewsContainer = ({ navigation }: any) => {
         <ActivityIndicator style={styles.loaderStyle} size='large' />
       ) : (
         <>
-          {errorMessage != '' && (
+          {errorMessage !== '' && (
             <View style={styles.errorContainer}>
               <Text style={styles.errorMessage}>{errorMessage}</Text>
             </View>

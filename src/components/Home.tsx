@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     width: imageWidth,
     maxHeight: imageHeight,
     marginTop: imageTopMargin,
+    marginBottom: 25,
   },
   text: { fontSize: 17, marginBottom: 10, paddingLeft: 15, paddingRight: 15 },
 });
