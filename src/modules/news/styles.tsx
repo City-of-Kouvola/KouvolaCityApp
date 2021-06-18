@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     fontFamily: HeaderFont,
     fontSize: 24,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontWeight: Platform.OS === 'ios' ? 'bold' : 'normal',
     marginTop: 24,
   },
   loaderStyle: {

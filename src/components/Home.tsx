@@ -1,5 +1,4 @@
 import React from 'react';
-import trasparentbg from '../assets/img/keltamusta_laiturillaB.jpg';
 import {
   View,
   Text,
@@ -9,6 +8,7 @@ import {
   Dimensions,
 } from 'react-native';
 import { NewsContainer } from '../modules/news/NewsContainer';
+const trasparentbg = require('../assets/img/keltamusta_laiturillaB.jpg');
 
 const Home = ({ navigation }: any): JSX.Element => {
   return (

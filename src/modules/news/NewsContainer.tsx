@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {
-  View,
-  Text,
-  ActivityIndicator,
-  FlatList,
-  ListRenderItem,
-  TouchableOpacity,
-} from 'react-native';
+import { View, Text, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { ArticleTitle } from './components/ArticleTitle';
 import { styles } from './styles';
 import { fetchNews } from './RequestService';
@@ -33,6 +26,7 @@ export const NewsContainer = ({ navigation }: any) => {
       );
       setIsLoading(false);
     }
+
     setCurrentPage(currentPage + 1);
     setNewsList([...newsList, ...data]);
     setIsLoading(false);
@@ -42,24 +36,22 @@ export const NewsContainer = ({ navigation }: any) => {
     requestData();
   }, []);
 
-  const renderNewsArticles: ListRenderItem<NewsArticle> = ({ item }) => {
-    return <ArticleTitle key={item.id} article={item} {...{ navigation }} />;
-  };
+  const renderNewsArticles = newsList.map(article => (
+    <ArticleTitle key={article.id} {...{ article, navigation }} />
+  ));
 
   return (
     <View style={styles.newsContainer}>
       <Text style={styles.headerText}>
         {translationData.Labels.finnish.Screens.Home.CurrentNews}
       </Text>
-
-      <FlatList
-        style={styles.newsListContainer}
-        data={newsList}
-        renderItem={renderNewsArticles}
-        extraData={(item: any) => item.id}
-      />
+      {renderNewsArticles}
       {isLoading ? (
-        <ActivityIndicator style={styles.loaderStyle} size='large' />
+        <ActivityIndicator
+          style={styles.loaderStyle}
+          size='large'
+          color='gray'
+        />
       ) : (
         <>
           {errorMessage !== '' && (
