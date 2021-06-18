@@ -35,13 +35,10 @@ export const NewsContainer = ({ navigation }: any) => {
     }
     setCurrentPage(currentPage + 1);
     setNewsList([...newsList, ...data]);
-    console.log(err);
-    console.log(newsList);
     setIsLoading(false);
   };
 
   useEffect(() => {
-    console.log(navigation);
     requestData();
   }, []);
 
