@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, ScrollView, useWindowDimensions } from 'react-native';
+import { ScrollView, useWindowDimensions } from 'react-native';
 import HTML from 'react-native-render-html';
 import { SafeAreaView } from 'react-navigation';
 import { NewsArticle } from '../Types';

@@ -11,7 +11,6 @@ import { ArticleTitle } from './components/ArticleTitle';
 import { styles } from './styles';
 import { fetchNews } from './RequestService';
 import { NewsArticle } from './Types';
-import { testObjectList } from './testobject';
 
 const translationData = require('config/locales.json');
 const url =
@@ -27,8 +26,7 @@ export const NewsContainer = ({ navigation }: any) => {
     setIsLoading(true);
     const newPageToLoad = currentPage + 1;
     const [data, err] = await fetchNews(url, newPageToLoad);
-    /*     const data: NewsArticle[] = testObjectList;
-    const err = null; */
+
     if (err) {
       setErrorMessage(
         translationData.Labels.finnish.ErrorMessages.ErrorLoadingNews,
