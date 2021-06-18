@@ -1,6 +1,8 @@
-export const fetchNews = async (url: string) => {
+export const fetchNews = async (url: string, page: number) => {
   try {
-    const response = await fetch(url);
+    const fullUrl = `${url}&page=${page}`;
+    const response = await fetch(fullUrl);
+    console.log(response);
     if (!response.ok) return [null, 'Invalid response'];
     const data = await response.json();
     return [data, null];

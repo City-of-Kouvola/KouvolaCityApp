@@ -21,7 +21,8 @@
       },
       "Screens": {
         "Home": {
-          "CurrentNews": "Current News"
+          "CurrentNews": "Current News",
+          "LoadMore": "Load more current news"
         }
       },
       "ErrorMessages": {
@@ -50,7 +51,8 @@
       },
       "Screens": {
         "Home": {
-          "CurrentNews": "Ajankohtaista"
+          "CurrentNews": "Ajankohtaista",
+          "LoadMore": "Lisää ajankohtaisia"
         }
       },
       "ErrorMessages": {

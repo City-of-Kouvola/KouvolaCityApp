@@ -5,6 +5,7 @@ import {
   ActivityIndicator,
   FlatList,
   ListRenderItem,
+  TouchableOpacity,
 } from 'react-native';
 import { ArticleTitle } from './components/ArticleTitle';
 import { styles } from './styles';
@@ -13,24 +14,31 @@ import { NewsArticle } from './Types';
 import { testObjectList } from './testobject';
 
 const translationData = require('config/locales.json');
-const url = 'https://www.kouvola.fi/wp-json/wp/v2/posts?categories=17';
+const url =
+  'https://www.kouvola.fi/wp-json/wp/v2/posts?categories=17&per_page=12';
 
 export const NewsContainer = ({ navigation }: any) => {
   const [newsList, setNewsList] = useState<NewsArticle[]>([]);
+  const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
 
   const requestData = async () => {
-    //const [data, err] = await fetchNews(url);
-    const data: NewsArticle[] = testObjectList;
-    const err = null;
+    setIsLoading(true);
+    const newPageToLoad = currentPage + 1;
+    const [data, err] = await fetchNews(url, newPageToLoad);
+    /*     const data: NewsArticle[] = testObjectList;
+    const err = null; */
     if (err) {
       setErrorMessage(
         translationData.Labels.finnish.ErrorMessages.ErrorLoadingNews,
       );
+      setIsLoading(false);
     }
-    setNewsList(data);
-    console.log(data);
+    setCurrentPage(currentPage + 1);
+    setNewsList([...newsList, ...data]);
+    console.log(err);
+    console.log(newsList);
     setIsLoading(false);
   };
 
@@ -48,13 +56,31 @@ export const NewsContainer = ({ navigation }: any) => {
       <Text style={styles.headerText}>
         {translationData.Labels.finnish.Screens.Home.CurrentNews}
       </Text>
-      <Text>{errorMessage}</Text>
+
       <FlatList
+        style={styles.newsListContainer}
         data={newsList}
         renderItem={renderNewsArticles}
         extraData={(item: any) => item.id}
       />
-      {isLoading && <ActivityIndicator size='large' />}
+      {isLoading ? (
+        <ActivityIndicator style={styles.loaderStyle} size='large' />
+      ) : (
+        <>
+          {errorMessage != '' && (
+            <View style={styles.errorContainer}>
+              <Text style={styles.errorMessage}>{errorMessage}</Text>
+            </View>
+          )}
+          <TouchableOpacity
+            style={styles.fetchMoreButton}
+            onPress={requestData}>
+            <Text style={styles.buttonText}>
+              {translationData.Labels.finnish.Screens.Home.LoadMore}
+            </Text>
+          </TouchableOpacity>
+        </>
+      )}
     </View>
   );
 };
