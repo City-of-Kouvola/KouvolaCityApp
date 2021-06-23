@@ -10,10 +10,9 @@ export const styles = StyleSheet.create({
   },
   headerText: {
     fontFamily: HeaderFont,
-    fontSize: 24,
+    fontSize: 28,
     textAlign: 'center',
     fontWeight: Platform.OS === 'ios' ? 'bold' : 'normal',
-    marginTop: 24,
   },
   loaderStyle: {
     marginTop: 30,
@@ -39,7 +38,7 @@ export const styles = StyleSheet.create({
     borderBottomColor: 'lightgray',
     borderBottomWidth: 2,
     padding: 16,
-    marginTop: 24,
+    marginTop: 6,
   },
   buttonText: {
     fontFamily: textFont,
