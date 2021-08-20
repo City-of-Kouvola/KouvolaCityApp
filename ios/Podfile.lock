@@ -338,7 +338,7 @@ PODS:
     - React-perflogger (= 0.65.0)
   - ReactNativeART (1.2.0):
     - React
-  - RNCAsyncStorage (1.14.1):
+  - RNCAsyncStorage (1.15.6):
     - React-Core
   - RNGestureHandler (1.9.0):
     - React-Core
@@ -570,7 +570,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: a9a1ac6a60389c3c588fd9b9158a30ed4d8d28a4
   ReactCommon: c11b11a5dc8187826144b7b3d72125c77a1b7b1a
   ReactNativeART: 78edc68dd4a1e675338cd0cd113319cf3a65f2ab
-  RNCAsyncStorage: fe58eec522885718d6b297b7b658bf87d7ca557b
+  RNCAsyncStorage: b7c6564ce662366dd44d0189456183ef7eda2d4d
   RNGestureHandler: 9b7e605a741412e20e13c512738a31bd1611759b
   RNInAppBrowser: 48b95ba7a4eaff5cc223bca338d3e319561dbd1b
   RNLocalize: 7c7aeda16c01db7a0918981c14875c0a53be9b79

@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.14.1",
+    "@react-native-async-storage/async-storage": "^1.15.6",
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/toolbar-android": "0.1.0-rc.2",
     "library_card_module": "github:City-of-Kouvola/Library_card_module#feature/update_images_and_texts",
