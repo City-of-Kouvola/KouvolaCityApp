@@ -5955,10 +5955,10 @@
     "invariant" "^2.2.4"
     "opencollective-postinstall" "^2.0.2"
 
-"react-native-localize@^1.4.3":
-  "integrity" "sha512-n3pi89LBeSzB825CBagyaYRtBS93LdvNz3sI386iXwLSg1ONjEGR1Ez36JBuxZalZgORjrKzV2Pun6MO7iwD6w=="
-  "resolved" "https://registry.npmjs.org/react-native-localize/-/react-native-localize-1.4.3.tgz"
-  "version" "1.4.3"
+"react-native-localize@^2.1.1":
+  "integrity" "sha512-+uyz2/b0vyLq19fcb7r1qU1gqmzbp3aC6EMTvOVXwfBuiN+aJXR/fDdFOJJ8D7+bLccKeuS2zBDrazh+ZayX/g=="
+  "resolved" "https://registry.npmjs.org/react-native-localize/-/react-native-localize-2.1.1.tgz"
+  "version" "2.1.1"
 
 "react-native-ratings@8.0.4":
   "integrity" "sha512-Xczu5lskIIRD6BEdz9A0jDRpEck/SFxRqiglkXi0u67yAtI1/pcJC76P4MukCbT8K4BPVl+42w83YqXBoBRl7A=="
@@ -6042,7 +6042,7 @@
     "invariant" "2.2.4"
     "rnpm-plugin-windows" "^0.5.1-0"
 
-"react-native@*", "react-native@^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || 1000.0.0", "react-native@>=0.50.0", "react-native@>=0.56", "react-native@>=0.65.0-rc.0 || 0.0.0-*", "react-native@0.64.0", "react-native@0.65.0":
+"react-native@*", "react-native@^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || 1000.0.0", "react-native@>=0.50.0", "react-native@>=0.56", "react-native@>=0.60.0", "react-native@>=0.65.0-rc.0 || 0.0.0-*", "react-native@0.64.0", "react-native@0.65.0":
   "integrity" "sha512-swtTbgcz7477PFllfDPvJ6Mx7dm2L1t76wlxsfCEFszl/jqxtdCXHb1K7AXCJDRHaEWVDJxYsU6DUDjzDqfCqQ=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.65.0.tgz"
   "version" "0.65.0"
