@@ -19,7 +19,7 @@
     "react-native-barcode-builder": "^2.0.0",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^1.10.3",
-    "react-native-inappbrowser-reborn": "^3.5.1",
+    "react-native-inappbrowser-reborn": "^3.6.3",
     "react-native-localize": "^1.4.3",
     "react-native-reanimated": "^1.13.2",
     "react-native-render-html": "^5.1.1",

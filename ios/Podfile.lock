@@ -344,7 +344,7 @@ PODS:
     - React-Core
   - RNGestureHandler (1.10.3):
     - React-Core
-  - RNInAppBrowser (3.5.1):
+  - RNInAppBrowser (3.6.3):
     - React-Core
   - RNLocalize (1.4.3):
     - React-Core
@@ -578,7 +578,7 @@ SPEC CHECKSUMS:
   ReactNativeART: 78edc68dd4a1e675338cd0cd113319cf3a65f2ab
   RNCAsyncStorage: b7c6564ce662366dd44d0189456183ef7eda2d4d
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
-  RNInAppBrowser: 48b95ba7a4eaff5cc223bca338d3e319561dbd1b
+  RNInAppBrowser: 3ff3a3b8f458aaf25aaee879d057352862edf357
   RNLocalize: 7c7aeda16c01db7a0918981c14875c0a53be9b79
   RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
   RNScreens: 45c457af3d2ee9e08fc01e70da87e653d46b1198
