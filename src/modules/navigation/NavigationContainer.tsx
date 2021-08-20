@@ -12,15 +12,16 @@ import {
   NavigationDrawerOptions,
   NavigationDrawerConfig,
 } from 'react-navigation-drawer';
+
+import { BackHeader, MainHeader } from './components/Header';
 import NavigationContent from './components/NavigationContent';
+import { ArticleFull } from '../news/components';
 import HomeView from 'components/Home';
 import Redirect from 'components/Redirect';
-import { BackHeader, MainHeader } from './components/Header';
-import { walttiMobiili, trimble } from 'config/Redirectroutes';
-import { WebViewModule } from 'OpenCityKvlModules';
-import { LibraryCardModule } from 'library_card_module';
 import RedirectInAppBrowser from 'components/RedirectInAppBrowser';
-import { ArticleFull } from '../news/components';
+import { walttiMobiili, trimble } from 'config/Redirectroutes';
+import { LibraryCardModule } from 'library_card_module';
+import { WebViewModule } from 'OpenCityKvlModules';
 
 const Home = createStackNavigator({
   Home: {

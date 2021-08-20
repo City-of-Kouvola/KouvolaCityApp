@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, Linking, ActivityIndicator } from 'react-native';
 import { Button } from 'react-native-elements';
-import { NavigationEvents } from 'react-navigation';
 import InAppBrowser from 'react-native-inappbrowser-reborn';
+import { NavigationEvents } from 'react-navigation';
 
 interface Props {
   url: string;
@@ -36,8 +36,7 @@ const RedirectInAppBrowser = (props: Props): JSX.Element => {
   if (!isLoading) {
     return (
       <View style={{ flex: 1, alignItems: 'center' }}>
-        <NavigationEvents
-          onDidFocus={() => handleRedirect()}></NavigationEvents>
+        <NavigationEvents onDidFocus={handleRedirect}></NavigationEvents>
         <Text style={{ marginTop: 10 }}>Ohjataan sivustolle:</Text>
         <Button title={props.url} onPress={handleRedirect} type='clear' />
       </View>
@@ -45,8 +44,7 @@ const RedirectInAppBrowser = (props: Props): JSX.Element => {
   } else {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <NavigationEvents
-          onDidFocus={() => handleRedirect()}></NavigationEvents>
+        <NavigationEvents onDidFocus={handleRedirect}></NavigationEvents>
         <ActivityIndicator size='large' />
       </View>
     );
