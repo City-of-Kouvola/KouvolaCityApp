@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { Text, TouchableOpacity, View } from 'react-native';
 import HTML from 'react-native-render-html';
+
+import { titleTagStyles } from './htmlStyles';
 import { styles } from '../styles';
 import { NewsArticle } from '../Types';
-import { titleTagStyles } from './htmlStyles';
+import { ERouteName } from 'modules/navigation/typings';
 
 interface IProps {
   article: NewsArticle;
@@ -23,7 +24,7 @@ export const ArticleTitle = ({ article, navigation }: IProps) => {
   };
 
   const openDetailedView = () => {
-    navigation.navigate('Details', { article });
+    navigation.navigate(ERouteName.DETAILS, { article });
   };
 
   return (

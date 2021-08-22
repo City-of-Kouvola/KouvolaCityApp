@@ -14,7 +14,10 @@ export default StyleSheet.create({
       android: {
         height: Sizing.XXML * 1.1,
       },
-      ios: {},
+      ios: {
+        height: Sizing.XXML * 1.1,
+        padding: 0,
+      },
     }),
   },
   drawerHeader: {
@@ -63,7 +66,7 @@ export default StyleSheet.create({
     height: '100%',
   },
   iconStyle: {
-    padding: 10,
+    padding: Sizing.S,
     fontSize: 30,
   },
   webViewView: {
