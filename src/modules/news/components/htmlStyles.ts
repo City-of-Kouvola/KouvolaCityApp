@@ -1,6 +1,8 @@
+import { MixedStyleDeclaration } from 'react-native-render-html';
+
 const textFont = 'Roboto';
 
-export const titleTagStyles = {
+export const titleTagStyles: Readonly<Record<string, MixedStyleDeclaration>> = {
   h1: {
     fontFamily: textFont,
     fontSize: 24,
@@ -19,7 +21,9 @@ export const titleTagStyles = {
   },
 };
 
-export const fullArticleTagStyles = {
+export const fullArticleTagStyles: Readonly<
+  Record<string, MixedStyleDeclaration>
+> = {
   div: { fontFamily: textFont, padding: 15 },
   h1: { fontSize: 41, marginBottom: 32, color: '#212121', fontWeight: '500' },
   h2: { fontSize: 35, marginBottom: 16, color: '#212121', fontWeight: '500' },

@@ -25,7 +25,7 @@
     "react-native-inappbrowser-reborn": "^3.6.3",
     "react-native-localize": "^2.1.1",
     "react-native-reanimated": "^2.3.0-alpha.2",
-    "react-native-render-html": "^5.1.1",
+    "react-native-render-html": "^6.0.5",
     "react-native-safe-area-context": "^3.3.0",
     "react-native-screens": "^2.16.1",
     "react-native-splash-screen": "^3.2.0",

@@ -1,5 +1,10 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import {
+  Text,
+  TouchableOpacity,
+  useWindowDimensions,
+  View,
+} from 'react-native';
 import HTML from 'react-native-render-html';
 
 import { titleTagStyles } from './htmlStyles';
@@ -31,7 +36,11 @@ export const ArticleTitle = ({ article, navigation }: IProps) => {
     <TouchableOpacity onPress={() => openDetailedView()}>
       <View style={styles.newsTitleContainer}>
         <Text style={styles.releaseDate}>{formatReleaseDate()}</Text>
-        <HTML tagsStyles={titleTagStyles} source={{ html: htmlContent }} />
+        <HTML
+          contentWidth={useWindowDimensions().width}
+          tagsStyles={titleTagStyles}
+          source={{ html: htmlContent }}
+        />
       </View>
     </TouchableOpacity>
   );
