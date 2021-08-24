@@ -2,6 +2,7 @@ import { Platform, StyleProp, StyleSheet, ViewStyle } from 'react-native';
 
 import colors from 'config/colors';
 import Sizing from 'config/layout/sizing';
+import TextSize from 'config/layout/text';
 
 export default StyleSheet.create({
   header: {
@@ -42,7 +43,7 @@ export default StyleSheet.create({
   headerLabel: {
     color: colors.white,
     fontWeight: '300',
-    fontSize: 22,
+    fontSize: TextSize.S,
     width: '100%',
   },
   headerActiveLabel: {
