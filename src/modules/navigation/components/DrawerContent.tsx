@@ -12,6 +12,8 @@ import translationData from 'config/locales.json';
 
 const NAVIGATION_MAP = {
   [translationData.Labels.finnish.Navigation.Home]: ERouteName.HOME,
+  [translationData.Labels.finnish.Navigation.Librarycard]:
+    ERouteName.LIBRARY_CARD,
   [translationData.Labels.finnish.Navigation.RoutePlanners]:
     ERouteName.ROUTE_PLANNER,
   [translationData.Labels.finnish.Navigation.Visit]: ERouteName.VISIT_KVL,
@@ -22,8 +24,6 @@ const NAVIGATION_MAP = {
     ERouteName.WALTTI_MOBIILI_REDIRECT,
   [translationData.Labels.finnish.Navigation.Events]: ERouteName.EVENTS,
   [translationData.Labels.finnish.Navigation.Feedback]: ERouteName.FEEDBACK,
-  [translationData.Labels.finnish.Navigation.Librarycard]:
-    ERouteName.LIBRARY_CARD,
 } as const;
 
 type TGenerateOnItemPressHandlerParams = Pick<
