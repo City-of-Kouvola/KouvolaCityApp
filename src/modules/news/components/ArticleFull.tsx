@@ -1,16 +1,16 @@
 import React from 'react';
 import { ScrollView, useWindowDimensions } from 'react-native';
 import HTML from 'react-native-render-html';
-import { SafeAreaView } from 'react-navigation';
-import { NewsArticle } from '../Types';
+
 import { fullArticleTagStyles } from './htmlStyles';
+import { NewsArticle } from '../Types';
 
 interface IProps {
-  navigation: any;
+  route: any;
 }
 
-export const ArticleFull = ({ navigation }: IProps) => {
-  const fullArticle: NewsArticle = navigation.state.params.article;
+export const ArticleFull = ({ route }: IProps) => {
+  const fullArticle = route.params.article;
   const htmlContent = `
   <div>
   <h1>${fullArticle.title.rendered}</h1>
@@ -19,14 +19,12 @@ export const ArticleFull = ({ navigation }: IProps) => {
   </div>`;
 
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <HTML
-          tagsStyles={fullArticleTagStyles}
-          source={{ html: htmlContent }}
-          contentWidth={useWindowDimensions().width}
-        />
-      </ScrollView>
-    </SafeAreaView>
+    <ScrollView>
+      <HTML
+        tagsStyles={fullArticleTagStyles}
+        source={{ html: htmlContent }}
+        contentWidth={useWindowDimensions().width}
+      />
+    </ScrollView>
   );
 };
