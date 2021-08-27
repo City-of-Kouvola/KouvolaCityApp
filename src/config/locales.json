@@ -7,17 +7,26 @@
         "Visit": "VisitKouvola.fi",
         "Enquiries": "Enquiries",
         "Events": "Events",
-        "Feedback": "App feedback",
+        "Librarycard": "Libary card",
         "Back": "Return"
       },
       "ExternalApps": {
-        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "KouvolaJoukkoliikenne": "Waltti Mobiili",
         "TrimbleFeedBack": "City Feedback"
       },
       "Permissions": {
         "Title": "Location Services",
         "Message": "We would like to request permissions to use location services",
         "Accept": "okay"
+      },
+      "Screens": {
+        "Home": {
+          "CurrentNews": "Current News",
+          "LoadMore": "Load more current news"
+        }
+      },
+      "ErrorMessages": {
+        "ErrorLoadingNews": "Error loading current news"
       }
     },
     "finnish": {
@@ -28,16 +37,26 @@
         "Enquiries": "Kyselyt",
         "Events": "Tapahtumat",
         "Feedback": "Palaute sovelluksesta",
+        "Librarycard": "Kirjastokortti",
         "Back": "Palaa"
       },
       "ExternalApps": {
-        "KouvolaJoukkoliikenne": "Mobiililippu",
+        "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili",
         "TrimbleFeedBack": "Palaute kaupungille"
       },
       "Permissions": {
         "Title": "Sijaintipalvelut",
         "Message": "Haluaisimme luvan käyttää sijaintipalveluja",
         "Accept": "Selvä"
+      },
+      "Screens": {
+        "Home": {
+          "CurrentNews": "Ajankohtaista",
+          "LoadMore": "Lisää ajankohtaisia"
+        }
+      },
+      "ErrorMessages": {
+        "ErrorLoadingNews": "Virhe ladattaessa ajakohtaisia uutisia"
       }
     }
   },
@@ -56,7 +75,7 @@
         "Back": "Go back"
       },
       "ExternalApps": {
-        "Kouvola": "Open Kouvola mobiililippu",
+        "Kouvola": "Open Waltti Mobiili",
         "TrimbleFeedBack": "Open Trimble Feedback for city feedback"
       },
       "Permissions": {
@@ -79,7 +98,7 @@
         "Back": "Mene takaisin"
       },
       "ExternalApps": {
-        "Kouvola": "Avaa Kouvola mobiililippu",
+        "Kouvola": "Avaa Waltti Mobiili",
         "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle"
       },
       "Permissions": {

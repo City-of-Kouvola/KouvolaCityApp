@@ -1,8 +1,16 @@
 import React from 'react';
-import trasparentbg from '../assets/img/kouvolatransparentImage.jpg';
-import { View, Text, StyleSheet, ScrollView, Image, Dimensions } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Image,
+  Dimensions,
+} from 'react-native';
+import { NewsContainer } from '../modules/news/NewsContainer';
+const trasparentbg = require('../assets/img/keltamusta_laiturillaB.jpg');
 
-const Home = (): JSX.Element => {
+const Home = ({ navigation }: any): JSX.Element => {
   return (
     <ScrollView style={styles.container}>
       <Image
@@ -10,28 +18,14 @@ const Home = (): JSX.Element => {
         resizeMode='contain'
         style={styles.transbg}
       />
-      <Text style={styles.text}>
-        Kouvolassa asuu Suomen onnellisimmat naapurit (Asuntomessubarometrin
-        mukaan). Meillä on elävä maaseutu ja rentoa pikkukaupungin sykettä.
-        Kymijoki halkoo maaseutua järvineen. Raiteet ja tiet kuljettavat
-        näppärästi minne tarvitsee.
-      </Text>
-      <Text style={styles.text}>
-        Kouvolassa tapahtuu paljon ja asioita tehdään tunteella: musiikkia,
-        teatteria, taiteita, urheilua ja yrittäjyyttä. Mukavan kokoisessa
-        kaupungissamme kaikki palvelut ja harrastukset ovat sopivan lähellä.
-      </Text>
-      <Text style={styles.text}>
-        Kouvolalaisten leppoisa ja mutkaton elämäntyyli tarttuu helposti ja
-        ihmiset täällä ovat oikein mukavaa porukkaa.
-      </Text>
+      <NewsContainer {...{ navigation }} />
     </ScrollView>
   );
 };
 
 const dimensions = Dimensions.get('window');
-const imageHeight = Math.round(dimensions.width * 14 / 16);
-const imageTopMargin = -Math.round(dimensions.width * 2.5 / 16);
+const imageHeight = Math.round((dimensions.width * 6) / 16);
+const imageTopMargin = -Math.round((dimensions.width * 0.1) / 16);
 const imageWidth = dimensions.width;
 
 const styles = StyleSheet.create({
@@ -46,9 +40,9 @@ const styles = StyleSheet.create({
   },
   transbg: {
     width: imageWidth,
-    height: imageHeight,
-    marginBottom: 25,
+    maxHeight: imageHeight,
     marginTop: imageTopMargin,
+    marginBottom: 25,
   },
   text: { fontSize: 17, marginBottom: 10, paddingLeft: 15, paddingRight: 15 },
 });
