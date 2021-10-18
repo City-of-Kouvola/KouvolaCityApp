@@ -30,6 +30,7 @@
 		CAEC0A38D9D54032B95576FD /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C30012FA841858CD81192 /* Roboto-Regular.ttf */; };
 		D60E0B81C94D450D8EA7A68F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55780EC5DD6E41BBA5DC20CD /* Roboto-Black.ttf */; };
 		E1F7F00BB0A142348BD4938F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7CDF845A05E441981E89BFD /* Roboto-Medium.ttf */; };
+		EB1EADE026E8A99E00390F2C /* Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1EADDF26E8A99E00390F2C /* Void.swift */; };
 		F936FA288C280FFEB409E55D /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CFE1CC093B1DE8374680B0 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */; };
 		F9ADBE325377451E83DC660A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E78A240264D449F4832D5F74 /* Roboto-Light.ttf */; };
 		FB2FD4EDFC2640029A3342C4 /* GT-Pressura-Mono-LC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01D607F15BA84B388D4BBD2D /* GT-Pressura-Mono-LC-Bold.ttf */; };
@@ -80,6 +81,8 @@
 		E5714EFD942B0C17DD6E4CC6 /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E78A240264D449F4832D5F74 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		E7CDF845A05E441981E89BFD /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		EB1EADDE26E8A99D00390F2C /* KouvolaCityApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KouvolaCityApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB1EADDF26E8A99E00390F2C /* Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Void.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F4ACE89409564504804975D5 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		F5FB0C254B4E4C6980C05FE8 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../src/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -188,6 +191,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				EB1EADDF26E8A99E00390F2C /* Void.swift */,
 				13B07FAE1A68108700A75B9A /* KouvolaCityApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* KouvolaCityAppTests */,
@@ -196,6 +200,7 @@
 				A48ABD93B3CAAA479E64B770 /* Pods */,
 				2261172A26035D16005F440F /* Recovered References */,
 				673AE32F243B4B59AD19F0A8 /* Resources */,
+				EB1EADDE26E8A99D00390F2C /* KouvolaCityApp-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -233,8 +238,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				AF6B1D38DDFB4EE713B83D3B /* [CP] Embed Pods Frameworks */,
 				57EDF06FE73C78BBCD5EB85B /* [CP] Copy Pods Resources */,
+				A9AA1EF8BB10C145B4DF5E06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,8 +261,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				705CCC4AA3FEA4C41B79A73D /* [CP] Embed Pods Frameworks */,
 				CA95C18B5DC8D1DC80DB458F /* [CP] Copy Pods Resources */,
+				D0D760AE1D9C4FD7F266C313 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,7 +287,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -398,24 +403,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		705CCC4AA3FEA4C41B79A73D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF6B1D38DDFB4EE713B83D3B /* [CP] Embed Pods Frameworks */ = {
+		A9AA1EF8BB10C145B4DF5E06 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,6 +459,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D0D760AE1D9C4FD7F266C313 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,6 +512,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				EB1EADE026E8A99E00390F2C /* Void.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D81A7A027E6E48587AC0EB3 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -565,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5714EFD942B0C17DD6E4CC6 /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
@@ -592,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
@@ -600,7 +608,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7.4;
+				MARKETING_VERSION = 1.7.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -608,6 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
 				PRODUCT_NAME = "Kouvola Mobiilissa";
+				SWIFT_OBJC_BRIDGING_HEADER = "KouvolaCityApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -620,14 +629,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7.4;
+				MARKETING_VERSION = 1.7.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -635,6 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
 				PRODUCT_NAME = "Kouvola Mobiilissa";
+				SWIFT_OBJC_BRIDGING_HEADER = "KouvolaCityApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

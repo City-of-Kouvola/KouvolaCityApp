@@ -24,7 +24,9 @@ export const ArticleTitle = ({ article, navigation }: IProps) => {
 
   const formatReleaseDate = () => {
     const dateObj = new Date(article.date);
-    const releaseDate = `${dateObj.getDate()}.${dateObj.getMonth()}.${dateObj.getFullYear()}`;
+    const releaseDate = `${dateObj.getDate()}.${
+      dateObj.getMonth() + 1
+    }.${dateObj.getFullYear()}`;
     return releaseDate;
   };
 
@@ -33,7 +35,7 @@ export const ArticleTitle = ({ article, navigation }: IProps) => {
   };
 
   return (
-    <TouchableOpacity onPress={() => openDetailedView()}>
+    <TouchableOpacity onPress={openDetailedView}>
       <View style={styles.newsTitleContainer}>
         <Text style={styles.releaseDate}>{formatReleaseDate()}</Text>
         <HTML
