@@ -4716,8 +4716,8 @@
     "prelude-ls" "~1.1.2"
     "type-check" "~0.3.2"
 
-"library_card_module@github:City-of-Kouvola/Library_card_module#feature/update_images_and_texts":
-  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#3a8e6ffa877b43e63addbfa5fd6943248a53733c"
+"library_card_module@github:City-of-Kouvola/Library_card_module":
+  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#6afb27eb814b1ca290d8626224d750ed0b37a29e"
   "version" "0.0.3"
   dependencies:
     "@react-native-async-storage/async-storage" "^1.14.1"
