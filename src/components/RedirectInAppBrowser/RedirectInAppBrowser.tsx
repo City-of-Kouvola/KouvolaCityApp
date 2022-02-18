@@ -31,7 +31,7 @@ const RedirectInAppBrowser = ({
         <ActivityIndicator size='large' />
       ) : (
         <>
-          <Text style={{ marginTop: 10 }}>Ohjataan sivustolle:</Text>
+          <Text style={{ marginTop: 10 }} accessibilityRole={'text'}>Ohjataan sivustolle:</Text>
           <Button
             title={url}
             onPress={generateOnBtnPressHandler({
@@ -39,6 +39,7 @@ const RedirectInAppBrowser = ({
               setIsLoading,
               url,
             })}
+            accessibilityRole={'link'}
             type='clear'
           />
         </>

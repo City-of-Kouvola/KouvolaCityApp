@@ -42,7 +42,7 @@ export const NewsContainer = ({ navigation }: any) => {
 
   return (
     <View style={styles.newsContainer}>
-      <Text style={styles.headerText}>
+      <Text style={styles.headerText} accessibilityRole={'text'}>
         {translationData.Labels.finnish.Screens.Home.CurrentNews}
       </Text>
       {renderNewsArticles}
@@ -56,12 +56,13 @@ export const NewsContainer = ({ navigation }: any) => {
         <>
           {errorMessage !== '' && (
             <View style={styles.errorContainer}>
-              <Text style={styles.errorMessage}>{errorMessage}</Text>
+              <Text style={styles.errorMessage} accessibilityRole={'text'}>{errorMessage}</Text>
             </View>
           )}
           <TouchableOpacity
             style={styles.fetchMoreButton}
-            onPress={requestData}>
+            onPress={requestData}
+            accessibilityRole={'button'}>
             <Text style={styles.buttonText}>
               {translationData.Labels.finnish.Screens.Home.LoadMore}
             </Text>

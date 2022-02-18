@@ -19,6 +19,7 @@ const BackHeader = (props: StackHeaderProps): JSX.Element => {
         accessible: true,
         accessibilityLabel:
           translationData.Accessibility.finnish.Navigation.GoBack,
+        accessibilityRole:'button',
         icon: 'arrow-back',
         iconStyle: styles.iconStyle,
         underlayColor: '#000',

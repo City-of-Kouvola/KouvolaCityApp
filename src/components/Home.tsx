@@ -14,6 +14,7 @@ const Home = ({ navigation }: any): JSX.Element => {
   return (
     <ScrollView style={styles.container}>
       <Image
+        accessibilityRole={'image'}
         source={trasparentbg}
         resizeMode='contain'
         style={styles.transbg}

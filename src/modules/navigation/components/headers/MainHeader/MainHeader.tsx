@@ -19,6 +19,7 @@ const MainHeader = (props: TMainHeaderProps): JSX.Element => {
         accessible: true,
         accessibilityLabel:
           translationData.Accessibility.finnish.Navigation.OpenMenu,
+        accessibilityRole:'button',
         icon: 'menu',
         iconStyle: styles.iconStyle,
         underlayColor: '#000',

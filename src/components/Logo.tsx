@@ -13,6 +13,7 @@ const Logo = () => (
   <Image
     source={require('assets/img/KouvolaWhiteLogo.png')}
     resizeMode='contain'
+    accessibilityRole={'image'}
     style={styles.headerLogo}
   />
 );

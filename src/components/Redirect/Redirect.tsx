@@ -25,7 +25,7 @@ const Redirect = ({
 
   return (
     <View style={{ flex: 1, alignItems: 'center' }}>
-      <Text style={{ marginTop: 10 }}>
+      <Text style={{ marginTop: 10 }} accessibilityRole={'text'}>
         Ohjataan sovellukseen: {applicationName}
       </Text>
       <Button
@@ -35,6 +35,7 @@ const Redirect = ({
           iosStoreUrl,
           launchUrl,
         })}
+        accessibilityRole={'link'}
         type='clear'
       />
     </View>

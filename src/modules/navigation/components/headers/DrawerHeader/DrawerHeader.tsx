@@ -20,6 +20,7 @@ const DrawerHeader = (props: DrawerContentComponentProps): JSX.Element => {
         accessibilityLabel:
           translationData.Accessibility.finnish.Navigation.CloseMenu,
         icon: 'close',
+        accessibilityRole:'button',
         iconStyle: styles.iconStyle,
         underlayColor: '#000',
         color: colors.white,

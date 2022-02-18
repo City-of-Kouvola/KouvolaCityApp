@@ -37,7 +37,7 @@ export const ArticleTitle = ({ article, navigation }: IProps) => {
   return (
     <TouchableOpacity onPress={openDetailedView}>
       <View style={styles.newsTitleContainer}>
-        <Text style={styles.releaseDate}>{formatReleaseDate()}</Text>
+        <Text style={styles.releaseDate} accessibilityRole={'text'}>{formatReleaseDate()}</Text>
         <HTML
           contentWidth={useWindowDimensions().width}
           tagsStyles={titleTagStyles}

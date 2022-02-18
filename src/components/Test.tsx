@@ -13,7 +13,7 @@ const Test = (props: Props): JSX.Element => {
   }, []);
   return (
     <View>
-      <Text>{`Test ${name}`}</Text>
+      <Text accessibilityRole={'text'}>{`Test ${name}`}</Text>
     </View>
   );
 };
