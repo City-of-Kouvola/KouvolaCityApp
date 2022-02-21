@@ -1,9 +1,6 @@
 import React from 'react';
-import { View, ScrollView } from 'react-native';
-import {
-  DrawerContentComponentProps,
-  DrawerItem,
-} from '@react-navigation/drawer';
+import { View, ScrollView, Text } from 'react-native';
+import { DrawerContentComponentProps } from '@react-navigation/drawer';
 
 import DrawerHeader from './headers/DrawerHeader';
 import styles from './headers/styles';
@@ -33,13 +30,12 @@ type TGenerateOnItemPressHandlerParams = Pick<
   route: ERouteName;
 };
 
-const generateOnItemPressHandler = ({
-  navigation,
-  route,
-}: TGenerateOnItemPressHandlerParams) => () => {
-  navigation.closeDrawer();
-  navigation.navigate(route);
-};
+const generateOnItemPressHandler =
+  ({ navigation, route }: TGenerateOnItemPressHandlerParams) =>
+  () => {
+    navigation.closeDrawer();
+    navigation.navigate(route);
+  };
 
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
   return (
@@ -47,19 +43,21 @@ const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
       <DrawerHeader {...props} />
       <ScrollView>
         {Object.entries(NAVIGATION_MAP).map(([key, value]) => (
-          <DrawerItem
-            key={`drawer-item-${key}`}
-            label={key}
-            labelStyle={styles.headerLabel}
-            style={styles.headerItem}
-            activeBackgroundColor={'#212121'}
-            // activeLabelStyle={styles.headerActiveLabel}
-            {...props}
-            onPress={generateOnItemPressHandler({
-              navigation: props.navigation,
-              route: value,
-            })}
-          />
+          <View key={key}>
+            <Text
+              numberOfLines={2}
+              style={[styles.headerLabel]}
+              accessibilityLabel={key}
+              accessibilityHint={'button'}
+              {...props}
+              onPress={generateOnItemPressHandler({
+                navigation: props.navigation,
+                route: value,
+              })}>
+              {key}
+            </Text>
+            <View style={styles.divider} />
+          </View>
         ))}
       </ScrollView>
     </View>
