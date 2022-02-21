@@ -45,7 +45,6 @@ export default StyleSheet.create({
     fontWeight: '300',
     fontSize: TextSize.S,
     width: '100%',
-    padding: 20,
   },
   headerActiveLabel: {
     ...Platform.select({
@@ -61,15 +60,17 @@ export default StyleSheet.create({
     width: '100%',
     height: '100%',
   },
+  headerItem: {
+    borderBottomWidth: 1,
+    borderBottomColor: colors.white,
+    width: '90%',
+    alignSelf: 'center',
+  },
   iconStyle: {
     padding: Sizing.S,
     fontSize: 30,
   },
   webViewView: {
     flex: 1,
-  },
-  divider: {
-    borderBottomColor: 'white',
-    borderBottomWidth: 1,
   },
 });

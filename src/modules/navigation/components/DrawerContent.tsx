@@ -1,6 +1,10 @@
 import React from 'react';
-import { View, ScrollView, Text } from 'react-native';
-import { DrawerContentComponentProps } from '@react-navigation/drawer';
+import { View, Text } from 'react-native';
+import {
+  DrawerContentComponentProps,
+  DrawerContentScrollView,
+  DrawerItem,
+} from '@react-navigation/drawer';
 
 import DrawerHeader from './headers/DrawerHeader';
 import styles from './headers/styles';
@@ -9,16 +13,12 @@ import translationData from 'config/locales.json';
 
 const NAVIGATION_MAP = {
   [translationData.Labels.finnish.Navigation.Home]: ERouteName.HOME,
-  [translationData.Labels.finnish.Navigation.Librarycard]:
-    ERouteName.LIBRARY_CARD,
-  [translationData.Labels.finnish.Navigation.RoutePlanners]:
-    ERouteName.ROUTE_PLANNER,
+  [translationData.Labels.finnish.Navigation.Librarycard]: ERouteName.LIBRARY_CARD,
+  [translationData.Labels.finnish.Navigation.RoutePlanners]: ERouteName.ROUTE_PLANNER,
   [translationData.Labels.finnish.Navigation.Visit]: ERouteName.VISIT_KVL,
   [translationData.Labels.finnish.Navigation.Enquiries]: ERouteName.ENQUIRY,
-  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]:
-    ERouteName.TRIMBLE_FEEDBACK_REDIRECT,
-  [translationData.Labels.finnish.ExternalApps.KouvolaJoukkoliikenne]:
-    ERouteName.WALTTI_MOBIILI_REDIRECT,
+  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]: ERouteName.TRIMBLE_FEEDBACK_REDIRECT,
+  [translationData.Labels.finnish.ExternalApps.KouvolaJoukkoliikenne]: ERouteName.WALTTI_MOBIILI_REDIRECT,
   [translationData.Labels.finnish.Navigation.Events]: ERouteName.EVENTS,
   [translationData.Labels.finnish.Navigation.Feedback]: ERouteName.FEEDBACK,
 } as const;
@@ -37,29 +37,28 @@ const generateOnItemPressHandler =
     navigation.navigate(route);
   };
 
+const returnText = (label: String): JSX.Element => {
+  return <Text style={styles.headerLabel}>{label}</Text>;
+};
+
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
   return (
     <View style={styles.headerMenu}>
       <DrawerHeader {...props} />
-      <ScrollView>
+      <DrawerContentScrollView>
         {Object.entries(NAVIGATION_MAP).map(([key, value]) => (
-          <View key={key}>
-            <Text
-              numberOfLines={2}
-              style={[styles.headerLabel]}
-              accessibilityLabel={key}
-              accessibilityHint={'button'}
-              {...props}
-              onPress={generateOnItemPressHandler({
-                navigation: props.navigation,
-                route: value,
-              })}>
-              {key}
-            </Text>
-            <View style={styles.divider} />
-          </View>
+          <DrawerItem
+            key={`drawer-item-${key}`}
+            label={() => returnText(key)}
+            style={styles.headerItem}
+            activeBackgroundColor={'#212121'}
+            onPress={generateOnItemPressHandler({
+              navigation: props.navigation,
+              route: value,
+            })}
+          />
         ))}
-      </ScrollView>
+      </DrawerContentScrollView>
     </View>
   );
 };
