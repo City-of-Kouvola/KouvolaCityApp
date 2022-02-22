@@ -56,15 +56,15 @@ export default StyleSheet.create({
       },
     }),
   },
+  headerLogo: {
+    width: '100%',
+    height: '100%',
+  },
   headerItem: {
     borderBottomWidth: 1,
     borderBottomColor: colors.white,
     width: '90%',
     alignSelf: 'center',
-  },
-  headerLogo: {
-    width: '100%',
-    height: '100%',
   },
   iconStyle: {
     padding: Sizing.S,
