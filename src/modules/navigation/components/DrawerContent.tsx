@@ -37,8 +37,8 @@ const generateOnItemPressHandler =
     navigation.navigate(route);
   };
 
-const returnText = (label: String): JSX.Element => {
-  return <Text style={styles.headerLabel}>{label}</Text>;
+const generateItemLabels = (labelText: String): JSX.Element => {
+  return <Text style={styles.headerLabel}>{labelText}</Text>;
 };
 
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
@@ -49,7 +49,7 @@ const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
         {Object.entries(NAVIGATION_MAP).map(([key, value]) => (
           <DrawerItem
             key={`drawer-item-${key}`}
-            label={() => returnText(key)}
+            label={() => generateItemLabels(key)}
             style={styles.headerItem}
             activeBackgroundColor={'#212121'}
             onPress={generateOnItemPressHandler({
