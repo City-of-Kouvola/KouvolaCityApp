@@ -51,6 +51,7 @@ const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
             key={`drawer-item-${key}`}
             label={() => generateItemLabels(key)}
             style={styles.headerItem}
+            pressColor={'black'}
             activeBackgroundColor={'#212121'}
             onPress={generateOnItemPressHandler({
               navigation: props.navigation,
