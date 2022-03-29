@@ -30,11 +30,11 @@ export const fullArticleTagStyles: Readonly<
   h3: { fontSize: 35, color: '#212121', fontWeight: '500' },
   p: {
     fontSize: 18,
-    marginBottom: '5%',
+    marginBottom: 18 * 2,
     color: '#212121',
     lineHeight: 18 * 1.5,
   },
-  a: { fontSize: 18, marginBottom: '5%', color: '#008629' },
+  a: { fontSize: 18, marginBottom: 18 * 2, color: '#008629' },
   figure: { marginBottom: 18 },
   figcaption: { fontSize: 16, color: '#555d66' },
 };
