@@ -32,10 +32,11 @@ static void InitializeFlipper(UIApplication *application) {
   InitializeFlipper(application);
 #endif
 
+  RCTAppSetupPrepareApp(application);
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-                                                   moduleName:@"KouvolaCityApp"
-                                            initialProperties:nil];
+
+  NSDictionary * initProps = [self prepareInitialProps];
+  UIView * rootView = RCTAppSetupDefaultRootView(bridge, @"RnDiffApp", initProps);
 
 if (@available(iOS 13.0, *)) {
       rootView.backgroundColor = [UIColor systemBackgroundColor];
@@ -50,6 +51,16 @@ if (@available(iOS 13.0, *)) {
   [self.window makeKeyAndVisible];
   [RNSplashScreen show];
   return YES;
+}
+
+- (BOOL)concurrentRootEnabled {
+  return false;
+}
+
+- (NSDictionary *)prepareInitialProps {
+  NSMutableDictionary *initProps = [NSMutableDictionary new];
+
+  return initProps;
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
