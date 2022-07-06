@@ -1362,7 +1362,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-"@react-native-async-storage/async-storage@^1.14.1", "@react-native-async-storage/async-storage@^1.15.6":
+"@react-native-async-storage/async-storage@^1.15.17", "@react-native-async-storage/async-storage@^1.15.6":
   "integrity" "sha512-mDtWhCcpxzrZhA95f6zi0pnBsjBEZW1LKZWfxVXG0UfaWpPxDBCKowNk2xjRTytckZeVhjmPJPtBU+8QNQcR0A=="
   "resolved" "https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-1.17.7.tgz"
   "version" "1.17.7"
@@ -3702,6 +3702,11 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
+"fsevents@^2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
+
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -5035,13 +5040,13 @@
     "type-check" "~0.3.2"
 
 "library_card_module@github:City-of-Kouvola/Library_card_module":
-  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#c264c9b66a1edd1e8e95039e6a0e2eb943be9223"
-  "version" "0.0.4"
+  "resolved" "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#a55071950105673f9b830b57d0bbcc63babc3bb8"
+  "version" "0.0.5"
   dependencies:
-    "@react-native-async-storage/async-storage" "^1.14.1"
+    "@react-native-async-storage/async-storage" "^1.15.17"
     "@react-native-community/art" "^1.2.0"
     "react-native-barcode-builder" "^2.0.0"
-    "react-native-svg" "^12.1.0"
+    "react-native-svg" "^12.1.1"
 
 "locate-path@^3.0.0":
   "integrity" "sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A=="
@@ -6327,7 +6332,7 @@
   "resolved" "https://registry.npmjs.org/react-native-splash-screen/-/react-native-splash-screen-3.3.0.tgz"
   "version" "3.3.0"
 
-"react-native-svg@^12.1.0":
+"react-native-svg@^12.1.0", "react-native-svg@^12.1.1":
   "integrity" "sha512-ESG1g1j7/WLD7X3XRFTQHVv0r6DpbHNNcdusngAODIxG88wpTWUZkhcM3A2HJTb+BbXTFDamHv7FwtRKWQ/ALg=="
   "resolved" "https://registry.npmjs.org/react-native-svg/-/react-native-svg-12.3.0.tgz"
   "version" "12.3.0"
@@ -6351,7 +6356,7 @@
     "escape-string-regexp" "2.0.0"
     "invariant" "2.2.4"
 
-"react-native@*", "react-native@^*", "react-native@^0.0.0-0 || 0.60 - 0.69 || 1000.0.0", "react-native@^0.62.0", "react-native@>=0.40.0", "react-native@>=0.50.0", "react-native@>=0.56", "react-native@>=0.57.0", "react-native@>=0.60.0", "react-native@>=0.61.4", "react-native@0.65.0", "react-native@0.69.1":
+"react-native@*", "react-native@^*", "react-native@^0.0.0-0 || 0.60 - 0.69 || 1000.0.0", "react-native@^0.62.0", "react-native@>=0.40.0", "react-native@>=0.50.0", "react-native@>=0.56", "react-native@>=0.57.0", "react-native@>=0.60.0", "react-native@>=0.61.4", "react-native@>=0.67.1", "react-native@0.69.1":
   "integrity" "sha512-585NmzSuYUfday8YsfqgreFAZbXRI/kxKsiuaShwGHgkwdtmE5qA7WfGItgxZBOZD6g/Hm1YBUqSwIm07tPa6A=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.69.1.tgz"
   "version" "0.69.1"
@@ -6413,7 +6418,7 @@
     "react-shallow-renderer" "^16.13.1"
     "scheduler" "^0.20.1"
 
-"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0", "react@>=16.8.6", "react@>=16.9.0", "react@17.0.1", "react@17.0.2", "react@18.0.0":
+"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0", "react@>=16.8.6", "react@>=16.9.0", "react@>=17.0.2", "react@17.0.1", "react@18.0.0":
   "integrity" "sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.0.0.tgz"
   "version" "18.0.0"
