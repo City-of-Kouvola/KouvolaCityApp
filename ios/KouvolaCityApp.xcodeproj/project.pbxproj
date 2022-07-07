@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* KouvolaCityAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KouvolaCityAppTests.m */; };
 		0B326EAA2CE746CD96D4D537 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E54DE7FBBA54A2DBF584AFD /* Roboto-Thin.ttf */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		22BB00F22B7E4B98AC1F3999 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB5E7CCF9B8400DAB00CF08 /* Roboto-BoldItalic.ttf */; };
 		22FBA24D24FE694D00E658CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA24F24FE694D00E658CB /* InfoPlist.strings */; };
 		2938F81038D54A2CB362751B /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A56131927B4354A5FE61A7 /* Arial.ttf */; };
+		43EF065A2875B6230072B091 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43EF06592875B6230072B091 /* AppDelegate.mm */; };
 		45CF69908DF5416DA3CF6883 /* GT-Pressura-Mono-LC-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08B46D05A18B436E90FF7C08 /* GT-Pressura-Mono-LC-Bold.otf */; };
 		47385F99C845D34C38D73E51 /* libPods-KouvolaCityApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAF80E92F4C71F222446F3F /* libPods-KouvolaCityApp.a */; };
 		4CC01863D6604DE089E4DE5E /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4ACE89409564504804975D5 /* Roboto-Italic.ttf */; };
@@ -63,6 +63,7 @@
 		22FBA24E24FE694D00E658CB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22FBA25024FE694F00E658CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D6C30012FA841858CD81192 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		43EF06592875B6230072B091 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = KouvolaCityApp/AppDelegate.mm; sourceTree = "<group>"; };
 		55780EC5DD6E41BBA5DC20CD /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5D81A7A027E6E48587AC0EB3 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E54DE7FBBA54A2DBF584AFD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				43EF06592875B6230072B091 /* AppDelegate.mm */,
 				EB1EADDF26E8A99E00390F2C /* Void.swift */,
 				13B07FAE1A68108700A75B9A /* KouvolaCityApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -510,7 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				43EF065A2875B6230072B091 /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				EB1EADE026E8A99E00390F2C /* Void.swift in Sources */,
 			);
@@ -683,7 +685,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -705,12 +707,13 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -748,7 +751,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -763,11 +766,12 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
