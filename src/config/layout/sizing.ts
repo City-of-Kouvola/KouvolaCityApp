@@ -21,7 +21,6 @@ const XXXL = XXL * MULTIPLIER;
 const breakingDimensions = 1.917;
 const higherHeader =
   ScreenHeight / ScreenWidth < breakingDimensions && ScreenWidth < 410;
-console.log(ScreenHeight / ScreenWidth, higherHeader, ScreenWidth);
 const IP = higherHeader ? 0 : S;
 export const headerHeight = higherHeader ? XXML * 1.2 : XXML * 1.1;
 
