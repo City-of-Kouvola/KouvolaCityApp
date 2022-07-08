@@ -18,8 +18,9 @@ const XXL = XL * MULTIPLIER;
 const XXXL = XXL * MULTIPLIER;
 
 // Header Icon visibility for smaller screen widths
-const breakPoint = 395;
-const higherHeader = ScreenWidth <= breakPoint;
+const breakingDimensions = 1.917;
+const higherHeader =
+  ScreenHeight / ScreenWidth < breakingDimensions && ScreenWidth < 410;
 const IP = higherHeader ? 0 : S;
 export const headerHeight = higherHeader ? XXML * 1.2 : XXML * 1.1;
 
