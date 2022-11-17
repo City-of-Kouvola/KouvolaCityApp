@@ -1,7 +1,5 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {
-  View,
-  Text,
   StyleSheet,
   ScrollView,
   Image,
@@ -11,14 +9,22 @@ import { NewsContainer } from '../modules/news/NewsContainer';
 const trasparentbg = require('../assets/img/keltamusta_laiturillaB.jpg');
 
 const Home = ({ navigation }: any): JSX.Element => {
+  
+  const returnToTop = () => {
+    scrollViewRef.current?.scrollTo({
+      y: imageHeight,      
+    })
+  }
+  const scrollViewRef = useRef<ScrollView>(null)
+  
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container}  ref={scrollViewRef}>
       <Image
         source={trasparentbg}
         resizeMode='contain'
         style={styles.transbg}
       />
-      <NewsContainer {...{ navigation }} />
+      <NewsContainer navigation={{...navigation}} returnToTop={returnToTop}/>
     </ScrollView>
   );
 };

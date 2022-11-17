@@ -22,11 +22,17 @@
       "Screens": {
         "Home": {
           "CurrentNews": "Current News",
-          "LoadMore": "Load more current news"
+          "LoadMore": "Load more current news",
+          "ChooseCategory": "CHOOSE CATEGORY",
+          "Close": "CLOSE",
+          "ShowMore": "Show more",
+          "ShowLess": "Show less"
         }
       },
       "ErrorMessages": {
-        "ErrorLoadingNews": "Error loading current news"
+        "ErrorLoadingNews": "Error loading current news",
+        "NoneSelected": "No categories selected",
+        "ErrorLoadingCategories": "Error loading categories"
       }
     },
     "finnish": {
@@ -51,12 +57,18 @@
       },
       "Screens": {
         "Home": {
-          "CurrentNews": "Ajankohtaista",
-          "LoadMore": "Lisää ajankohtaisia"
+          "Categories": {},
+          "LoadMore": "Lisää uutisia",
+          "ChooseCategory": "VALITSE TYYPPI",
+          "Close": "SULJE",
+          "ShowMore": "Näytä lisää",
+          "ShowLess": "Näytä vähemmän"
         }
       },
       "ErrorMessages": {
-        "ErrorLoadingNews": "Virhe ladattaessa ajakohtaisia uutisia"
+        "ErrorLoadingNews": "Virhe ladattaessa uutisia",
+        "NoneSelected": "Ei valittuja",
+        "ErrorLoadingCategories": "Virhe ladattaessa kategorioita"
       }
     }
   },
