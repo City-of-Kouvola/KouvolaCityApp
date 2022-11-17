@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import {
   StyleSheet,
   ScrollView,
@@ -9,6 +9,8 @@ import { NewsContainer } from '../modules/news/NewsContainer';
 const trasparentbg = require('../assets/img/keltamusta_laiturillaB.jpg');
 
 const Home = ({ navigation }: any): JSX.Element => {
+
+  const [isScrolling, setIsScrolling] = useState(false)
   
   const returnToTop = () => {
     scrollViewRef.current?.scrollTo({
@@ -18,13 +20,22 @@ const Home = ({ navigation }: any): JSX.Element => {
   const scrollViewRef = useRef<ScrollView>(null)
   
   return (
-    <ScrollView style={styles.container}  ref={scrollViewRef}>
+    <ScrollView 
+      style={styles.container} 
+      ref={scrollViewRef} 
+      onScrollBeginDrag={() => {
+        if (!isScrolling) setIsScrolling(true)
+      }}
+      onMomentumScrollEnd={() => {
+        if (isScrolling) setIsScrolling(false)
+      }}
+    >
       <Image
         source={trasparentbg}
         resizeMode='contain'
         style={styles.transbg}
       />
-      <NewsContainer navigation={{...navigation}} returnToTop={returnToTop}/>
+      <NewsContainer navigation={{...navigation}} returnToTop={returnToTop} isScrolling={isScrolling} />
     </ScrollView>
   );
 };

@@ -5,6 +5,7 @@ import { styles } from './styles';
 import { fetchNews } from './RequestService';
 import { NewsArticle } from './Types';
 import NavBar from './components/NavBar';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const translationData = require('config/locales.json');
 export type category = {
@@ -12,6 +13,7 @@ export type category = {
   id: number,
   newsCount: number,
   isActive: boolean,
+  isScrolling: boolean,
 }
 
 interface Props {
@@ -20,6 +22,7 @@ interface Props {
 }
 
 export const NewsContainer: React.FC<Props> = (props) => {
+
   const [categories, setCategories] = useState<category[]>([])  
   const [activeCategories, setActiveCategories] = useState<category[]>([])
   const [newsList, setNewsList] = useState<NewsArticle[]>([]);
@@ -33,8 +36,9 @@ export const NewsContainer: React.FC<Props> = (props) => {
   }, [])
 
   const getCategoryData = async () => {
-    let newCategories: category[] = [];
-    let defaultCategory: category | null = null;
+    let activeCategoryIDs: number[] = []
+    let newCategories: category[] = []
+    let newActiveCategories: category[] = []
 
     const url: string = 'https://www.kouvola.fi/wp-json/wp/v2/categories/?per_page=100&orderby=count&order=desc';
 
@@ -47,29 +51,33 @@ export const NewsContainer: React.FC<Props> = (props) => {
       setIsLoading(false)
     }
 
+    let savedCategories = await AsyncStorage.getItem("activeCategoryIDs")
+    activeCategoryIDs = (savedCategories && savedCategories.length !== 0) ? JSON.parse(savedCategories) : [17]
+
+
     if (response) {
       const json = await response.json()
       json.forEach((field: any) => {
         if (field.count > 0) {
           let category: category = {name: field.name, id: field.id, newsCount: field.count, isActive: false}
-          if (category.name === 'Ajankohtaista') {
-            defaultCategory = category
-            category.isActive = true
+          if (activeCategoryIDs.includes(category.id)) {
+            category.isActive = true          
+            newActiveCategories.push(category)
           }
           newCategories.push(category)
         }
       });
 
-      if (!defaultCategory) {
-        defaultCategory = newCategories[0]
+      if (newActiveCategories.length === 0) {
         newCategories[0].isActive = true;
-      }      
+        newActiveCategories.push(newCategories[0])
+      }
+    }      
 
-      updateNewsCount([defaultCategory])
-      setActiveCategories([defaultCategory])         
-      updateData([defaultCategory])
-      setCategories(newCategories)
-    }
+    updateNewsCount(newActiveCategories)
+    setActiveCategories(newActiveCategories)         
+    updateData(newActiveCategories)
+    setCategories(newCategories)
   }
 
   const updateNewsCount = (categories: category[]) => {
@@ -130,15 +138,15 @@ export const NewsContainer: React.FC<Props> = (props) => {
   const renderNewsArticles = () => {    
     return (newsCount > 0) ? 
       newsList.map(article => (
-        <ArticleTitle key={article.id} article={article} navigation={props.navigation} />        
+        <ArticleTitle key={article.id} isScrolling={props.isScrolling} article={article} navigation={props.navigation} />        
       )) : (
-      <View style={styles.noneSelectedContainer}>
+      <View style={styles.noneSelectedContainer} accessible={true}>
         <Text style={styles.noneSelectedText}>{translationData.Labels.finnish.ErrorMessages.NoneSelected}</Text>
       </View>
     )
   }
 
-  const editActiveCategories = (category: category) => { 
+  const editActiveCategories = async (category: category) => { 
     let index = activeCategories.indexOf(category);
     let newCategories = activeCategories;
     if (index !== -1) {  
@@ -146,6 +154,11 @@ export const NewsContainer: React.FC<Props> = (props) => {
     } else {
       newCategories = [...activeCategories, category];
     }
+
+    let activeCategoryIDs: number[] = newCategories.map((cat) => {
+      return cat.id
+    })
+    await AsyncStorage.setItem("activeCategoryIDs", JSON.stringify(activeCategoryIDs))
     setActiveCategories(newCategories)
     updateNewsCount(newCategories)    
     setNewsList([])
@@ -154,7 +167,13 @@ export const NewsContainer: React.FC<Props> = (props) => {
 
   return (
     <View style={styles.newsContainer}>
-      <NavBar data={categories} setData={setCategories} changeCategory={editActiveCategories} returnToTop={props.returnToTop} />
+      <NavBar 
+        data={categories} 
+        setData={setCategories} 
+        changeCategory={editActiveCategories} 
+        returnToTop={props.returnToTop} 
+        isScrolling={props.isScrolling}
+      />
       {renderNewsArticles()}      
       {isLoading ? ( 
         <ActivityIndicator
@@ -174,7 +193,7 @@ export const NewsContainer: React.FC<Props> = (props) => {
                   accessibilityRole='button'
                   style={styles.fetchMoreButton}
                   onPress={loadMore}>
-                  <Text style={styles.buttonText}>
+                  <Text style={styles.buttonText}  accessible={false}>>
                     {translationData.Labels.finnish.Screens.Home.LoadMore}
                   </Text>
                 </TouchableOpacity>

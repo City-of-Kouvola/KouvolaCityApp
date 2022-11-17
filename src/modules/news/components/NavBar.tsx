@@ -10,6 +10,7 @@ interface Props {
     setData: React.Dispatch<React.SetStateAction<category[]>>
     changeCategory: (category: category) => void
     returnToTop: () => void
+    isScrolling: boolean
 }   
 
 const NavBar: React.FC<Props> = (props) => {     
@@ -17,12 +18,12 @@ const NavBar: React.FC<Props> = (props) => {
   const [isOpen, setIsOpen] = useState(false)
   const [showMore, setShowMore] = useState(false)
   const [openButtonText, setOpenButtonText] = useState(translationData.Labels.finnish.Screens.Home.ChooseCategory)  
-  const [showMoreButtonText, setShowMoreButtonText] = useState("")  
+  const [showMoreButtonText, setShowMoreButtonText] = useState("")
 
-  const handleCategoryPress = (category: category, index: number) => {
-    props.changeCategory(category)
+  const handleCategoryPress = async (category: category, index: number) => {
+    await props.changeCategory(category)
     updateCategories(index)
-  }  
+  }
 
   const updateCategories = (index: number) => {
     let newCategories = props.data;
@@ -62,15 +63,21 @@ const NavBar: React.FC<Props> = (props) => {
       categories.map((category: category, index) => {
         return (
           <TouchableOpacity
+          accessible={true}
+            importantForAccessibility={(props.isScrolling) ? "no-hide-descendants" : "yes"}
             accessibilityRole='togglebutton'
+            accessibilityLabel={category.name}
+            accessibilityState={{checked: category.isActive}}
             key={category.id}
             style={styles.categoryButton}
-            onPress={() => handleCategoryPress(category, index + offset)}>
+            onPress={() => handleCategoryPress(category, index + offset)}
+            >
               <Icon 
                 style={styles.toggleButton} 
                 name={category.isActive ? "check-square" : "square"} 
+                accessible={false}
               />
-            <Text style={styles.categoryText}>
+              <Text style={styles.categoryText} accessible={false}>
               {category.name} ({category.newsCount})
             </Text>
           </TouchableOpacity>          
@@ -103,35 +110,40 @@ const NavBar: React.FC<Props> = (props) => {
     <View style={styles.navBarContainer}>
       <TouchableOpacity
         accessibilityRole='button'
+        accessibilityLabel={openButtonText}
+        accessibilityHint={isOpen ?
+          translationData.Accessibility.finnish.Navigation.CloseNavBar :
+          translationData.Accessibility.finnish.Navigation.OpenNavBar
+        }
         onPress={handleOpenAndClose} 
         style={styles.navBarButton}>
-          <Text style={styles.navBarOpenButtonText}>{openButtonText}</Text>   
+          <Text accessible={false}  style={styles.navBarOpenButtonText}>{openButtonText}</Text>   
           <Animated.View 
+          accessible={false}
             style={isOpen ? 
               {transform: [{rotate: openingRotate}] } :
               {transform: [{rotate: closingRotate}] }
             }>
-            <Icon name='plus-circle' style={styles.menuIcon} />
+            <Icon name='plus-circle' style={styles.menuIcon} accessible={false}/>
           </Animated.View>         
       </TouchableOpacity>    
       <View>
         {isOpen &&         
           <>
             {renderCategories(props.data.slice(0, 5), 0)}
-            {showMore && renderCategories(props.data.slice(5), 5)}        
-            <View
-              style={[
-                styles.navBarShowMoreButton,                  
-                Platform.OS === 'ios' ? styles.skew : {}
-              ]}  
-            >
-              <TouchableOpacity                              
-                accessibilityRole='button'
-                onPress={handleShowMore}
-              >
-                <Text style={styles.showMoreText}>{showMoreButtonText}</Text>
-              </TouchableOpacity>
-            </View>             
+            {showMore && renderCategories(props.data.slice(5), 5)}  
+            {props.data.length > 5 && (      
+              <View style={Platform.OS === 'ios' ? styles.skew : {}}>                
+                <TouchableOpacity                 
+                  style={styles.navBarShowMoreButton}      
+                  accessibilityLabel={showMoreButtonText}                   
+                  accessibilityRole='button'
+                  onPress={handleShowMore}
+                >
+                  <Text style={styles.showMoreText} accessible={false}>{showMoreButtonText}</Text>
+                </TouchableOpacity>
+              </View>             
+            )}             
           </>
         }        
       </View> 
