@@ -193,7 +193,7 @@ export const NewsContainer: React.FC<Props> = (props) => {
                   accessibilityRole='button'
                   style={styles.fetchMoreButton}
                   onPress={loadMore}>
-                  <Text style={styles.buttonText}  accessible={false}>>
+                  <Text style={styles.buttonText}  accessible={false}>
                     {translationData.Labels.finnish.Screens.Home.LoadMore}
                   </Text>
                 </TouchableOpacity>
