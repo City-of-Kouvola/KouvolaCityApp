@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text, AccessibilityInfo } from 'react-native';
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
@@ -71,6 +71,16 @@ const generateOnItemPressHandler =
   };
 
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
+
+  useEffect(()=> {
+    const naviStateHistory: {status?:string,type:string}[] = props.navigation.getState().history as any
+    const status = naviStateHistory && naviStateHistory.length >= 2 ? naviStateHistory.find((historyObject)=> historyObject.status): false
+    if(status && status.status === 'open') {
+    AccessibilityInfo.announceForAccessibility(
+      translationData.Accessibility.finnish.Navigation.OpenedMenu,
+    );}
+  },[props.navigation.getState().history])
+
   return (
     <View style={styles.headerMenu}>
       <DrawerHeader {...props} />

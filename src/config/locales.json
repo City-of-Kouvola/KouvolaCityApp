@@ -76,6 +76,7 @@
     "english": {
       "Navigation": {
         "OpenMenu": "Open menu",
+        "OpenedMenu": "Navigation menu opened",
         "CloseMenu": "Close menu",
         "GoBack": "Go back",
         "Home": "Go to home",
@@ -102,6 +103,7 @@
       "Navigation": {
         "OpenMenu": "Avaa valikko",
         "CloseMenu": "Sulje valikko",
+        "OpenedMenu": "Navigointivalikko avattu",
         "GoBack": "Palaa takaisin",
         "Home": "Mene kotiin",
         "LibraryCard": "Mene kirjastokortti kohtaan",
