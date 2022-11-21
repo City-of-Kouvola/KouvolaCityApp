@@ -4,6 +4,7 @@ import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
   DrawerItem,
+  useDrawerStatus
 } from '@react-navigation/drawer';
 
 import DrawerHeader from './headers/DrawerHeader';
@@ -72,14 +73,14 @@ const generateOnItemPressHandler =
 
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
 
+  const isDrawerOpen = useDrawerStatus();
+
   useEffect(()=> {
-    const naviStateHistory: {status?:string,type:string}[] = props.navigation.getState().history as any
-    const status = naviStateHistory && naviStateHistory.length >= 2 ? naviStateHistory.find((historyObject)=> historyObject.status): false
-    if(status && status.status === 'open') {
+    if(isDrawerOpen === 'open') {
     AccessibilityInfo.announceForAccessibility(
       translationData.Accessibility.finnish.Navigation.OpenedMenu,
     );}
-  },[props.navigation.getState().history])
+  },[isDrawerOpen])
 
   return (
     <View style={styles.headerMenu}>
