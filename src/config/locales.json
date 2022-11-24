@@ -60,7 +60,9 @@
           "Categories": {},
           "LoadMore": "Lisää uutisia",
           "ChooseCategory": "VALITSE KATEGORIA",
+          "ChooseCategoryAccessibility": "Kutistettu",
           "Close": "SULJE",
+          "CloseAccessibility": "Laajennettu",
           "ShowMore": "Näytä lisää",
           "ShowLess": "Näytä vähemmän"
         }
