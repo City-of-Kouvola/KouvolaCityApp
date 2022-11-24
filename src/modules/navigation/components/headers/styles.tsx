@@ -70,6 +70,10 @@ export default StyleSheet.create({
     padding: Sizing.IP,
     fontSize: 30,
   },
+  backbtnStyle: {
+    flex:1, 
+    minWidth:50
+  },
   webViewView: {
     flex: 1,
   },

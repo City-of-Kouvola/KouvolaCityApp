@@ -19,7 +19,7 @@ const BackHeader = (props: StackHeaderProps): JSX.Element => {
       leftComponent={(
         <TouchableOpacity 
         accessible={true}
-        style={{flex:1}}
+        style={styles.backbtnStyle}
         accessibilityLabel={translationData.Accessibility.finnish.Navigation.GoBack}
         accessibilityRole={'button'}
         onPress= {generateOnBackIconPressHandler({
