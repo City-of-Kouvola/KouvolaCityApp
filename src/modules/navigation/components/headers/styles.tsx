@@ -64,7 +64,7 @@ export default StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.white,
     width: '90%',
-    alignSelf: 'center',
+    marginLeft:'5%'
   },
   iconStyle: {
     padding: Sizing.IP,
