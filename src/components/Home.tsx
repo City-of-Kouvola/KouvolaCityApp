@@ -1,7 +1,5 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import {
-  View,
-  Text,
   StyleSheet,
   ScrollView,
   Image,
@@ -11,14 +9,33 @@ import { NewsContainer } from '../modules/news/NewsContainer';
 const trasparentbg = require('../assets/img/keltamusta_laiturillaB.jpg');
 
 const Home = ({ navigation }: any): JSX.Element => {
+
+  const [isScrolling, setIsScrolling] = useState(false)
+  
+  const returnToTop = () => {
+    scrollViewRef.current?.scrollTo({
+      y: imageHeight,      
+    })
+  }
+  const scrollViewRef = useRef<ScrollView>(null)
+  
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView 
+      style={styles.container} 
+      ref={scrollViewRef} 
+      onScrollBeginDrag={() => {
+        if (!isScrolling) setIsScrolling(true)
+      }}
+      onMomentumScrollEnd={() => {
+        if (isScrolling) setIsScrolling(false)
+      }}
+    >
       <Image
         source={trasparentbg}
         resizeMode='contain'
         style={styles.transbg}
       />
-      <NewsContainer {...{ navigation }} />
+      <NewsContainer navigation={{...navigation}} returnToTop={returnToTop} isScrolling={isScrolling} />
     </ScrollView>
   );
 };

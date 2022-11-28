@@ -15,9 +15,10 @@ import { ERouteName } from 'modules/navigation/typings';
 interface IProps {
   article: NewsArticle;
   navigation: any;
+  isScrolling: boolean;
 }
 
-export const ArticleTitle = ({ article, navigation }: IProps) => {
+export const ArticleTitle = ({ article, navigation, isScrolling }: IProps) => {
   const htmlContent = `
   <h1>${article.title.rendered}</h1>
   ${article.excerpt.rendered}`;
@@ -35,8 +36,10 @@ export const ArticleTitle = ({ article, navigation }: IProps) => {
   };
 
   return (
-    <TouchableOpacity onPress={openDetailedView}>
-      <View style={styles.newsTitleContainer}>
+    <TouchableOpacity 
+      importantForAccessibility={(isScrolling) ? "no-hide-descendants" : "yes"}
+      onPress={openDetailedView}>
+      <View style={styles.newsTitleContainer} importantForAccessibility='no-hide-descendants'>
         <Text style={styles.releaseDate}>{formatReleaseDate()}</Text>
         <HTML
           contentWidth={useWindowDimensions().width}

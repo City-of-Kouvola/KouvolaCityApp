@@ -1,9 +1,10 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text, AccessibilityInfo } from 'react-native';
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
   DrawerItem,
+  useDrawerStatus
 } from '@react-navigation/drawer';
 
 import DrawerHeader from './headers/DrawerHeader';
@@ -11,17 +12,38 @@ import styles from './headers/styles';
 import { ERouteName } from '../typings';
 import translationData from 'config/locales.json';
 
-const NAVIGATION_MAP = {
-  [translationData.Labels.finnish.Navigation.Home]: ERouteName.HOME,
-  [translationData.Labels.finnish.Navigation.Librarycard]: ERouteName.LIBRARY_CARD,
-  [translationData.Labels.finnish.Navigation.RoutePlanners]: ERouteName.ROUTE_PLANNER,
-  [translationData.Labels.finnish.Navigation.Visit]: ERouteName.VISIT_KVL,
-  [translationData.Labels.finnish.Navigation.Enquiries]: ERouteName.ENQUIRY,
-  [translationData.Labels.finnish.ExternalApps.TrimbleFeedBack]: ERouteName.TRIMBLE_FEEDBACK_REDIRECT,
-  [translationData.Labels.finnish.ExternalApps.KouvolaJoukkoliikenne]: ERouteName.WALTTI_MOBIILI_REDIRECT,
-  [translationData.Labels.finnish.Navigation.Events]: ERouteName.EVENTS,
-  [translationData.Labels.finnish.Navigation.Feedback]: ERouteName.FEEDBACK,
-} as const;
+type navigationType =  "Home" | "LibraryCard" | "RoutePlanners" | "Visit" | 
+"Enquiries" | "TrimbleFeedBack" | "KouvolaJoukkoliikenne" | "Events" |  "Feedback"
+
+const navigationData: {name: navigationType, route: ERouteName}[] = [
+  {name: "Home", route: ERouteName.HOME},
+  {name: "LibraryCard", route: ERouteName.LIBRARY_CARD},
+  {name: "RoutePlanners", route: ERouteName.ROUTE_PLANNER},
+  {name: "Visit", route: ERouteName.VISIT_KVL},
+  {name: "Enquiries", route: ERouteName.ENQUIRY},  
+  {name: "TrimbleFeedBack", route: ERouteName.TRIMBLE_FEEDBACK_REDIRECT},
+  {name: "KouvolaJoukkoliikenne", route: ERouteName.WALTTI_MOBIILI_REDIRECT},
+  {name: "Events", route: ERouteName.EVENTS},
+  {name: "Feedback", route: ERouteName.FEEDBACK},
+]
+
+const createDrawerContent = (navigation: any) => {  
+  return navigationData.map(({name, route}: {name: navigationType, route: ERouteName}) => {
+    return (
+      <DrawerItem          
+        key={`drawer-item-${name}`}
+        label={() => generateItemLabels(name)}
+        style={styles.headerItem}
+        pressColor={'white'}
+        activeBackgroundColor={'#212121'}          
+        onPress={generateOnItemPressHandler({
+          navigation: navigation,
+          route: route,
+        })}            
+      />
+    )
+    })
+}
 
 type TGenerateOnItemPressHandlerParams = Pick<
   DrawerContentComponentProps,
@@ -37,28 +59,34 @@ const generateOnItemPressHandler =
     navigation.navigate(route);
   };
 
-const generateItemLabels = (labelText: String): JSX.Element => {
-  return <Text style={styles.headerLabel}>{labelText}</Text>;
-};
+  const generateItemLabels = (item: navigationType): JSX.Element => {
+    const externalApp = (item === "TrimbleFeedBack" || item=== "KouvolaJoukkoliikenne")
+    const labelText = (externalApp) ? translationData.Labels.finnish.ExternalApps[item] 
+      : translationData.Labels.finnish.Navigation[item]
+    const accessibilityText = (externalApp) ? translationData.Accessibility.finnish.ExternalApps[item] 
+      : translationData.Accessibility.finnish.Navigation[item]
+  
+    return (
+      <Text style={styles.headerLabel} accessibilityLabel={accessibilityText}>{labelText}</Text>
+    )
+  };
 
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
+
+  const isDrawerOpen = useDrawerStatus();
+
+  useEffect(()=> {
+    if(isDrawerOpen === 'open') {
+    AccessibilityInfo.announceForAccessibility(
+      translationData.Accessibility.finnish.Navigation.OpenedMenu,
+    );}
+  },[isDrawerOpen])
+
   return (
     <View style={styles.headerMenu}>
       <DrawerHeader {...props} />
       <DrawerContentScrollView>
-        {Object.entries(NAVIGATION_MAP).map(([key, value]) => (
-          <DrawerItem
-            key={`drawer-item-${key}`}
-            label={() => generateItemLabels(key)}
-            style={styles.headerItem}
-            pressColor={'white'}
-            activeBackgroundColor={'#212121'}
-            onPress={generateOnItemPressHandler({
-              navigation: props.navigation,
-              route: value,
-            })}
-          />
-        ))}
+      {createDrawerContent(props.navigation)}
       </DrawerContentScrollView>
     </View>
   );

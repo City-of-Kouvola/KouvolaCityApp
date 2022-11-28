@@ -54,5 +54,67 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#212121',
     marginTop: 25,
+  },  
+  navBarContainer: {
+    alignItems: 'center'
+  },
+  navBarButton: {
+    width: '90%',
+    height: 50,
+    backgroundColor: '#28482B',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  navBarOpenButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 22,
+    marginLeft: 10,    
+  },
+  navBarMenu: {
+    width: '100%',
+    height: '50%',
+  },
+  menuIcon: {
+    marginHorizontal: 20,
+    color: 'white',
+    fontSize: 25,
+  },
+  categoryButton: {
+    paddingVertical: 10,
+    flexDirection: 'row',
+  },
+  toggleButton: {
+    marginHorizontal: '3%',
+    fontSize: 25,
+    paddingTop: 2,
+    color: '#28482B',
+  },
+  categoryText: {
+    fontSize: 20,
+    width: '80%'
+  },
+  navBarShowMoreButton: {
+    alignItems: 'center',
+    backgroundColor: '#28482B',
+    padding: 10,
+  },
+  showMoreText: {
+    color: 'white',
+    fontSize: 15,
+    textDecorationLine: 'underline',
+    textDecorationStyle: 'solid',
+  },
+  noneSelectedContainer: {
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center',
+  },
+  noneSelectedText: {
+    fontSize: 15,    
+  },    
+  skew: {    
+    transform: [{ skewX: '-4deg' }],
   },
 });
