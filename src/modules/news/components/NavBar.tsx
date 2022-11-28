@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, TouchableOpacity, Text, LayoutAnimation, Animated, Easing, Platform} from 'react-native'
+import { View, TouchableOpacity, Text, LayoutAnimation, Animated, Easing, Platform, AccessibilityInfo} from 'react-native'
 import { styles } from './../styles';
 import { category } from './../NewsContainer';
 import Icon from 'react-native-vector-icons/FontAwesome5'
@@ -18,6 +18,7 @@ const NavBar: React.FC<Props> = (props) => {
   const [isOpen, setIsOpen] = useState(false)
   const [showMore, setShowMore] = useState(false)
   const [openButtonText, setOpenButtonText] = useState(translationData.Labels.finnish.Screens.Home.ChooseCategory)  
+  const [openButtonAccessibilityText, setOpenButtonAccessibilityText] = useState(translationData.Labels.finnish.Screens.Home.ChooseCategoryAccessibility)  
   const [showMoreButtonText, setShowMoreButtonText] = useState("")
 
   const handleCategoryPress = async (category: category, index: number) => {
@@ -38,11 +39,16 @@ const NavBar: React.FC<Props> = (props) => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
     const openText = translationData.Labels.finnish.Screens.Home.Close
     const closeText = translationData.Labels.finnish.Screens.Home.ChooseCategory
+    const openAccessibilityText = translationData.Labels.finnish.Screens.Home.CloseAccessibility
+    const closeAccessibilityText = translationData.Labels.finnish.Screens.Home.ChooseCategoryAccessibility
+    let accessibilityText = (!isOpen) ? openAccessibilityText : closeAccessibilityText
     let text = (!isOpen) ? openText : closeText
     if (showMoreButtonText === "") {      
       setShowMoreButtonText(`${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`)
     }
+    AccessibilityInfo.announceForAccessibility(!isOpen ? openAccessibilityText : closeAccessibilityText)
     setOpenButtonText(text)
+    setOpenButtonAccessibilityText(accessibilityText)
     setIsOpen(!isOpen)
   }   
 
@@ -50,10 +56,13 @@ const NavBar: React.FC<Props> = (props) => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
     const openText = translationData.Labels.finnish.Screens.Home.ShowLess
     const closeText = `${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`
+    const openedText = translationData.Labels.finnish.Screens.Home.ShowingLess
+    const closedText = translationData.Labels.finnish.Screens.Home.ShowingMore
     const text = (!showMore) ? openText : closeText    
     if (showMore) {
       props.returnToTop()
     }
+    AccessibilityInfo.announceForAccessibility(showMore ? openedText : closedText)
     setShowMoreButtonText(text)
     setShowMore(!showMore)
   }
@@ -110,7 +119,7 @@ const NavBar: React.FC<Props> = (props) => {
     <View style={styles.navBarContainer}>
       <TouchableOpacity
         accessibilityRole='button'
-        accessibilityLabel={openButtonText}
+        accessibilityLabel={openButtonAccessibilityText}
         accessibilityHint={isOpen ?
           translationData.Accessibility.finnish.Navigation.CloseNavBar :
           translationData.Accessibility.finnish.Navigation.OpenNavBar

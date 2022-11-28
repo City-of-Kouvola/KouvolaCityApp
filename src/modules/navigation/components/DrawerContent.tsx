@@ -1,9 +1,10 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text, AccessibilityInfo } from 'react-native';
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
   DrawerItem,
+  useDrawerStatus
 } from '@react-navigation/drawer';
 
 import DrawerHeader from './headers/DrawerHeader';
@@ -71,6 +72,16 @@ const generateOnItemPressHandler =
   };
 
 const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
+
+  const isDrawerOpen = useDrawerStatus();
+
+  useEffect(()=> {
+    if(isDrawerOpen === 'open') {
+    AccessibilityInfo.announceForAccessibility(
+      translationData.Accessibility.finnish.Navigation.OpenedMenu,
+    );}
+  },[isDrawerOpen])
+
   return (
     <View style={styles.headerMenu}>
       <DrawerHeader {...props} />

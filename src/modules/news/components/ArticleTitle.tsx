@@ -39,7 +39,7 @@ export const ArticleTitle = ({ article, navigation, isScrolling }: IProps) => {
     <TouchableOpacity 
       importantForAccessibility={(isScrolling) ? "no-hide-descendants" : "yes"}
       onPress={openDetailedView}>
-      <View style={styles.newsTitleContainer}>
+      <View style={styles.newsTitleContainer} importantForAccessibility='no-hide-descendants'>
         <Text style={styles.releaseDate}>{formatReleaseDate()}</Text>
         <HTML
           contentWidth={useWindowDimensions().width}

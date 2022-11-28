@@ -25,7 +25,7 @@ const MainHeader = (props: TMainHeaderProps): JSX.Element => {
           onPress= {generateOnMenuIconPressHandler({
             navigation: props.navigation,
           })}>
-          <Icon accessible={false} name='menu' style={styles.iconStyle} color={colors.white} ></Icon>
+          <Icon accessible={false} name='menu' style={styles.iconStyle} color={colors.white}/>
         </TouchableOpacity>
       )}
       centerComponent={<Logo />}

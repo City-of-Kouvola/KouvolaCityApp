@@ -64,11 +64,15 @@ export default StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.white,
     width: '90%',
-    alignSelf: 'center',
+    marginLeft:'5%'
   },
   iconStyle: {
     padding: Sizing.IP,
     fontSize: 30,
+  },
+  backbtnStyle: {
+    flex:1, 
+    minWidth:50
   },
   webViewView: {
     flex: 1,
