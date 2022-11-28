@@ -26,7 +26,9 @@
           "ChooseCategory": "CHOOSE CATEGORY",
           "Close": "CLOSE",
           "ShowMore": "Show more",
-          "ShowLess": "Show less"
+          "ShowLess": "Show less",
+          "ShowingMore": "Showing more categories",
+          "ShowingLess": "Showing fewer categories"
         }
       },
       "ErrorMessages": {
@@ -64,7 +66,9 @@
           "Close": "SULJE",
           "CloseAccessibility": "Laajennettu",
           "ShowMore": "Näytä lisää",
-          "ShowLess": "Näytä vähemmän"
+          "ShowLess": "Näytä vähemmän",
+          "ShowingMore": "Näytetään enemmän kategorioita",
+          "ShowingLess": "Näytetään vähemmän kategorioita"
         }
       },
       "ErrorMessages": {

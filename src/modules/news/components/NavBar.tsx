@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, TouchableOpacity, Text, LayoutAnimation, Animated, Easing, Platform} from 'react-native'
+import { View, TouchableOpacity, Text, LayoutAnimation, Animated, Easing, Platform, AccessibilityInfo} from 'react-native'
 import { styles } from './../styles';
 import { category } from './../NewsContainer';
 import Icon from 'react-native-vector-icons/FontAwesome5'
@@ -46,6 +46,7 @@ const NavBar: React.FC<Props> = (props) => {
     if (showMoreButtonText === "") {      
       setShowMoreButtonText(`${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`)
     }
+    AccessibilityInfo.announceForAccessibility(!isOpen ? openAccessibilityText : closeAccessibilityText)
     setOpenButtonText(text)
     setOpenButtonAccessibilityText(accessibilityText)
     setIsOpen(!isOpen)
@@ -55,10 +56,13 @@ const NavBar: React.FC<Props> = (props) => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
     const openText = translationData.Labels.finnish.Screens.Home.ShowLess
     const closeText = `${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`
+    const openedText = translationData.Labels.finnish.Screens.Home.ShowingLess
+    const closedText = translationData.Labels.finnish.Screens.Home.ShowingMore
     const text = (!showMore) ? openText : closeText    
     if (showMore) {
       props.returnToTop()
     }
+    AccessibilityInfo.announceForAccessibility(showMore ? openedText : closedText)
     setShowMoreButtonText(text)
     setShowMore(!showMore)
   }
