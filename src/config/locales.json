@@ -7,7 +7,7 @@
         "Visit": "VisitKouvola.fi",
         "Enquiries": "Enquiries",
         "Events": "Events",
-        "LibraryCard": "Libary card",
+        "LibraryCard": "Library card",
         "Back": "Return"
       },
       "ExternalApps": {
@@ -86,6 +86,7 @@
         "CloseMenu": "Close menu",
         "GoBack": "Go back",
         "Home": "Go to home",
+        "LibraryCard": "Go to library card",
         "RoutePlanners": "Go to route planner",
         "Visit": "Go to VisitKouvola.fi",
         "Enquiries": "Go to enquiries",
@@ -112,7 +113,7 @@
         "OpenedMenu": "Navigointivalikko avattu",
         "GoBack": "Palaa takaisin",
         "Home": "Mene kotiin",
-        "LibraryCard": "Mene kirjastokortti kohtaan",
+        "LibraryCard": "Mene kirjastokortille",
         "RoutePlanners": "Mene reittioppaaseen",
         "Visit": "Mene VisitKouvola.fi",
         "Enquiries": "Mene kyselyihin",
