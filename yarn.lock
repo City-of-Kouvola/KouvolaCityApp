@@ -1113,7 +1113,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@react-native-async-storage/async-storage@^1.15.17", "@react-native-async-storage/async-storage@^1.17.10":
+"@react-native-async-storage/async-storage@^1.17.10":
   version "1.17.11"
   resolved "https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-1.17.11.tgz"
   integrity sha512-bzs45n5HNcDq6mxXnSsOHysZWn1SbbebNxldBXCQs8dSvF8Aor9KCdpm+TpnnGweK3R6diqsT8lFhX77VX0NFw==
@@ -1687,7 +1687,7 @@
 
 "OpenCityKvlModules@git+https://github.com/City-of-Kouvola/open-city-kvl-modules.git":
   version "0.0.2"
-  resolved "git+https://github.com/City-of-Kouvola/open-city-kvl-modules.git#1fdf4170ea0898a361397ff7a211e551d925c42d"
+  resolved "git+ssh://git@github.com/City-of-Kouvola/open-city-kvl-modules.git#1fdf4170ea0898a361397ff7a211e551d925c42d"
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -4389,14 +4389,13 @@ leven@^3.1.0:
   resolved "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz"
   integrity sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==
 
-"library_card_module@github:City-of-Kouvola/Library_card_module":
-  version "0.0.5"
-  resolved "https://codeload.github.com/City-of-Kouvola/Library_card_module/tar.gz/a55071950105673f9b830b57d0bbcc63babc3bb8"
+"library_card_module@git+https://github.com/City-of-Kouvola/Library_card_module.git":
+  version "0.0.6"
+  resolved "git+ssh://git@github.com/City-of-Kouvola/Library_card_module.git#cf2b9dc6678cd5849cf9654ce49d769c63640e2b"
   dependencies:
-    "@react-native-async-storage/async-storage" "^1.15.17"
     "@react-native-community/art" "^1.2.0"
     react-native-barcode-builder "^2.0.0"
-    react-native-svg "^12.1.1"
+    react-native-svg "^13.1.0"
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
@@ -5629,15 +5628,7 @@ react-native-splash-screen@^3.3.0:
   resolved "https://registry.npmjs.org/react-native-splash-screen/-/react-native-splash-screen-3.3.0.tgz"
   integrity sha512-rGjt6HkoSXxMqH4SQUJ1gnPQlPJV8+J47+4yhgTIan4bVvAwJhEeJH7wWt9hXSdH4+VfwTS0GTaflj1Tw83IhA==
 
-react-native-svg@^12.1.1:
-  version "12.4.4"
-  resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-12.4.4.tgz"
-  integrity sha512-LpcNlEVCURexqPAvQ9ne8KrPVfYz0wIDygwud8VMRmXLezysXzyQN/DTsjm1BO9lIfYp55WQsr3u3yW/vk6iiA==
-  dependencies:
-    css-select "^5.1.0"
-    css-tree "^1.1.3"
-
-react-native-svg@^13.6.0:
+react-native-svg@^13.1.0, react-native-svg@^13.6.0:
   version "13.6.0"
   resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-13.6.0.tgz"
   integrity sha512-1wjHCMJ8siyZbDZ0MX5wM+Jr7YOkb6GADn4/Z+/u1UwJX8WfjarypxDF3UO1ugMHa+7qor39oY+URMcrgPpiww==

@@ -16,11 +16,11 @@ Kouvola city needed a new channel to reach Kouvola municipality inhabitants.
 
 Kouvola City App has been developed using:
 
-`"React": "17.0.2"`
+`"React": "18.1.0"`
 
-`"React-Native": "0.67.0"`
+`"React-Native": "0.70.6"`
 
-`”TypeScript”: “4.5.5”`
+`”TypeScript”: “4.9.3”`
 
 `node: “16.0.0”`
 
@@ -29,7 +29,8 @@ Kouvola City App has been developed using:
 1. Setup React Native development environment (`it is recommended to use the React Native CLI path instead of Expo`) https://reactnative.dev/docs/environment-setup
 2. Clone the repository i.e with Git using `git clone https://github.com/City-of-Kouvola/KouvolaCityApp.git`
 3. `npm install`
-4. `cd ios && pod install` (if developing for iOS)
-5. `npm start`
+4. `yarn install (This is required due to an error in peerDependencies of react-native-safe-area-context, yarn detects and corrects this while npm will not)`
+5. `cd ios && pod install` (if developing for iOS)
+6. `npm start`
 
 The application uses [open-city-kvl-modules](https://github.com/City-of-Kouvola/open-city-kvl-modules) repository, which contains modules that implement some specific functionality and can be installed to a derivate app.
