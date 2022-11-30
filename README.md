@@ -29,7 +29,7 @@ Kouvola City App has been developed using:
 1. Setup React Native development environment (`it is recommended to use the React Native CLI path instead of Expo`) https://reactnative.dev/docs/environment-setup
 2. Clone the repository i.e with Git using `git clone https://github.com/City-of-Kouvola/KouvolaCityApp.git`
 3. `npm install`
-4. `yarn install (This is required due to an error in peerDependencies of react-native-safe-area-context, yarn detects and corrects this while npm will not)`
+4. `yarn install (This is required due to an error in peerDependencies of react-native-elements, yarn detects and corrects this while npm will not)`
 5. `cd ios && pod install` (if developing for iOS)
 6. `npm start`
 
