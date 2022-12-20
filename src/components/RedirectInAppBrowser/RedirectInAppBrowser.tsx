@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
-import { Button } from 'react-native-elements';
+import { Button } from '@rneui/themed';
 
 import { generateOnBtnPressHandler, generateOnFocusHandler } from './helpers';
 import { IRedirectInAppBrowserProps } from './typings';

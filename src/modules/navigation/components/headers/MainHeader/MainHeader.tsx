@@ -1,7 +1,7 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native'
-import Icon from 'react-native-vector-icons/Entypo'
-import { Header } from 'react-native-elements';
+import { TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Entypo';
+import { Header } from '@rneui/themed';
 
 import { generateOnMenuIconPressHandler } from './helpers';
 import styles from '../styles';
@@ -17,17 +17,24 @@ const MainHeader = (props: TMainHeaderProps): JSX.Element => {
         barStyle: 'light-content',
         backgroundColor: colors.black,
       }}
-      leftComponent={(
-        <TouchableOpacity 
+      leftComponent={
+        <TouchableOpacity
           accessible={true}
-          accessibilityLabel={translationData.Accessibility.finnish.Navigation.OpenMenu}
+          accessibilityLabel={
+            translationData.Accessibility.finnish.Navigation.OpenMenu
+          }
           accessibilityRole={'button'}
-          onPress= {generateOnMenuIconPressHandler({
+          onPress={generateOnMenuIconPressHandler({
             navigation: props.navigation,
           })}>
-          <Icon accessible={false} name='menu' style={styles.iconStyle} color={colors.white}/>
+          <Icon
+            accessible={false}
+            name='menu'
+            style={styles.iconStyle}
+            color={colors.white}
+          />
         </TouchableOpacity>
-      )}
+      }
       centerComponent={<Logo />}
       containerStyle={styles.header}
       {...props}
