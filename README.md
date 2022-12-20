@@ -16,11 +16,11 @@ Kouvola city needed a new channel to reach Kouvola municipality inhabitants.
 
 Kouvola City App has been developed using:
 
-`"React": "17.0.2"`
+`"React": "18.1.0"`
 
-`"React-Native": "0.67.0"`
+`"React-Native": "0.70.6"`
 
-`”TypeScript”: “4.5.5”`
+`”TypeScript”: “4.9.3”`
 
 `node: “16.0.0”`
 

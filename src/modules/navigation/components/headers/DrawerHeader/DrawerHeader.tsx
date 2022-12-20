@@ -1,7 +1,7 @@
 import React from 'react';
-import { Header } from 'react-native-elements';
+import { Header } from '@rneui/themed';
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
-import Icon from 'react-native-vector-icons/AntDesign'
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import { generateOnCloseIconPressHandler } from './helpers';
 import styles from '../styles';
@@ -17,17 +17,24 @@ const DrawerHeader = (props: DrawerContentComponentProps): JSX.Element => {
         barStyle: 'light-content',
         backgroundColor: colors.black,
       }}
-      rightComponent={(        
+      rightComponent={
         <TouchableOpacity
           accessible={true}
-          accessibilityLabel={translationData.Accessibility.finnish.Navigation.CloseMenu}        
+          accessibilityLabel={
+            translationData.Accessibility.finnish.Navigation.CloseMenu
+          }
           accessibilityRole={'button'}
           onPress={generateOnCloseIconPressHandler({
             navigation: props.navigation,
           })}>
-          <Icon accessible={false} name='close' style={styles.iconStyle} color={colors.white} />
+          <Icon
+            accessible={false}
+            name='close'
+            style={styles.iconStyle}
+            color={colors.white}
+          />
         </TouchableOpacity>
-      )}
+      }
       centerComponent={<Logo />}
       containerStyle={styles.header}
       {...props}

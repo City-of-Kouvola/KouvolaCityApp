@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Icon } from 'react-native-elements';
+import { Header, Icon } from '@rneui/themed';
 import { StackHeaderProps } from '@react-navigation/stack';
 
 import { generateOnBackIconPressHandler } from './helpers';
@@ -16,18 +16,26 @@ const BackHeader = (props: StackHeaderProps): JSX.Element => {
         barStyle: 'light-content',
         backgroundColor: colors.black,
       }}
-      leftComponent={(
-        <TouchableOpacity 
-        accessible={true}
-        style={styles.backbtnStyle}
-        accessibilityLabel={translationData.Accessibility.finnish.Navigation.GoBack}
-        accessibilityRole={'button'}
-        onPress= {generateOnBackIconPressHandler({
-          navigation: props.navigation,
-        })}>
-          <Icon accessible={false} importantForAccessibility='no-hide-descendants' name='arrow-back' style={styles.iconStyle} color={colors.white} />
+      leftComponent={
+        <TouchableOpacity
+          accessible={true}
+          style={styles.backbtnStyle}
+          accessibilityLabel={
+            translationData.Accessibility.finnish.Navigation.GoBack
+          }
+          accessibilityRole={'button'}
+          onPress={generateOnBackIconPressHandler({
+            navigation: props.navigation,
+          })}>
+          <Icon
+            accessible={false}
+            importantForAccessibility='no-hide-descendants'
+            name='arrow-back'
+            style={styles.iconStyle}
+            color={colors.white}
+          />
         </TouchableOpacity>
-      )}
+      }
       centerComponent={<Logo />}
       containerStyle={styles.header}
       {...props}
