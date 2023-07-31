@@ -13,7 +13,7 @@
 
 @implementation KouvolaCityAppTests
 
-- (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
+- (BOOL)findSubviewInView:(UIView *)view matching:( BOOL(^)(UIView *view))test
 {
   if (test(view)) {
     return YES;
@@ -34,7 +34,7 @@
 
   __block NSString *redboxError = nil;
 #ifdef DEBUG
-  RCTSetLogFunction(^(RCTLogLevel level, RCTLogSource source, NSString *fileName, NSNumber *lineNumber, NSString *message) {
+  ^RCTSetLogFunction(^(RCTLogLevel level, RCTLogSource source, NSString *fileName, NSNumber *lineNumber, NSString *message) {
     if (level >= RCTLogLevelError) {
       redboxError = message;
     }

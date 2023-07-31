@@ -1,7 +1,7 @@
 import { Platform, StyleProp, StyleSheet, ViewStyle } from 'react-native';
 
 import colors from 'config/colors';
-import Sizing from 'config/layout/sizing';
+import Sizing, { headerHeight } from 'config/layout/sizing';
 import TextSize from 'config/layout/text';
 
 export default StyleSheet.create({
@@ -13,7 +13,7 @@ export default StyleSheet.create({
     borderBottomColor: '#212121',
     ...Platform.select({
       android: {
-        height: Sizing.XXML * 1.1,
+        height: headerHeight,
       },
       ios: {
         height: Sizing.XXML * 1.1,
@@ -56,19 +56,23 @@ export default StyleSheet.create({
       },
     }),
   },
-  headerItem: {
-    borderBottomWidth: 1,
-    borderBottomColor: colors.white,
-    width: '90%',
-    alignSelf: 'center',
-  },
   headerLogo: {
     width: '100%',
     height: '100%',
   },
+  headerItem: {
+    borderBottomWidth: 1,
+    borderBottomColor: colors.white,
+    width: '90%',
+    marginLeft:'5%'
+  },
   iconStyle: {
-    padding: Sizing.S,
+    padding: Sizing.IP,
     fontSize: 30,
+  },
+  backbtnStyle: {
+    flex:1, 
+    minWidth:50
   },
   webViewView: {
     flex: 1,

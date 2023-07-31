@@ -7,7 +7,7 @@
         "Visit": "VisitKouvola.fi",
         "Enquiries": "Enquiries",
         "Events": "Events",
-        "Librarycard": "Libary card",
+        "LibraryCard": "Library card",
         "Back": "Return"
       },
       "ExternalApps": {
@@ -22,11 +22,19 @@
       "Screens": {
         "Home": {
           "CurrentNews": "Current News",
-          "LoadMore": "Load more current news"
+          "LoadMore": "Load more current news",
+          "ChooseCategory": "CHOOSE CATEGORY",
+          "Close": "CLOSE",
+          "ShowMore": "Show more",
+          "ShowLess": "Show less",
+          "ShowingMore": "Showing more categories",
+          "ShowingLess": "Showing fewer categories"
         }
       },
       "ErrorMessages": {
-        "ErrorLoadingNews": "Error loading current news"
+        "ErrorLoadingNews": "Error loading current news",
+        "NoneSelected": "No categories selected",
+        "ErrorLoadingCategories": "Error loading categories"
       }
     },
     "finnish": {
@@ -37,7 +45,7 @@
         "Enquiries": "Kyselyt",
         "Events": "Tapahtumat",
         "Feedback": "Palaute sovelluksesta",
-        "Librarycard": "Kirjastokortti",
+        "LibraryCard": "Kirjastokortti",
         "Back": "Palaa"
       },
       "ExternalApps": {
@@ -51,12 +59,22 @@
       },
       "Screens": {
         "Home": {
-          "CurrentNews": "Ajankohtaista",
-          "LoadMore": "Lisää ajankohtaisia"
+          "Categories": {},
+          "LoadMore": "Lisää uutisia",
+          "ChooseCategory": "VALITSE KATEGORIA",
+          "ChooseCategoryAccessibility": "Kutistettu",
+          "Close": "SULJE",
+          "CloseAccessibility": "Laajennettu",
+          "ShowMore": "Näytä lisää",
+          "ShowLess": "Näytä vähemmän",
+          "ShowingMore": "Näytetään enemmän kategorioita",
+          "ShowingLess": "Näytetään vähemmän kategorioita"
         }
       },
       "ErrorMessages": {
-        "ErrorLoadingNews": "Virhe ladattaessa ajakohtaisia uutisia"
+        "ErrorLoadingNews": "Virhe ladattaessa uutisia",
+        "NoneSelected": "Ei valittuja",
+        "ErrorLoadingCategories": "Virhe ladattaessa kategorioita"
       }
     }
   },
@@ -64,15 +82,19 @@
     "english": {
       "Navigation": {
         "OpenMenu": "Open menu",
+        "OpenedMenu": "Navigation menu opened",
         "CloseMenu": "Close menu",
         "GoBack": "Go back",
         "Home": "Go to home",
+        "LibraryCard": "Go to library card",
         "RoutePlanners": "Go to route planner",
         "Visit": "Go to VisitKouvola.fi",
         "Enquiries": "Go to enquiries",
         "Events": "Open Kymenlaaksonyt.fi",
         "Feedback": "Open App Feedback",
-        "Back": "Go back"
+        "Back": "Go back",
+        "OpenNavBar": "Open news category menu",
+        "CloseNavBar": "Close news category menu"
       },
       "ExternalApps": {
         "Kouvola": "Open Waltti Mobiili",
@@ -88,18 +110,23 @@
       "Navigation": {
         "OpenMenu": "Avaa valikko",
         "CloseMenu": "Sulje valikko",
+        "OpenedMenu": "Navigointivalikko avattu",
         "GoBack": "Palaa takaisin",
         "Home": "Mene kotiin",
+        "LibraryCard": "Mene kirjastokortille",
         "RoutePlanners": "Mene reittioppaaseen",
-        "visit": "Mene VisitKouvola.fi",
+        "Visit": "Mene VisitKouvola.fi",
         "Enquiries": "Mene kyselyihin",
         "Events": "Avaa Kymenlaaksonyt.fi",
         "Feedback": "Avaa sovellus palaute",
-        "Back": "Mene takaisin"
+        "Back": "Mene takaisin",
+        "OpenNavBar": "Avaa uutiskategoriavalikko",
+        "CloseNavBar": "Sulje uutiskategoriavalikko"
       },
       "ExternalApps": {
         "Kouvola": "Avaa Waltti Mobiili",
-        "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle"
+        "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle",
+        "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili"
       },
       "Permissions": {
         "Title": "Location Services",

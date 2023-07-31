@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
-import { Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 
 import { generateOnBtnPressHandler, generateOnFocusHandler } from './helpers';
 import { IRedirectProps } from './typings';
+import { Button } from '@rneui/themed';
 
 const Redirect = ({
   androidStoreUrl,

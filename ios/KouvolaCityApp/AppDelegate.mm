@@ -4,6 +4,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <React/RCTAppSetupUtils.h>
 #import "RNSplashScreen.h"
 
 #ifdef FB_SONARKIT_ENABLED
@@ -32,10 +33,11 @@ static void InitializeFlipper(UIApplication *application) {
   InitializeFlipper(application);
 #endif
 
+  RCTAppSetupPrepareApp(application);
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-                                                   moduleName:@"KouvolaCityApp"
-                                            initialProperties:nil];
+
+  NSDictionary * initProps = [self prepareInitialProps];
+  UIView * rootView = RCTAppSetupDefaultRootView(bridge, @"KouvolaCityApp", initProps);
 
 if (@available(iOS 13.0, *)) {
       rootView.backgroundColor = [UIColor systemBackgroundColor];
@@ -52,10 +54,20 @@ if (@available(iOS 13.0, *)) {
   return YES;
 }
 
+- (BOOL)concurrentRootEnabled {
+  return false;
+}
+
+- (NSDictionary *)prepareInitialProps {
+  NSMutableDictionary *initProps = [NSMutableDictionary new];
+
+  return initProps;
+}
+
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
 #if DEBUG
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
