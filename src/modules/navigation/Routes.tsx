@@ -48,8 +48,8 @@ const DRAWER_DATA: Readonly<TStackScreenProps<TRootScreen>[]> = [
     component: redirectStacks[ERouteName.TRIMBLE_FEEDBACK_REDIRECT],
   },
   {
-    name: ERouteName.FEEDBACK,
-    component: webViewStacks[ERouteName.FEEDBACK],
+    name: ERouteName.ONLINE_STORE,
+    component: redirectInAppBrowserStacks[ERouteName.ONLINE_STORE]
   },
 ];
 

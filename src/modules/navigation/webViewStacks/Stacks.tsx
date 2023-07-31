@@ -7,7 +7,7 @@ import { generateCommonStackOptions } from '../helpers';
 import { ERouteName, IHasInitialRoute, TStackScreenProps } from '../typings';
 
 type TWebViewStackScreen = {
-  [key in ERouteName.ENQUIRY | ERouteName.FEEDBACK | ERouteName.ROUTE_PLANNER]:
+  [key in ERouteName.ENQUIRY | ERouteName.ROUTE_PLANNER]:
     | object
     | undefined;
 };
@@ -25,12 +25,6 @@ const WEB_VIEW_STACKS_DATA: Readonly<TWebViewStackProps[]> = [
     initialRouteName: ERouteName.ENQUIRY_INITIAL,
     name: ERouteName.ENQUIRY,
     src: 'https://www.kouvola.fi/kyselyt',
-  },
-  {
-    initialRouteName: ERouteName.FEEDBACK_INITIAL,
-    name: ERouteName.FEEDBACK,
-    src:
-      'https://forms.office.com/Pages/ResponsePage.aspx?id=ExOyCIOAqkKvHS9MnyytXSlNvRMzFBBMnbnK5I_oJr1UNFAyNjRLUTI4SVVRR1RNRzJYQzQ2WVpHVyQlQCN0PWcu',
   },
   {
     initialRouteName: ERouteName.ROUTE_PLANNER_INITIAL,
