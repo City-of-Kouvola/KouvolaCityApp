@@ -8,7 +8,7 @@ import RedirectInAppBrowser, {
 } from 'components/RedirectInAppBrowser';
 
 type TRedirectInAppBrowserStackScreen = {
-  [key in ERouteName.EVENTS | ERouteName.VISIT_KVL]: object | undefined;
+  [key in ERouteName.EVENTS | ERouteName.VISIT_KVL | ERouteName.ONLINE_STORE]: object | undefined;
 };
 
 type TRedirectInAppBrowserStackProps = Pick<
@@ -31,6 +31,11 @@ const REDIRECT_IN_APP_BROWSER_STACKS_DATA: Readonly<
     name: ERouteName.VISIT_KVL,
     url: 'https://visitkouvola.fi/suunnittele-matkasi',
   },
+  {
+    initialRouteName: ERouteName.ONLINE_STORE,
+    name: ERouteName.ONLINE_STORE,
+    url: 'https://verkkokauppa.kouvola.fi/'
+  }
 ] as const;
 
 const Stack = createStackNavigator();
