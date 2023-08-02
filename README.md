@@ -18,9 +18,9 @@ Modules which are managed by City of Kouvola used inside the app:
 
 Kouvola City App has been developed using:
 
-`"React": "18.1.0"`
+`"React": "18.2.0"`
 
-`"React-Native": "0.70.6"`
+`"React-Native": "0.72.3"`
 
 `”TypeScript”: “4.9.3”`
 
