@@ -24,7 +24,7 @@ Kouvola City App has been developed using:
 
 `”TypeScript”: “4.9.3”`
 
-`node: “16.0.0”`
+`node: “20.5.0”`
 
 ## Getting Started
 
