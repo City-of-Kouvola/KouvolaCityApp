@@ -6,7 +6,7 @@ import {
   Dimensions,
 } from 'react-native';
 import { NewsContainer } from '../modules/news/NewsContainer';
-const trasparentbg = require('../assets/img/keltamusta_laiturillaB.jpg');
+const trasparentbg = require('../assets/img/Pohjoiseen_laajakuva_vaaka.jpg');
 
 const Home = ({ navigation }: any): JSX.Element => {
 

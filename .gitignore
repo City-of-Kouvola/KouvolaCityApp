@@ -30,6 +30,7 @@ build/
 local.properties
 *.iml
 .cxx/
+/android/app/release
 
 # Visual Studio Code
 #
