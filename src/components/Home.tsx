@@ -181,9 +181,9 @@ const Home = ({ navigation }: any): JSX.Element => {
   const onRefresh = React.useCallback(async () => {
     setRefreshing(true);
     setNewsList([]);
-    await updateData(categories);
+    await updateData(activeCategories);
     setRefreshing(false);
-  }, [categories]);
+  }, [activeCategories]);
   
   return (
     <ScrollView 
