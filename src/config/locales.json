@@ -12,7 +12,8 @@
       },
       "ExternalApps": {
         "KouvolaJoukkoliikenne": "Waltti Mobiili",
-        "TrimbleFeedBack": "City Feedback"
+        "TrimbleFeedBack": "City Feedback",
+        "OnlineStore": "Online Store"
       },
       "Permissions": {
         "Title": "Location Services",
@@ -44,13 +45,13 @@
         "Visit": "VisitKouvola.fi",
         "Enquiries": "Kyselyt",
         "Events": "Tapahtumat",
-        "Feedback": "Palaute sovelluksesta",
         "LibraryCard": "Kirjastokortti",
         "Back": "Palaa"
       },
       "ExternalApps": {
         "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili",
-        "TrimbleFeedBack": "Palaute kaupungille"
+        "TrimbleFeedBack": "Palaute kaupungille",
+        "OnlineStore": "Verkkokauppa"
       },
       "Permissions": {
         "Title": "Sijaintipalvelut",
@@ -91,14 +92,14 @@
         "Visit": "Go to VisitKouvola.fi",
         "Enquiries": "Go to enquiries",
         "Events": "Open Kymenlaaksonyt.fi",
-        "Feedback": "Open App Feedback",
         "Back": "Go back",
         "OpenNavBar": "Open news category menu",
         "CloseNavBar": "Close news category menu"
       },
       "ExternalApps": {
         "Kouvola": "Open Waltti Mobiili",
-        "TrimbleFeedBack": "Open Trimble Feedback for city feedback"
+        "TrimbleFeedBack": "Open Trimble Feedback for city feedback",
+        "OnlineStore": "Open online store"
       },
       "Permissions": {
         "Title": "Location Services",
@@ -118,7 +119,6 @@
         "Visit": "Mene VisitKouvola.fi",
         "Enquiries": "Mene kyselyihin",
         "Events": "Avaa Kymenlaaksonyt.fi",
-        "Feedback": "Avaa sovellus palaute",
         "Back": "Mene takaisin",
         "OpenNavBar": "Avaa uutiskategoriavalikko",
         "CloseNavBar": "Sulje uutiskategoriavalikko"
@@ -126,7 +126,8 @@
       "ExternalApps": {
         "Kouvola": "Avaa Waltti Mobiili",
         "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle",
-        "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili"
+        "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili",
+        "OnlineStore": "Avaa Kouvolan kaupungin verkkokauppa"
       },
       "Permissions": {
         "Title": "Location Services",
