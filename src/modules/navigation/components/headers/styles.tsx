@@ -67,7 +67,7 @@ export default StyleSheet.create({
     marginLeft:'5%'
   },
   iconStyle: {
-    padding: Sizing.IP,
+    padding: Platform.OS === "android" ? Sizing.IP : 0,
     fontSize: 30,
   },
   backbtnStyle: {
