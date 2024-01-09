@@ -99,12 +99,16 @@ const Home = ({ navigation }: any): JSX.Element => {
   }
 
   const getIdsUrl = (categories: Category[]): string => {
+
     let ids: string = ""
     categories.forEach((category: Category) => {
       ids += `${category.id},`
     })
+
     if (ids.length === 0) { ids = '0' }
+
     return ids;
+
   }
 
   const updateData = async (categories: Category[]) => {
