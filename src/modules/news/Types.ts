@@ -46,3 +46,10 @@ interface Guid {
 interface Title {
   rendered: string;
 }
+
+export type Category = {
+  name: string,
+  id: number,
+  newsCount: number,
+  isActive: boolean,
+}

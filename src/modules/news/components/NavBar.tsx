@@ -1,14 +1,15 @@
 import React, {useMemo, useState} from 'react';
 import { View, TouchableOpacity, Text, LayoutAnimation, Animated, Easing, Platform, AccessibilityInfo} from 'react-native'
 import { styles } from './../styles';
-import { category } from './../NewsContainer';
+
 import Icon from 'react-native-vector-icons/FontAwesome5'
+import { Category } from '../Types';
 
 const translationData = require('config/locales.json');
 interface Props {
-    data: category[]
-    setData: React.Dispatch<React.SetStateAction<category[]>>
-    changeCategory: (category: category) => void
+    data: Category[]
+    setData: React.Dispatch<React.SetStateAction<Category[]>>
+    changeCategory: (category: Category) => void
     returnToTop: () => void
     isScrolling: boolean
 }   
@@ -34,7 +35,7 @@ const NavBar: React.FC<Props> = (props) => {
     return showMore ? openText : closeText;
   }, [showMore, props.data])
 
-  const handleCategoryPress = async (category: category, index: number) => {
+  const handleCategoryPress = async (category: Category, index: number) => {
     await props.changeCategory(category)
     updateCategories(index)
   }
@@ -64,33 +65,29 @@ const NavBar: React.FC<Props> = (props) => {
     setShowMore(!showMore)
   }
 
-  const renderCategories = (categories: category[], offset: number) => {
-    return (
-      categories.map((category: category, index) => {
-        return (
-          <TouchableOpacity
-          accessible={true}
-            importantForAccessibility={(props.isScrolling) ? "no-hide-descendants" : "yes"}
-            accessibilityRole='togglebutton'
-            accessibilityLabel={category.name}
-            accessibilityState={{checked: category.isActive}}
-            key={category.id}
-            style={styles.categoryButton}
-            onPress={() => handleCategoryPress(category, index + offset)}
-            >
-              <Icon 
-                style={styles.toggleButton} 
-                name={category.isActive ? "check-square" : "square"} 
-                accessible={false}
-              />
-              <Text style={styles.categoryText} accessible={false}>
-              {category.name} ({category.newsCount})
-            </Text>
-          </TouchableOpacity>          
-        )
-      })
-    )
-  }
+  const renderCategories = (categories: Category[], offset: number) => (
+    categories.map((category: Category, index) => (
+      <TouchableOpacity
+        accessible={true}
+        importantForAccessibility={(props.isScrolling) ? "no-hide-descendants" : "yes"}
+        accessibilityRole='togglebutton'
+        accessibilityLabel={category.name}
+        accessibilityState={{checked: category.isActive}}
+        key={category.id}
+        style={styles.categoryButton}
+        onPress={() => handleCategoryPress(category, index + offset)}
+        >
+          <Icon 
+            style={styles.toggleButton} 
+            name={category.isActive ? "check-square" : "square"} 
+            accessible={false}
+          />
+          <Text style={styles.categoryText} accessible={false}>
+          {category.name} ({category.newsCount})
+        </Text>
+      </TouchableOpacity>          
+    ))
+  )
 
   const spinValue = new Animated.Value(0);
   Animated.timing(
