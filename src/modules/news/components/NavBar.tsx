@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import { View, TouchableOpacity, Text, LayoutAnimation, Animated, Easing, Platform, AccessibilityInfo} from 'react-native'
 import { styles } from './../styles';
 import { category } from './../NewsContainer';
@@ -17,9 +17,22 @@ const NavBar: React.FC<Props> = (props) => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [showMore, setShowMore] = useState(false)
-  const [openButtonText, setOpenButtonText] = useState(translationData.Labels.finnish.Screens.Home.ChooseCategory)  
-  const [openButtonAccessibilityText, setOpenButtonAccessibilityText] = useState(translationData.Labels.finnish.Screens.Home.ChooseCategoryAccessibility)  
-  const [showMoreButtonText, setShowMoreButtonText] = useState("")
+
+  const openButtonText = useMemo(() => (
+    isOpen ? translationData.Labels.finnish.Screens.Home.Close : translationData.Labels.finnish.Screens.Home.ChooseCategory
+  ), [isOpen])
+
+  const openButtonAccessibilityText = useMemo(() => {
+    const accessibilityText = isOpen ? translationData.Labels.finnish.Screens.Home.CloseAccessibility : translationData.Labels.finnish.Screens.Home.ChooseCategoryAccessibility
+    AccessibilityInfo.announceForAccessibility(accessibilityText);
+    return accessibilityText;
+  }, [isOpen])
+
+  const showMoreButtonText = useMemo(() => {
+    const openText = translationData.Labels.finnish.Screens.Home.ShowLess;
+    const closeText = `${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`;
+    return showMore ? openText : closeText;
+  }, [showMore, props.data])
 
   const handleCategoryPress = async (category: category, index: number) => {
     await props.changeCategory(category)
@@ -37,33 +50,17 @@ const NavBar: React.FC<Props> = (props) => {
 
   const handleOpenAndClose = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
-    const openText = translationData.Labels.finnish.Screens.Home.Close
-    const closeText = translationData.Labels.finnish.Screens.Home.ChooseCategory
-    const openAccessibilityText = translationData.Labels.finnish.Screens.Home.CloseAccessibility
-    const closeAccessibilityText = translationData.Labels.finnish.Screens.Home.ChooseCategoryAccessibility
-    let accessibilityText = (!isOpen) ? openAccessibilityText : closeAccessibilityText
-    let text = (!isOpen) ? openText : closeText
-    if (showMoreButtonText === "") {      
-      setShowMoreButtonText(`${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`)
-    }
-    AccessibilityInfo.announceForAccessibility(!isOpen ? openAccessibilityText : closeAccessibilityText)
-    setOpenButtonText(text)
-    setOpenButtonAccessibilityText(accessibilityText)
     setIsOpen(!isOpen)
   }   
 
   const handleShowMore = () => {    
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
-    const openText = translationData.Labels.finnish.Screens.Home.ShowLess
-    const closeText = `${translationData.Labels.finnish.Screens.Home.ShowMore} (${props.data.length - 5})`
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut) 
     const openedText = translationData.Labels.finnish.Screens.Home.ShowingLess
     const closedText = translationData.Labels.finnish.Screens.Home.ShowingMore
-    const text = (!showMore) ? openText : closeText    
     if (showMore) {
       props.returnToTop()
     }
     AccessibilityInfo.announceForAccessibility(showMore ? openedText : closedText)
-    setShowMoreButtonText(text)
     setShowMore(!showMore)
   }
 
