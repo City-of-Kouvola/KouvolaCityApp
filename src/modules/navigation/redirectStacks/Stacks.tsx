@@ -4,12 +4,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { generateCommonStackOptions } from '../helpers';
 import { ERouteName, IHasInitialRoute, TStackScreenProps } from '../typings';
 import Redirect, { IRedirectProps } from 'components/Redirect';
-import { walttiMobiili, trimble } from 'config/Redirectroutes';
+import { trimble } from 'config/Redirectroutes';
 
 type TRedirectStackScreen = {
   [key in
-    | ERouteName.TRIMBLE_FEEDBACK_REDIRECT
-    | ERouteName.WALTTI_MOBIILI_REDIRECT]: object | undefined;
+    | ERouteName.TRIMBLE_FEEDBACK_REDIRECT]: object | undefined;
 };
 
 type TRedirectStackProps = Pick<
@@ -24,12 +23,7 @@ const REDIRECT_STACKS_DATA: Readonly<TRedirectStackProps[]> = [
     initialRouteName: ERouteName.TRIMBLE_FEEDBACK_REDIRECT_INITIAL,
     name: ERouteName.TRIMBLE_FEEDBACK_REDIRECT,
     ...trimble,
-  },
-  {
-    initialRouteName: ERouteName.WALTTI_MOBIILI_REDIRECT_INITIAL,
-    name: ERouteName.WALTTI_MOBIILI_REDIRECT,
-    ...walttiMobiili,
-  },
+  }
 ] as const;
 
 const Stack = createStackNavigator();

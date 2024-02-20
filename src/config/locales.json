@@ -11,7 +11,6 @@
         "Back": "Return"
       },
       "ExternalApps": {
-        "KouvolaJoukkoliikenne": "Waltti Mobiili",
         "TrimbleFeedBack": "City Feedback",
         "OnlineStore": "Online Store"
       },
@@ -49,7 +48,6 @@
         "Back": "Palaa"
       },
       "ExternalApps": {
-        "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili",
         "TrimbleFeedBack": "Palaute kaupungille",
         "OnlineStore": "Verkkokauppa"
       },
@@ -97,7 +95,6 @@
         "CloseNavBar": "Close news category menu"
       },
       "ExternalApps": {
-        "Kouvola": "Open Waltti Mobiili",
         "TrimbleFeedBack": "Open Trimble Feedback for city feedback",
         "OnlineStore": "Open online store"
       },
@@ -124,9 +121,7 @@
         "CloseNavBar": "Sulje uutiskategoriavalikko"
       },
       "ExternalApps": {
-        "Kouvola": "Avaa Waltti Mobiili",
         "TrimbleFeedBack": "Avaa Trimble Feedback kaupunki palautteelle",
-        "KouvolaJoukkoliikenne": "Lataa Waltti Mobiili",
         "OnlineStore": "Avaa Kouvolan kaupungin verkkokauppa"
       },
       "Permissions": {
