@@ -25,7 +25,6 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>itms-apps</string>
-		<string>walttiapp</string>
 		<string>instagram</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>

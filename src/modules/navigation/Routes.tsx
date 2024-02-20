@@ -28,10 +28,6 @@ const DRAWER_DATA: Readonly<TStackScreenProps<TRootScreen>[]> = [
     component: webViewStacks[ERouteName.ROUTE_PLANNER],
   },
   {
-    name: ERouteName.WALTTI_MOBIILI_REDIRECT,
-    component: redirectStacks[ERouteName.WALTTI_MOBIILI_REDIRECT],
-  },
-  {
     name: ERouteName.VISIT_KVL,
     component: redirectInAppBrowserStacks[ERouteName.VISIT_KVL],
   },
