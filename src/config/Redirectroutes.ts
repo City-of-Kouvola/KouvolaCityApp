@@ -6,13 +6,6 @@ export const trimble: RedirectData = {
   iosStoreUrl: 'itms-apps://apps.apple.com/us/app/trimble-feedback/id816215762',
 };
 
-export const walttiMobiili: RedirectData = {
-  applicationName: 'Waltti Mobiili',
-  launchUrl: 'walttiapp://',
-  androidStoreUrl: 'market://details?id=waltti.com.mobiili&launch=true',
-  iosStoreUrl: 'itms-apps://apps.apple.com/us/app/waltti-mobiili/id1467878273',
-};
-
 export const kvlInstagram: RedirectData = {
   applicationName: 'Kouvola instagram',
   launchUrl: 'instagram://user?username=kouvolankaupunki',

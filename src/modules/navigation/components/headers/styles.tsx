@@ -67,8 +67,16 @@ export default StyleSheet.create({
     marginLeft:'5%'
   },
   iconStyle: {
-    padding: Sizing.IP,
+    padding: Platform.OS === "android" ? Sizing.IP : 0,
     fontSize: 30,
+    ...Platform.select({
+      android: {
+        fontSize: headerHeight / 3.5,
+      },
+      ios: {
+        fontSize: (Sizing.XXML * 1.1) / 3.5,
+      },
+    }),
   },
   backbtnStyle: {
     flex:1, 

@@ -1,6 +1,6 @@
 {
   "name": "KouvolaCityApp",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@adrianso/react-native-device-brightness": "^1.2.7",
     "@react-native-async-storage/async-storage": "1.19.1",
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/toolbar-android": "^0.2.1",

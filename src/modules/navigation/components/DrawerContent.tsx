@@ -13,13 +13,12 @@ import { ERouteName } from '../typings';
 import translationData from 'config/locales.json';
 
 type navigationType =  "Home" | "LibraryCard" | "RoutePlanners" | "Visit" | 
-"Enquiries" | "TrimbleFeedBack" | "KouvolaJoukkoliikenne" | "Events" |  "OnlineStore"
+"Enquiries" | "TrimbleFeedBack" | "Events" |  "OnlineStore"
 
 const navigationData: {name: navigationType, route: ERouteName}[] = [
   {name: "Home", route: ERouteName.HOME},
   {name: "LibraryCard", route: ERouteName.LIBRARY_CARD},
   {name: "RoutePlanners", route: ERouteName.ROUTE_PLANNER},
-  {name: "KouvolaJoukkoliikenne", route: ERouteName.WALTTI_MOBIILI_REDIRECT},
   {name: "OnlineStore", route: ERouteName.ONLINE_STORE},
   {name: "Events", route: ERouteName.EVENTS},
   {name: "TrimbleFeedBack", route: ERouteName.TRIMBLE_FEEDBACK_REDIRECT},
@@ -60,7 +59,7 @@ const generateOnItemPressHandler =
   };
 
   const generateItemLabels = (item: navigationType): JSX.Element => {
-    const externalApp = (item === "TrimbleFeedBack" || item === "KouvolaJoukkoliikenne" || item === "OnlineStore")
+    const externalApp = (item === "TrimbleFeedBack" || item === "OnlineStore")
     const labelText = (externalApp) ? translationData.Labels.finnish.ExternalApps[item] 
       : translationData.Labels.finnish.Navigation[item]
     const accessibilityText = (externalApp) ? translationData.Accessibility.finnish.ExternalApps[item] 

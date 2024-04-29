@@ -23,8 +23,6 @@ export enum ERouteName {
   TRIMBLE_FEEDBACK_REDIRECT_INITIAL = 'trimbleFeedbackRedirectInit',
   VISIT_KVL = 'visitKvl',
   VISIT_KVL_INITIAL = 'visitKvlInit',
-  WALTTI_MOBIILI_REDIRECT = 'walttiMobiiliRedirect',
-  WALTTI_MOBIILI_REDIRECT_INITIAL = 'walttiMobiiliRedirectInit',
 }
 
 export type TStackScreenProps<
