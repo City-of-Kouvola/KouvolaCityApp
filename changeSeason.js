@@ -8,32 +8,38 @@ if (!args.length) {
   process.exit(1);
 }
 
-const launchScreenDirPath = "android/app/src/main/res/layout";
-const launchScreenFile = launchScreenDirPath + "/launch_screen.xml";
+const splashScreenDirPathAndroid = "android/app/src/main/res/layout";
+const splashScreenFileAndroid = splashScreenDirPathAndroid + "/launch_screen.xml";
+
+const splashScreenFileIos = "ios/Launch_Screen.storyboard";
 
 const bannerDirPath = "src/assets/img";
 const bannerFile = bannerDirPath + "/banner.jpg";
 
-const summerSplashScreen = launchScreenDirPath + "/launch_screen_summer.xml";
-const summerBanner = bannerDirPath + "/banner_summer.jpg";
+const summerSplashScreenAndroid = splashScreenDirPathAndroid + "/launch_screen_summer.xml";
+const summerSplashScreenIos = "ios/Launch_Screen_Summer.storyboard";
+const summerBannerAndroid = bannerDirPath + "/banner_summer.jpg";
 
-const winterSplashScreen = launchScreenDirPath + "/launch_screen_winter.xml";
-const winterBanner = bannerDirPath + "/banner_winter.jpg";
+const winterSplashScreenAndroid = splashScreenDirPathAndroid + "/launch_screen_winter.xml";
+const winterSplashScreenIos = "ios/Launch_Screen_Winter.storyboard";
+const winterBannerAndroid = bannerDirPath + "/banner_winter.jpg";
 
 const season = args[0];
 
-let splashScreen, banner;
+let splashScreenAndroid, splashScreenIos, banner;
 if (season === '--winter') {
-  splashScreen = winterSplashScreen;
-  banner = winterBanner;
+  splashScreenAndroid = winterSplashScreenAndroid;
+  splashScreenIos = winterSplashScreenIos;
+  banner = winterBannerAndroid;
 } else if (season === '--summer') {
-  splashScreen = summerSplashScreen;
-  banner = summerBanner;
+  splashScreenAndroid = summerSplashScreenAndroid;
+  splashScreenIos = summerSplashScreenIos;
+  banner = summerBannerAndroid;
 }
 
 fs.readFile(path.resolve(__dirname, banner), 'utf8', (err, data) => {
   if (err) {
-    console.error(`Error reading ${splashScreen}:`, err);
+    console.error(`Error reading ${splashScreenAndroid}:`, err);
     process.exit(1);
   }
 
@@ -45,18 +51,32 @@ fs.readFile(path.resolve(__dirname, banner), 'utf8', (err, data) => {
   });
 });
 
-fs.readFile(path.resolve(__dirname, splashScreen), 'utf8', (err, data) => {
+fs.readFile(path.resolve(__dirname, splashScreenAndroid), 'utf8', (err, data) => {
   if (err) {
-    console.error(`Error reading ${splashScreen}:`, err);
+    console.error(`Error reading ${splashScreenAndroid}:`, err);
     process.exit(1);
   }
 
-  fs.writeFile(path.resolve(__dirname, launchScreenFile), data, 'utf8', (err) => {
+  fs.writeFile(path.resolve(__dirname, splashScreenFileAndroid), data, 'utf8', (err) => {
+    if (err) {
+      console.error(`Error writing to launch_screen.xml:`, err);
+      process.exit(1);
+    }
+  });
+});
+
+fs.readFile(path.resolve(__dirname, splashScreenIos), 'utf8', (err, data) => {
+  if (err) {
+    console.error(`Error reading ${splashScreenIos}:`, err);
+    process.exit(1);
+  }
+  
+  fs.writeFile(path.resolve(__dirname, splashScreenFileIos), data, 'utf8', (err) => {
     if (err) {
       console.error(`Error writing to launch_screen.xml:`, err);
       process.exit(1);
     }
 
-    console.info(`Changed theme successfully. Please restart the application for the splash screen to update`);
+    console.log("Changed theme successfully. Please restart the application for the splash screen to update");
   });
 });
