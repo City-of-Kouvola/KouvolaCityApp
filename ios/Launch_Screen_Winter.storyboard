@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background-Summer" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-Y1-dFm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background-Winter" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-Y1-dFm">
                                 <rect key="frame" x="-51" y="42" width="497" height="761"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Frame-Ral10121" translatesAutoresizingMaskIntoConstraints="NO" id="V1h-ed-8Ri">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Frame-Kymijoki" translatesAutoresizingMaskIntoConstraints="NO" id="V1h-ed-8Ri">
                                 <rect key="frame" x="-109" y="-220" width="677" height="1292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
