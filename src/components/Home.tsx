@@ -15,7 +15,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { fetchNews } from 'modules/news/RequestService';
 import NavBar from 'modules/news/components/NavBar';
 import { ArticleTitle } from 'modules/news/components';
-const transparentBg = require('../assets/img/Pohjoiseen_laajakuva_vaaka.jpg');
+const transparentBg = require('../assets/img/banner.jpg');
 const translationData = require('config/locales.json');
 
 const Home = ({ navigation }: any): JSX.Element => {
