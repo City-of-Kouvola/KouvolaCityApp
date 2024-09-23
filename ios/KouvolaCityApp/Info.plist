@@ -40,6 +40,11 @@
 			</dict>
 		</dict>
 	</dict>
+	<!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
+	<key>NSAllowsArbitraryLoads</key>
+	<false/>
+	<key>NSAllowsLocalNetworking</key>
+	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>UIAppFonts</key>
@@ -85,7 +90,7 @@
 	<string>Launch_Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>armv7</string>
+		<string>arm64</string>
 	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleDefault</string>
