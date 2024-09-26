@@ -110,6 +110,7 @@ def reactNativeArchitectures() {
 
 android {
     ndkVersion rootProject.ext.ndkVersion
+    namespace = "com.kouvolacityapp"
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
