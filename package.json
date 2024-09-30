@@ -11,8 +11,8 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.0.0",
     "@react-native-community/toolbar-android": "^0.2.1",
+    "@react-native/gradle-plugin": "^0.75.3",
     "@react-navigation/drawer": "6.6.3",
-    "@react-native/gradle-plugin":"^0.75.3",
     "@react-navigation/native": "6.1.7",
     "@react-navigation/stack": "6.4.1",
     "@rneui/base": "^4.0.0-rc.7",
