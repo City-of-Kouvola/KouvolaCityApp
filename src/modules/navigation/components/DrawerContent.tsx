@@ -76,9 +76,10 @@ const DrawerContent = (props: DrawerContentComponentProps): JSX.Element => {
 
   useEffect(()=> {
     if(isDrawerOpen === 'open') {
-    AccessibilityInfo.announceForAccessibility(
-      translationData.Accessibility.finnish.Navigation.OpenedMenu,
-    );}
+      AccessibilityInfo.announceForAccessibility(
+        translationData.Accessibility.finnish.Navigation.OpenedMenu,
+      );
+    }
   },[isDrawerOpen])
 
   return (
