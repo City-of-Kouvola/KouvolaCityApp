@@ -16,14 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/background_summer" />
+            android:src="@drawable/background_winter"
+            app:srcCompat="@drawable/background_autumn" />
 
         <ImageView
             android:id="@+id/Frame"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/kouvola_frame_ral10121" />
+            android:src="@drawable/kouvola_frame_kymijoki"
+            app:srcCompat="@drawable/kouvola_frame_ral10121" />
 
         <ImageView
             android:id="@+id/KouvolaMobiilissa"
