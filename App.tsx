@@ -6,7 +6,7 @@ import SplashScreen from 'react-native-splash-screen';
 import Routes from 'modules/navigation/Routes';
 import translationData from 'config/locales.json';
 
-const App = (): JSX.Element => {
+const App = (): React.JSX.Element => {
   useEffect(() => {
     setTimeout(() => {
       SplashScreen.hide();
