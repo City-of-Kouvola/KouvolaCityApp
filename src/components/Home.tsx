@@ -201,7 +201,7 @@ const Home = ({ navigation }: any): JSX.Element => {
     >
       <Image
         source={transparentBg}
-        resizeMode='contain'
+        resizeMode='stretch'
         style={styles.transbg}
       />
       <View style={styles.newsContainer}>
