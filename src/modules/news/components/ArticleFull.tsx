@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { ScrollView, useWindowDimensions } from 'react-native';
 import HTML from 'react-native-render-html';
-
 import { fullArticleTagStyles } from './htmlStyles';
-import { NewsArticle } from '../Types';
 
 interface IProps {
   route: any;
 }
 
-export const ArticleFull = ({ route }: IProps) => {
+export const ArticleFull = memo(({ route }: IProps) => {
   const fullArticle = route.params.article;
   const htmlContent = `
   <div>
@@ -27,4 +25,4 @@ export const ArticleFull = ({ route }: IProps) => {
       />
     </ScrollView>
   );
-};
+});

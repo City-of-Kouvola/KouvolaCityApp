@@ -8,9 +8,13 @@ import translationData from 'config/locales.json';
 
 const App = (): React.JSX.Element => {
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       SplashScreen.hide();
     }, 3000);
+
+    return () => {
+      clearTimeout(timeout)
+    }
   }, []);
 
   if (Platform.OS === 'android') {
