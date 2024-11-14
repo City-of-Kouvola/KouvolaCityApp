@@ -118,8 +118,8 @@ android {
         applicationId "com.kouvolacityapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 37
-        versionName "1.12.1"
+        versionCode 38
+        versionName "1.12.2"
     }
     splits {
         abi {
