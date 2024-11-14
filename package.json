@@ -13,9 +13,10 @@
     "@react-native/gradle-plugin": "^0.76.1",
     "react-native-vector-icons": "10.2.0",
     "react-native-reanimated": "3.16.1",
-    "library_card_module": "github:City-of-Kouvola/Library_card_module",
     "react": "18.3.1",
     "react-native": "0.76.1",
+    "@bwip-js/react-native":">=4.5.1",
+    "@adrianso/react-native-device-brightness":">=1.2.7",
     "react-native-splash-screen": "^3.3.0"
   },
   "devDependencies": {
@@ -38,7 +39,8 @@
     "react-native-codegen": "^0.70.7",
     "react-test-renderer": "18.3.1",
     "reactotron-react-native": "^5.1.9",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "eslint": "^9.14.0"
   },
   "jest": {
     "preset": "react-native",
