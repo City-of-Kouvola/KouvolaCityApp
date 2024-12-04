@@ -45,8 +45,6 @@
 	<false/>
 	<key>NSAllowsLocalNetworking</key>
 	<false/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
