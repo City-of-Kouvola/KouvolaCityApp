@@ -43,6 +43,9 @@ export const locales = {
   invalidCredentials: {
     fi: 'Väärä kortin numero tai salasana',
   },
+  noConnection: {
+    fi: 'Ei saatu yhteyttä palveluun, tarkista nettiyhteytesi',
+  },
   logoutButton: {
     fi: 'Kirjaudu ulos',
   },
