@@ -51,7 +51,6 @@ export const Login = ({saveDetails}: IProps) => {
       );
 
       if (response.status !== 200) {
-        setIsLoading(false);
         AccessibilityInfo.announceForAccessibility(
           locales.invalidCredentials.fi,
         );
@@ -63,10 +62,10 @@ export const Login = ({saveDetails}: IProps) => {
       const responseJSON = await response.json();
       const holderName = `${responseJSON.firstname} ${responseJSON.surname}`;
       saveDetails(inputCardNumber, holderName);    
-      setIsLoading(false);
     } catch (e) {
-      setIsLoading(false);
       console.log('Error: ', e);
+    } finally {
+      setIsLoading(false);
     }
   };
 

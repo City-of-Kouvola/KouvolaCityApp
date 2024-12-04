@@ -30,12 +30,12 @@ export const LibraryCard = ({cardNumber, holderName, logout, isFocused}: IProps)
   const {width} = useWindowDimensions();
 
   useEffect(() => {
-
     AccessibilityInfo.announceForAccessibility(locales.userLoggedIn.fi);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsTimeout(false)
     }, 5000);
-
+  
+    return () => clearTimeout(timer);
   }, [])
 
   useEffect(() => {
