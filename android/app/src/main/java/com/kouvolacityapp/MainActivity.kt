@@ -7,9 +7,6 @@ import com.facebook.react.defaults.DefaultReactActivityDelegate
 import com.facebook.react.ReactRootView
 import android.os.Bundle
 
-import com.facebook.react.config.ReactFeatureFlags
-import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView
-
 import org.devio.rn.splashscreen.SplashScreen;
 
 class MainActivity : ReactActivity() {

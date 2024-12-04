@@ -118,8 +118,8 @@ android {
         applicationId "com.kouvolacityapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 37
-        versionName "1.12.1"
+        versionCode 38
+        versionName "1.12.2"
     }
     splits {
         abi {
@@ -171,6 +171,7 @@ dependencies {
     implementation "com.facebook.react:react-native:0.72.3"  // From node_modules
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+    implementation("com.facebook.react:hermes-android")
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
