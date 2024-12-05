@@ -9,19 +9,21 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFDFD">
 
         <ImageView
             android:id="@+id/KirjastoLogo"
-            android:layout_width="364dp"
-            android:layout_height="244dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="50dp"
-            android:layout_weight="0.2"
+            android:layout_marginBottom="50dp"
             android:adjustViewBounds="false"
-            android:src="@drawable/yleisten_kirjastojen_tunnus_fi_pysty_nega" />
+            android:contentDescription="@string/kirjaston_logo"
+            android:src="@drawable/yleisten_kirjastojen_tunnus_fi_pysty" />
 
     </FrameLayout>
 </LinearLayout>
