@@ -18,6 +18,14 @@ class MainActivity : ReactActivity() {
     override fun getMainComponentName(): String = "KouvolaCityApp"
 
   /**
+   * override oncreate to use SplashScreen
+   */
+    override fun onCreate(savedInstanceState: Bundle?) {
+      SplashScreen.show(this)
+      super.onCreate(savedInstanceState)
+    }
+
+  /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
    * which allows you to enable New Architecture with a single boolean flags [fabricEnabled]
    */
