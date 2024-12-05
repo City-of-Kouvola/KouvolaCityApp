@@ -6,6 +6,7 @@ const textFont = 'Roboto';
 
 export const styles = StyleSheet.create({
   headerContainer: {marginTop: '2%', alignSelf: 'center'},
+
   loginHeaderImage: {maxWidth: '70%'},
   loginDescription: {
     width: '90%',
@@ -57,6 +58,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: 'white',
   },
+  iosFiller: {minHeight: '2%', alignSelf: 'center'},
   errorInput: {
     width: 250,
     fontSize: 24,
