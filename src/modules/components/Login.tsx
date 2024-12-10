@@ -87,6 +87,7 @@ export const Login = ({saveDetails}: IProps) => {
         style={{flex: 1}}
         enabled
         behavior={Platform.OS === 'ios' ? 'position' : 'padding'}>
+        {Platform.OS === 'ios' && <View style={styles.iosFiller}></View>}
         <View style={styles.headerContainer}>
           <Image
             resizeMode="contain"

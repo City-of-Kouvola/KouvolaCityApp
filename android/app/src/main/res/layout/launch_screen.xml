@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_dark"
@@ -9,46 +7,21 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFDFD">
 
         <ImageView
-            android:id="@+id/Background"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/background_winter"
-            app:srcCompat="@drawable/background_autumn" />
-
-        <ImageView
-            android:id="@+id/Frame"
+            android:id="@+id/KirjastoLogo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/kouvola_frame_kymijoki"
-            app:srcCompat="@drawable/kouvola_frame_ral10121" />
-
-        <ImageView
-            android:id="@+id/KouvolaMobiilissa"
-            android:layout_width="750px"
-            android:layout_height="147dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="50dp"
-            android:layout_weight="0.2"
+            android:layout_marginBottom="50dp"
             android:adjustViewBounds="false"
-            android:src="@drawable/kouvola_mobiilissa_transparent" />
-
-        <ImageView
-            android:id="@+id/Slogan"
-            android:layout_width="750px"
-            android:layout_height="128dp"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="40dp"
-            android:layout_weight="0.2"
-            android:src="@drawable/kouvola_slogan_transparent" />
+            android:contentDescription="@string/kirjaston_logo"
+            android:src="@drawable/yleisten_kirjastojen_tunnus_fi_pysty" />
 
     </FrameLayout>
 </LinearLayout>
