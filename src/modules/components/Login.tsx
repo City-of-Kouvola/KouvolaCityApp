@@ -63,7 +63,10 @@ export const Login = ({saveDetails}: IProps) => {
       const holderName = `${responseJSON.firstname} ${responseJSON.surname}`;
       saveDetails(inputCardNumber, holderName);    
     } catch (e) {
-      console.log('Error: ', e);
+      AccessibilityInfo.announceForAccessibility(
+        locales.noConnection.fi,
+      );
+      setErrorMessage(locales.noConnection.fi);
     } finally {
       setIsLoading(false);
     }
