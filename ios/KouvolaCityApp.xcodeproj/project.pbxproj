@@ -51,7 +51,7 @@
 		01D607F15BA84B388D4BBD2D /* GT-Pressura-Mono-LC-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Bold.ttf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Bold.ttf"; sourceTree = "<group>"; };
 		0758E58F57AC48448459DA90 /* GT-Pressura-Mono-LC-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Regular.otf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Regular.otf"; sourceTree = "<group>"; };
 		08B46D05A18B436E90FF7C08 /* GT-Pressura-Mono-LC-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Bold.otf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Bold.otf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Kouvola Mobiilissa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouvola Mobiilissa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Kouvolan Kirjasto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouvolan Kirjasto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KouvolaCityApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.mm; path = KouvolaCityApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KouvolaCityApp/Images.xcassets; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Kouvola Mobiilissa.app */,
+				13B07F961A680F5B00A75B9A /* Kouvolan Kirjasto.app */,
 				00E356EE1AD99517003FC87E /* KouvolaCityAppTests.xctest */,
 			);
 			name = Products;
@@ -266,7 +266,7 @@
 			);
 			name = KouvolaCityApp;
 			productName = KouvolaCityApp;
-			productReference = 13B07F961A680F5B00A75B9A /* Kouvola Mobiilissa.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Kouvolan Kirjasto.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -557,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvola Mobiilissa.app/Kouvola Mobiilissa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvolan Kirjasto.app/Kouvolan Kirjasto";
 			};
 			name = Debug;
 		};
@@ -582,7 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvola Mobiilissa.app/Kouvola Mobiilissa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvolan Kirjasto.app/Kouvolan Kirjasto";
 			};
 			name = Release;
 		};
@@ -607,7 +607,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
-				PRODUCT_NAME = "Kouvola Mobiilissa";
+				PRODUCT_NAME = "Kouvolan Kirjasto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -634,7 +634,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
-				PRODUCT_NAME = "Kouvola Mobiilissa";
+				PRODUCT_NAME = "Kouvolan Kirjasto";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
