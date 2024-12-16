@@ -31,7 +31,7 @@ export const LibraryCardModule = ({isFocused}: {isFocused?: boolean}) => {
       const cardNumber = await AsyncStorage.getItem('@cardNumber');
       const holderName = await AsyncStorage.getItem('@holderName');
       if (cardNumber && holderName) {
-        setCardNumber(cardNumber);
+        setCardNumber(cardNumber.toUpperCase());
         setHolderName(holderName);
       }
       setIsLoading(false);
