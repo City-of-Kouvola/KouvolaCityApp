@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -12,18 +12,25 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <view key="view" contentMode="scaleAspectFit" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="KouvolaMobiilissa" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-We-NEp">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="KirjastoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-We-NEp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1eh-We-NEp" secondAttribute="bottom" id="1h6-MT-ojZ"/>
+                            <constraint firstItem="1eh-We-NEp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7ne-gF-qmT"/>
+                            <constraint firstItem="1eh-We-NEp" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="BKn-Fu-O5B"/>
+                            <constraint firstItem="1eh-We-NEp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="F19-Oa-Imu"/>
+                            <constraint firstItem="1eh-We-NEp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SaH-PF-BqC"/>
+                            <constraint firstItem="1eh-We-NEp" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="sV4-4b-Ur5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KouvolaMobiilissa" width="58.666667938232422" height="63.666667938232422"/>
+        <image name="KirjastoLogo" width="176" height="191.66667175292969"/>
     </resources>
 </document>
