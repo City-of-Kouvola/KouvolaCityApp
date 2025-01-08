@@ -29,6 +29,10 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAllowsArbitraryLoads</key>
+	<false/>
+	<key>NSAllowsLocalNetworking</key>
+	<false/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -40,11 +44,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
-	<key>NSAllowsArbitraryLoads</key>
-	<false/>
-	<key>NSAllowsLocalNetworking</key>
-	<false/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

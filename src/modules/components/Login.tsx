@@ -126,7 +126,7 @@ export const Login = ({saveDetails}: IProps) => {
                 maxLength: 20,
                 style: errorMessage ? styles.errorInput : styles.input,
                 onChangeText: (inputCardNumber: string) =>
-                  setInputCardNumber(inputCardNumber),
+                  setInputCardNumber(inputCardNumber.toUpperCase()),
                 placeholder: locales.cardNumber.fi,
                 placeholderTextColor: '#8b9cb5',
                 returnKeyType: 'next',
