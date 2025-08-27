@@ -27,6 +27,7 @@
 		C7C0682B02D9492E817DD41C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 740AE7B6E6B64F9A881F94AF /* Roboto-Bold.ttf */; };
 		CAEC0A38D9D54032B95576FD /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C30012FA841858CD81192 /* Roboto-Regular.ttf */; };
 		D60E0B81C94D450D8EA7A68F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55780EC5DD6E41BBA5DC20CD /* Roboto-Black.ttf */; };
+		D68824441EEA74FFA5E2ADD9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4E513670B7B8C0E5F97E7A90 /* PrivacyInfo.xcprivacy */; };
 		E1F7F00BB0A142348BD4938F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7CDF845A05E441981E89BFD /* Roboto-Medium.ttf */; };
 		F9ADBE325377451E83DC660A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E78A240264D449F4832D5F74 /* Roboto-Light.ttf */; };
 		FB059994A068F7BC0FE14A43 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB19D002AADFB7A9BF1435BD /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */; };
@@ -50,7 +51,7 @@
 		01D607F15BA84B388D4BBD2D /* GT-Pressura-Mono-LC-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Bold.ttf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Bold.ttf"; sourceTree = "<group>"; };
 		0758E58F57AC48448459DA90 /* GT-Pressura-Mono-LC-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Regular.otf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Regular.otf"; sourceTree = "<group>"; };
 		08B46D05A18B436E90FF7C08 /* GT-Pressura-Mono-LC-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Bold.otf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Bold.otf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Kouvola Mobiilissa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouvola Mobiilissa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Kouvolan kirjasto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouvolan kirjasto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KouvolaCityApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.mm; path = KouvolaCityApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KouvolaCityApp/Images.xcassets; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		23EFAD972B233E9B004580E2 /* Launch_Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch_Screen.storyboard; sourceTree = "<group>"; };
 		3D6C30012FA841858CD81192 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		3F29F9F5386F34616AE6E0D7 /* Pods-KouvolaCityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4E513670B7B8C0E5F97E7A90 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = KouvolaCityApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		55780EC5DD6E41BBA5DC20CD /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5E54DE7FBBA54A2DBF584AFD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		61DC1DD09F1D715FCC8ADDB3 /* Pods-KouvolaCityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				22FBA24F24FE694D00E658CB /* InfoPlist.strings */,
+				4E513670B7B8C0E5F97E7A90 /* PrivacyInfo.xcprivacy */,
 			);
 			name = KouvolaCityApp;
 			sourceTree = "<group>";
@@ -203,7 +206,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Kouvola Mobiilissa.app */,
+				13B07F961A680F5B00A75B9A /* Kouvolan kirjasto.app */,
 				00E356EE1AD99517003FC87E /* KouvolaCityAppTests.xctest */,
 			);
 			name = Products;
@@ -263,7 +266,7 @@
 			);
 			name = KouvolaCityApp;
 			productName = KouvolaCityApp;
-			productReference = 13B07F961A680F5B00A75B9A /* Kouvola Mobiilissa.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Kouvolan kirjasto.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -335,6 +338,7 @@
 				6DB5AEB33229483DAC3B5330 /* Times New Roman.ttf in Resources */,
 				FB2FD4EDFC2640029A3342C4 /* GT-Pressura-Mono-LC-Bold.ttf in Resources */,
 				9B4AB91954D247C78B0CB8AA /* GT-Pressura-Mono-LC-Regular.ttf in Resources */,
+				D68824441EEA74FFA5E2ADD9 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +544,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = KouvolaCityAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvola Mobiilissa.app/Kouvola Mobiilissa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvolan kirjasto.app/Kouvolan kirjasto";
 			};
 			name = Debug;
 		};
@@ -565,7 +569,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,7 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvola Mobiilissa.app/Kouvola Mobiilissa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvolan kirjasto.app/Kouvolan kirjasto";
 			};
 			name = Release;
 		};
@@ -588,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
@@ -596,14 +600,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.12.1;
+				MARKETING_VERSION = 2.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
-				PRODUCT_NAME = "Kouvola Mobiilissa";
+				PRODUCT_NAME = "Kouvolan kirjasto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -616,21 +620,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = AB3TGBXZTM;
 				INFOPLIST_FILE = KouvolaCityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.12.1;
+				MARKETING_VERSION = 2.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.kouvola.kouvola-mobiilissa";
-				PRODUCT_NAME = "Kouvola Mobiilissa";
+				PRODUCT_NAME = "Kouvolan kirjasto";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -640,8 +644,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -667,6 +672,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -685,7 +691,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -699,8 +707,11 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -708,8 +719,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -735,6 +747,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -746,7 +759,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -759,8 +774,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

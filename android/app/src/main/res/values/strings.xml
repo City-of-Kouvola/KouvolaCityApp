@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Kouvola Mobiilissa</string>
+    <string name="app_name">Kouvolan kirjasto</string>
+    <string name="kirjaston_logo">Kirjaston logo</string>
 </resources>

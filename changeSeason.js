@@ -24,6 +24,10 @@ const winterSplashScreenAndroid = splashScreenDirPathAndroid + "/launch_screen_w
 const winterSplashScreenIos = "ios/Launch_Screen_Winter.storyboard";
 const winterBannerAndroid = bannerDirPath + "/banner_winter.jpg";
 
+const autumnSplashScreenAndroid = splashScreenDirPathAndroid + "/launch_screen_autumn.xml";
+const autumnSplashScreenIos = "ios/Launch_Screen_Autumn.storyboard";
+const autumnBannerAndroid = bannerDirPath + "/banner_autumn.jpg";
+
 const season = args[0];
 
 let splashScreenAndroid, splashScreenIos, banner;
@@ -35,6 +39,10 @@ if (season === '--winter') {
   splashScreenAndroid = summerSplashScreenAndroid;
   splashScreenIos = summerSplashScreenIos;
   banner = summerBannerAndroid;
+} else if (season === '--autumn') {
+  splashScreenAndroid = autumnSplashScreenAndroid;
+  splashScreenIos = autumnSplashScreenIos;
+  banner = autumnBannerAndroid;
 }
 
 fs.readFile(path.resolve(__dirname, banner), 'utf8', (err, data) => {
