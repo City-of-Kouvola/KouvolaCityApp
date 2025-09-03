@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
   logoutContainer: {
     justifyContent: "center", 
     alignItems: "center", 
-    flex: 1
+    flex: 2
   },
   logoutButton: {
     height: 50,
@@ -34,9 +34,17 @@ export const styles = StyleSheet.create({
     fontSize: 21,
     padding: 15,
   },
+  libraryName: {
+    fontFamily: textFont,
+    fontSize: 24,
+    fontWeight: 'bold',
+    flex: 1.5,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+  },
   imageContainer: {
     alignItems: "center", 
-    flex: 1
+    flex: 1.5
   },
   libraryCardImage: {
     maxWidth: '100%',

@@ -28,7 +28,7 @@ Kouvola City App has been developed using:
 
 ## Getting Started
 
-1. Setup React Native development environment [React Native CLI](https://reactnative.dev/docs/environment-setup)
+1. Setup React Native development environment [React Native CLI](https://reactnative.dev/docs/set-up-your-environment)
 2. Clone the repository i.e with Git using `git clone https://github.com/City-of-Kouvola/KouvolaCityApp.git`
 3. `npm install`
 4. `cd ios && pod install` (if developing for iOS)
