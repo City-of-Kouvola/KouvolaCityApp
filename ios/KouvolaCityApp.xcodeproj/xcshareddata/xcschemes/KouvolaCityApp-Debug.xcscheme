@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "KouvolaCityAppTests.xctest"
+               BuildableName = "KouvolaCityAppTests"
                BlueprintName = "KouvolaCityAppTests"
                ReferencedContainer = "container:KouvolaCityApp.xcodeproj">
             </BuildableReference>

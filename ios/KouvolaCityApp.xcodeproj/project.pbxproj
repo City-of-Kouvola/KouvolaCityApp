@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* KouvolaCityAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KouvolaCityAppTests.m */; };
 		0B326EAA2CE746CD96D4D537 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E54DE7FBBA54A2DBF584AFD /* Roboto-Thin.ttf */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		22BB00F22B7E4B98AC1F3999 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB5E7CCF9B8400DAB00CF08 /* Roboto-BoldItalic.ttf */; };
 		22FBA24D24FE694D00E658CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA24F24FE694D00E658CB /* InfoPlist.strings */; };
 		2305FC802B2341700058935B /* Launch_Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EFAD972B233E9B004580E2 /* Launch_Screen.storyboard */; };
@@ -30,7 +28,6 @@
 		D68824441EEA74FFA5E2ADD9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4E513670B7B8C0E5F97E7A90 /* PrivacyInfo.xcprivacy */; };
 		E1F7F00BB0A142348BD4938F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7CDF845A05E441981E89BFD /* Roboto-Medium.ttf */; };
 		F9ADBE325377451E83DC660A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E78A240264D449F4832D5F74 /* Roboto-Light.ttf */; };
-		FB059994A068F7BC0FE14A43 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB19D002AADFB7A9BF1435BD /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */; };
 		FB2FD4EDFC2640029A3342C4 /* GT-Pressura-Mono-LC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01D607F15BA84B388D4BBD2D /* GT-Pressura-Mono-LC-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -45,19 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* KouvolaCityAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KouvolaCityAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* KouvolaCityAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KouvolaCityAppTests.m; sourceTree = "<group>"; };
 		01D607F15BA84B388D4BBD2D /* GT-Pressura-Mono-LC-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Bold.ttf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Bold.ttf"; sourceTree = "<group>"; };
 		0758E58F57AC48448459DA90 /* GT-Pressura-Mono-LC-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Regular.otf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Regular.otf"; sourceTree = "<group>"; };
 		08B46D05A18B436E90FF7C08 /* GT-Pressura-Mono-LC-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Bold.otf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Bold.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Kouvolan kirjasto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouvolan kirjasto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KouvolaCityApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.mm; path = KouvolaCityApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KouvolaCityApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KouvolaCityApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KouvolaCityApp/main.m; sourceTree = "<group>"; };
-		15B3A86A5FB50EBDD571E51B /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		22FBA24E24FE694D00E658CB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22FBA25024FE694F00E658CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		23EFAD972B233E9B004580E2 /* Launch_Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch_Screen.storyboard; sourceTree = "<group>"; };
@@ -68,14 +59,13 @@
 		5E54DE7FBBA54A2DBF584AFD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		61DC1DD09F1D715FCC8ADDB3 /* Pods-KouvolaCityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp.release.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp/Pods-KouvolaCityApp.release.xcconfig"; sourceTree = "<group>"; };
 		6588E5F75EF1D40E29E55D61 /* libPods-KouvolaCityApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KouvolaCityApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = KouvolaCityApp/AppDelegate.swift; sourceTree = "<group>"; };
 		740AE7B6E6B64F9A881F94AF /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		7FB5E7CCF9B8400DAB00CF08 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		80EB60177991460EB8AEC307 /* GT-Pressura-Mono-LC-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GT-Pressura-Mono-LC-Regular.ttf"; path = "../src/assets/fonts/GT-Pressura-Mono-LC-Regular.ttf"; sourceTree = "<group>"; };
 		846BE365E8A84D68B280D1E0 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		96A56131927B4354A5FE61A7 /* Arial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Arial.ttf; path = ../src/assets/fonts/Arial.ttf; sourceTree = "<group>"; };
 		A8AA086806A54C70BE281189 /* Times New Roman.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Times New Roman.ttf"; path = "../src/assets/fonts/Times New Roman.ttf"; sourceTree = "<group>"; };
-		BB19D002AADFB7A9BF1435BD /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KouvolaCityApp-KouvolaCityAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7C7E958C1FA3534B92F9735 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC3C1C465CB4494A9CF7FF80 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		E08B461FCB974DEDA997CA5B /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../src/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		E78A240264D449F4832D5F74 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -86,14 +76,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB059994A068F7BC0FE14A43 /* libPods-KouvolaCityApp-KouvolaCityAppTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,15 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* KouvolaCityAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F21AD99517003FC87E /* KouvolaCityAppTests.m */,
-				00E356F01AD99517003FC87E /* Supporting Files */,
-			);
-			path = KouvolaCityAppTests;
-			sourceTree = "<group>";
-		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,12 +98,10 @@
 		13B07FAE1A68108700A75B9A /* KouvolaCityApp */ = {
 			isa = PBXGroup;
 			children = (
-				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				23EFAD972B233E9B004580E2 /* Launch_Screen.storyboard */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB71A68108700A75B9A /* main.m */,
 				22FBA24F24FE694D00E658CB /* InfoPlist.strings */,
 				4E513670B7B8C0E5F97E7A90 /* PrivacyInfo.xcprivacy */,
 			);
@@ -149,7 +120,6 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				6588E5F75EF1D40E29E55D61 /* libPods-KouvolaCityApp.a */,
-				BB19D002AADFB7A9BF1435BD /* libPods-KouvolaCityApp-KouvolaCityAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,7 +161,6 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* KouvolaCityApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* KouvolaCityAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A48ABD93B3CAAA479E64B770 /* Pods */,
@@ -207,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* Kouvolan kirjasto.app */,
-				00E356EE1AD99517003FC87E /* KouvolaCityAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,8 +185,6 @@
 			children = (
 				3F29F9F5386F34616AE6E0D7 /* Pods-KouvolaCityApp.debug.xcconfig */,
 				61DC1DD09F1D715FCC8ADDB3 /* Pods-KouvolaCityApp.release.xcconfig */,
-				C7C7E958C1FA3534B92F9735 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */,
-				15B3A86A5FB50EBDD571E51B /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,27 +192,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* KouvolaCityAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KouvolaCityAppTests" */;
-			buildPhases = (
-				3468876C2BD86BA311A062E9 /* [CP] Check Pods Manifest.lock */,
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-				17CA0760892312C26AB53733 /* [CP] Embed Pods Frameworks */,
-				B6D64AA96A60151BC71B0743 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = KouvolaCityAppTests;
-			productName = KouvolaCityAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* KouvolaCityAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* KouvolaCityApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KouvolaCityApp" */;
@@ -277,11 +222,6 @@
 			attributes = {
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = AB3TGBXZTM;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
 					};
@@ -302,7 +242,6 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* KouvolaCityApp */,
-				00E356ED1AD99517003FC87E /* KouvolaCityAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -359,23 +298,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		17CA0760892312C26AB53733 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2A552C29BA32E343CA2E7B27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,45 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3468876C2BD86BA311A062E9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KouvolaCityApp-KouvolaCityAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B6D64AA96A60151BC71B0743 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KouvolaCityApp-KouvolaCityAppTests/Pods-KouvolaCityApp-KouvolaCityAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB8C7D12142DCC612F1CDC95 /* [CP] Embed Pods Frameworks */ = {
@@ -493,20 +376,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* KouvolaCityAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,59 +407,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7C7E958C1FA3534B92F9735 /* Pods-KouvolaCityApp-KouvolaCityAppTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = AB3TGBXZTM;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KouvolaCityAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvolan kirjasto.app/Kouvolan kirjasto";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15B3A86A5FB50EBDD571E51B /* Pods-KouvolaCityApp-KouvolaCityAppTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = AB3TGBXZTM;
-				INFOPLIST_FILE = KouvolaCityAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kouvolan kirjasto.app/Kouvolan kirjasto";
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F29F9F5386F34616AE6E0D7 /* Pods-KouvolaCityApp.debug.xcconfig */;
@@ -707,7 +528,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -774,7 +598,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -785,15 +612,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KouvolaCityAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KouvolaCityApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
