@@ -30,6 +30,19 @@ export const styles = StyleSheet.create({
     height: Dimensions.get('window').width * 0.99,
     width: Dimensions.get('window').height * 0.9,
     justifyContent: 'center',
+    alignItems: 'center'
+  },
+  libraryNameContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  libraryName: {
+    fontFamily: textFont,
+    fontSize: 24,
+    paddingBottom: 5,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    textAlignVertical: 'center',
   },
   libraryCard: {
     marginBottom: '20%',
@@ -39,8 +52,7 @@ export const styles = StyleSheet.create({
     fontSize: 21,
     width: '60%',
     position: 'absolute',
-    padding: 35,
-    paddingLeft: 45,
+    padding: 60,
     top: '45%',
   },
   imageContainer: {

@@ -34,11 +34,15 @@ export const styles = StyleSheet.create({
     fontSize: 21,
     padding: 15,
   },
+  libraryNameContainer: {
+    flex: 1.5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   libraryName: {
     fontFamily: textFont,
     fontSize: 24,
     fontWeight: 'bold',
-    flex: 1.5,
     textAlign: 'center',
     textAlignVertical: 'center',
   },

@@ -16,7 +16,9 @@ const LibraryCardPortrait = ({cardNumber, confirmLogout, holderName, isTimeout}:
       style={styles.libraryCardContainer}
       importantForAccessibility={isTimeout ? "no-hide-descendants" : "yes"}
     >
-      <Text style={styles.libraryName}>{locales.libraryName.fi}</Text>
+      <View style={styles.libraryNameContainer}>
+        <Text style={styles.libraryName}>{locales.libraryName.fi}</Text>
+      </View>
       <View style={styles.libraryCard}>
         <Text style={styles.holderName}>{holderName}</Text>
         <View accessibilityLabel={locales.libraryBarCode.fi} accessibilityRole={'image'}>
