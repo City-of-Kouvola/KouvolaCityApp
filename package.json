@@ -9,7 +9,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@adrianso/react-native-device-brightness": ">=1.2.7",
+    
+    "@punosmobile/react-native-device-brightness": "git+https://github.com/punosmobile/react-native-device-brightness.git#chore/update-dev-deps",
     "@bwip-js/react-native": ">=4.5.1",
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-community/cli-platform-ios": "^20.0.1",
