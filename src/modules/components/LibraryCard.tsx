@@ -10,7 +10,7 @@ import {
 import {locales} from '../../config/locales';
 import LibraryCardPortrait from './portrait/LibraryCardPortrait';
 import LibraryCardLandscape from './landscape/LibraryCardLandscape';
-import { setBrightnessLevel, getBrightnessLevel } from '@adrianso/react-native-device-brightness';
+import { setBrightnessLevel, getBrightnessLevel } from '@punosmobile/react-native-device-brightness';
 
 interface IProps {
   cardNumber: string;
