@@ -52,7 +52,8 @@ export const styles = StyleSheet.create({
     fontSize: 21,
     width: '60%',
     position: 'absolute',
-    padding: 60,
+    paddingLeft: 45,
+    padding: 35,
     top: '45%',
   },
   imageContainer: {
