@@ -1332,7 +1332,7 @@ PODS:
     - React-jsiexecutor
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
-  - react-native-device-brightness (1.2.7):
+  - react-native-device-brightness (1.2.9):
     - React
   - react-native-safe-area-context (5.6.1):
     - DoubleConversion
@@ -1949,7 +1949,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
-  - "react-native-device-brightness (from `../node_modules/@adrianso/react-native-device-brightness`)"
+  - "react-native-device-brightness (from `../node_modules/@punosmobile/react-native-device-brightness`)"
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
@@ -2071,7 +2071,7 @@ EXTERNAL SOURCES:
   React-microtasksnativemodule:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
   react-native-device-brightness:
-    :path: "../node_modules/@adrianso/react-native-device-brightness"
+    :path: "../node_modules/@punosmobile/react-native-device-brightness"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-splash-screen:
@@ -2186,7 +2186,7 @@ SPEC CHECKSUMS:
   React-logger: 1426d04b594a2e68b0ac2add21d45422d06397a3
   React-Mapbuffer: 70a29536f84ddffca4a91097651d2b8f194f7c67
   React-microtasksnativemodule: ff05e894231c44c21135d1d23a82b87656d98eeb
-  react-native-device-brightness: 1a997350d060c3df9f303b1df84a4f7c5cbeb924
+  react-native-device-brightness: c54f3653ef96d7b25f066af7547e54922c476ae6
   react-native-safe-area-context: 895c49ee2613865f90318789be89a8e286fe7b69
   react-native-splash-screen: 95994222cc95c236bd3cdc59fe45ed5f27969594
   React-NativeModulesApple: d94850b316446b0c39a82eb278d6efaa1a634055
