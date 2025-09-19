@@ -9,14 +9,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "@bwip-js/react-native": ">=4.7.0",
     "@punosmobile/react-native-device-brightness": "git+https://github.com/punosmobile/react-native-device-brightness.git",
-    "@bwip-js/react-native": ">=4.5.1",
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-community/cli-platform-ios": "^20.0.1",
-    "@react-native/gradle-plugin": "^0.79.0",
-    "react": "19.0.0",
-    "react-native": "^0.79.0",
-    "react-native-reanimated": "^3.18.0",
+    "@react-native/gradle-plugin": "^0.81.4",
+    "react": "19.1.0",
+    "react-native": "0.81.4",
     "react-native-safe-area-context": "^5.5.2",
     "react-native-splash-screen": "^3.3.0",
     "react-native-vector-icons": "10.2.0"
@@ -26,10 +25,10 @@
     "@babel/runtime": "^7.28.3",
     "@react-native-community/cli": "^20.0.0",
     "@react-native-community/cli-platform-android": "^20.0.0",
-    "@react-native/babel-preset": "^0.79.0",
-    "@react-native/eslint-config": "0.79.0",
-    "@react-native/metro-config": "^0.79.0",
-    "@react-native/typescript-config": "0.79.0",
+    "@react-native/babel-preset": "0.81.4",
+    "@react-native/eslint-config": "0.81.4",
+    "@react-native/metro-config": "0.81.4",
+    "@react-native/typescript-config": "0.81.4",
     "@types/jest": "^29.5.13",
     "@types/react-test-renderer": "19.1.0",
     "babel-plugin-module-resolver": "^5.0.2",
@@ -53,6 +52,6 @@
     ]
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=20.19.4"
   }
 }
