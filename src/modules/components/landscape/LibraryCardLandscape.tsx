@@ -15,8 +15,11 @@ const LibraryCardLandscape = ({cardNumber, confirmLogout, holderName, isTimeout}
   return (
     <View
       style={styles.libraryCardContainer}
-      importantForAccessibility={isTimeout ? "no-hide-descendants" : "yes"}>    
+      importantForAccessibility={isTimeout ? "no-hide-descendants" : "yes"}>  
       <View style={styles.rotatedContainer}>
+      <View style={styles.libraryNameContainer}>
+        <Text style={styles.libraryName}>{locales.libraryName.fi}</Text>
+      </View>
         <View style={styles.libraryCard}>
           <Text accessible={true} style={styles.holderName}>{holderName}</Text>
           <View accessible={true} accessibilityLabel={locales.libraryBarCode.fi} accessibilityRole={'image'}>

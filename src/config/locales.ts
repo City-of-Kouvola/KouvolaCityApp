@@ -13,6 +13,9 @@ export const locales = {
   libraryCardDescription: {
     fi: 'Sitoudun noudattamaan kirjaston käyttösääntöjä.',
   },
+  libraryName: {
+    fi: 'Kouvolan kaupunginkirjasto',
+  },
   libraryLink: {
     fi: 'kyyti.finna.fi',
   },
