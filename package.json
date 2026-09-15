@@ -1,6 +1,6 @@
 {
   "name": "KouvolaCityApp",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -9,35 +9,38 @@
     "test": "jest"
   },
   "dependencies": {
-    "@bwip-js/react-native": ">=4.7.0",
     "@punosmobile/react-native-device-brightness": "git+https://github.com/punosmobile/react-native-device-brightness.git",
+    "@bwip-js/react-native": ">=4.11.2",
     "@react-native-async-storage/async-storage": "^2.2.0",
-    "@react-native-community/cli-platform-ios": "^20.0.1",
-    "@react-native/gradle-plugin": "^0.81.4",
-    "react": "19.1.0",
-    "react-native": "0.81.4",
-    "react-native-safe-area-context": "^5.5.2",
+    "@react-native-community/cli-platform-ios": "^20.1.0",
+    "@react-native/gradle-plugin": "^0.86.0",
+    "react": "19.2.3",
+    "react-native": "^0.86.0",
+    "react-native-reanimated": "^4.4.0",
+    "react-native-safe-area-context": "^5.8.0",
     "react-native-splash-screen": "^3.3.0",
-    "react-native-vector-icons": "10.2.0"
+    "react-native-vector-icons": "10.3.0",
+    "react-native-worklets": "^0.10.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.3",
-    "@babel/runtime": "^7.28.3",
-    "@react-native-community/cli": "^20.0.0",
-    "@react-native-community/cli-platform-android": "^20.0.0",
-    "@react-native/babel-preset": "0.81.4",
-    "@react-native/eslint-config": "0.81.4",
-    "@react-native/metro-config": "0.81.4",
-    "@react-native/typescript-config": "0.81.4",
-    "@types/jest": "^29.5.13",
+    "@babel/core": "^8.0.1",
+    "@babel/runtime": "^8.0.0",
+    "@react-native-community/cli": "^20.1.0",
+    "@react-native-community/cli-platform-android": "^20.1.0",
+    "@react-native/babel-preset": "^0.86.0",
+    "@react-native/eslint-config": "0.86.0",
+    "@react-native/metro-config": "^0.86.0",
+    "@react-native/typescript-config": "0.86.0",
+    "@types/jest": "^29.2.1",
+    "@types/react": "^19.2.0",
     "@types/react-test-renderer": "19.1.0",
     "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^9.34.0",
     "jest": "^29.2.1",
     "react-native-codegen": "^0.70.7",
-    "react-test-renderer": "19.0.0",
-    "reactotron-react-native": "^5.1.9",
-    "typescript": "^5.8.3"
+    "react-test-renderer": "19.2.3",
+    "reactotron-react-native": "^5.2.0",
+    "typescript": "^7.0.2"
   },
   "jest": {
     "preset": "react-native",
@@ -52,6 +55,6 @@
     ]
   },
   "engines": {
-    "node": ">=20.19.4"
+    "node": ">=22.11.0"
   }
 }
